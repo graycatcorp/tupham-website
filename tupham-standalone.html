@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tupham AI - A IA brasileira amiga da Amazônia. Assistente inteligente pessoal que destina 10% da receita para reflorestamento.">
+    <meta name="keywords" content="Tupham, IA, inteligência artificial, Amazônia, reflorestamento, assistente virtual, Brasil">
+    <meta name="author" content="Gray Cat Corporation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tupham.ai/">
+    <meta property="og:title" content="Tupham AI - A IA brasileira amiga da Amazônia">
+    <meta property="og:description" content="Assistente inteligente pessoal que destina 10% da receita para reflorestamento da Amazônia.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Tupham AI - A IA brasileira amiga da Amazônia">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Tupham AI - A IA brasileira amiga da Amazônia</title>
+    <style>
+:root{--forest-green-900:#0D2818;--forest-green-800:#1B4332;--forest-green-700:#2D6A4F;--forest-green-600:#40916C;--forest-green-500:#52B788;--forest-green-400:#74C69D;--forest-green-300:#95D5B2;--forest-green-200:#B7E4C7;--forest-green-100:#D8F3DC;--forest-green-50:#F0FBF4;--brazil-blue-900:#001A4D;--brazil-blue-800:#002776;--brazil-blue-700:#1A4A8C;--brazil-blue-600:#2E6CB5;--brazil-blue-500:#4A90D9;--brazil-blue-400:#72ACE8;--brazil-blue-300:#9AC5F0;--brazil-blue-200:#C2DEF7;--brazil-blue-100:#E5F0FC;--gold-yellow:#FFDF00;--gold-yellow-dark:#D4B800;--gold-yellow-light:#FFF3B0;--background:#FAFBFC;--surface:#FFFFFF;--text-primary:#1A1D21;--text-secondary:#5C6370;--text-tertiary:#9CA3AF;--divider:#E8ECF0;--shadow-sm:0 1px 2px rgba(0,0,0,0.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);--shadow-lg:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);--shadow-xl:0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);--shadow-green:0 10px 40px -10px rgba(82,183,136,0.4);--transition-fast:150ms ease;--transition-normal:300ms ease;--transition-slow:500ms ease;--radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;--radius-xl:1rem;--radius-2xl:1.5rem;--radius-full:9999px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;background-color:var(--background);color:var(--text-primary);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,h6{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;line-height:1.2}
+a{text-decoration:none;color:inherit;transition:color var(--transition-fast)}
+img{max-width:100%;height:auto;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
+.gradient-text{background:linear-gradient(135deg,var(--forest-green-500),var(--brazil-blue-500));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.light{color:white}
+#particles-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden}
+.particle{position:absolute;width:10px;height:10px;background:var(--forest-green-400);border-radius:50%;opacity:0.3;animation:float 15s infinite ease-in-out}
+.particle.leaf{width:15px;height:15px;background:transparent;border-radius:0}
+.particle.leaf::before{content:'🍃';font-size:14px}
+@keyframes float{0%,100%{transform:translateY(0) translateX(0) rotate(0deg);opacity:0.3}25%{transform:translateY(-100px) translateX(50px) rotate(90deg);opacity:0.5}50%{transform:translateY(-200px) translateX(-30px) rotate(180deg);opacity:0.3}75%{transform:translateY(-100px) translateX(20px) rotate(270deg);opacity:0.5}}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;transition:all var(--transition-normal)}
+.navbar.scrolled{background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:var(--shadow-md);padding:0.75rem 0}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:0.75rem;z-index:1001}
+.logo-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--forest-green-500),var(--forest-green-700));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(82,183,136,0.3);transition:transform var(--transition-fast),box-shadow var(--transition-fast)}
+.logo:hover .logo-icon{transform:scale(1.05);box-shadow:0 6px 20px rgba(82,183,136,0.4)}
+.logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.25rem;color:var(--text-primary)}
+.logo-text strong{font-weight:800}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-size:0.95rem;font-weight:500;color:var(--text-secondary);transition:color var(--transition-fast);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--forest-green-500),var(--forest-green-600));border-radius:var(--radius-full);transition:width var(--transition-normal)}
+.nav-links a:hover{color:var(--forest-green-600)}
+.nav-links a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:1rem}
+.lang-toggle{display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0.75rem;border-radius:var(--radius-full);background:var(--forest-green-50);border:1px solid var(--forest-green-100);font-size:0.875rem;font-weight:500;color:var(--forest-green-700);transition:all var(--transition-fast)}
+.lang-toggle:hover{background:var(--forest-green-100);border-color:var(--forest-green-200)}
+.lang-flag{font-size:1.1rem}
+.nav-cta{padding:0.625rem 1.25rem}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:0.5rem;z-index:1001}
+.hamburger span{width:24px;height:2px;background:var(--text-primary);border-radius:var(--radius-full);transition:all var(--transition-normal)}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);padding:1.5rem;box-shadow:var(--shadow-lg);flex-direction:column;gap:1rem;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all var(--transition-normal)}
+.mobile-menu.active{opacity:1;visibility:visible;transform:translateY(0)}
+.mobile-menu a{padding:0.75rem 1rem;font-size:1rem;font-weight:500;color:var(--text-secondary);border-radius:var(--radius-md);transition:all var(--transition-fast)}
+.mobile-menu a:hover{background:var(--forest-green-50);color:var(--forest-green-600)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem 1.5rem;font-size:0.95rem;font-weight:600;border-radius:var(--radius-lg);transition:all var(--transition-fast);position:relative;overflow:hidden}
+.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);transition:left var(--transition-slow)}
+.btn:hover::before{left:100%}
+.btn-primary{background:linear-gradient(135deg,var(--forest-green-600),var(--forest-green-700));color:white;box-shadow:0 4px 15px rgba(64,145,108,0.3)}
+.btn-primary:hover{background:linear-gradient(135deg,var(--forest-green-500),var(--forest-green-600));transform:translateY(-2px);box-shadow:0 6px 20px rgba(64,145,108,0.4)}
+.btn-secondary{background:var(--surface);color:var(--forest-green-700);border:2px solid var(--forest-green-200)}
+.btn-secondary:hover{background:var(--forest-green-50);border-color:var(--forest-green-400);transform:translateY(-2px)}
+.btn-white{background:white;color:var(--forest-green-700);box-shadow:var(--shadow-lg)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow-xl)}
+.btn-outline-white{background:transparent;color:white;border:2px solid rgba(255,255,255,0.5)}
+.btn-outline-white:hover{background:rgba(255,255,255,0.1);border-color:white;transform:translateY(-2px)}
+.btn-lg{padding:1rem 2rem;font-size:1rem}
+.btn-block{width:100%}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:8rem 0 4rem;background:linear-gradient(180deg,var(--forest-green-50) 0%,var(--background) 100%);overflow:hidden}
+.hero-blobs{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;z-index:0}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.5;animation:blobMove 20s infinite ease-in-out}
+.blob-1{width:600px;height:600px;background:linear-gradient(135deg,var(--forest-green-300),var(--forest-green-400));top:-200px;right:-100px}
+.blob-2{width:400px;height:400px;background:linear-gradient(135deg,var(--brazil-blue-300),var(--brazil-blue-400));bottom:-100px;left:-100px;animation-delay:-5s}
+.blob-3{width:300px;height:300px;background:linear-gradient(135deg,var(--forest-green-200),var(--brazil-blue-200));top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:-10s}
+@keyframes blobMove{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(30px,-30px) scale(1.05)}50%{transform:translate(-20px,20px) scale(0.95)}75%{transform:translate(20px,10px) scale(1.02)}}
+.hero-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-text{max-width:600px}
+.hero-title{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;line-height:1.1;margin-bottom:1.5rem}
+.hero-title span{display:block}
+.hero-subtitle{font-size:1.25rem;color:var(--text-secondary);margin-bottom:2rem;max-width:500px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem}
+.tree-counter{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.25rem;background:var(--surface);border-radius:var(--radius-full);box-shadow:var(--shadow-md);font-size:0.95rem}
+.tree-icon{font-size:1.5rem;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.tree-count{font-weight:700;color:var(--forest-green-600);font-size:1.1rem}
+.tree-text{color:var(--text-secondary)}
+.hero-mockup{display:flex;justify-content:center;perspective:1000px}
+.phone-mockup{width:280px;background:linear-gradient(145deg,#1a1a1a,#2d2d2d);border-radius:36px;padding:12px;box-shadow:0 50px 100px -20px rgba(0,0,0,0.25),0 30px 60px -30px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.1);transform:rotateY(-5deg) rotateX(5deg);transition:transform var(--transition-slow);animation:phoneFloat 6s ease-in-out infinite}
+.phone-mockup:hover{transform:rotateY(0) rotateX(0)}
+@keyframes phoneFloat{0%,100%{transform:rotateY(-5deg) rotateX(5deg) translateY(0)}50%{transform:rotateY(-5deg) rotateX(5deg) translateY(-10px)}}
+.phone-notch{width:120px;height:28px;background:#1a1a1a;border-radius:0 0 20px 20px;margin:0 auto;position:relative;z-index:10}
+.phone-screen{background:var(--surface);border-radius:28px;overflow:hidden;height:520px;display:flex;flex-direction:column}
+.chat-header{display:flex;align-items:center;gap:0.75rem;padding:1rem;background:linear-gradient(135deg,var(--forest-green-600),var(--forest-green-700));color:white}
+.chat-avatar{width:40px;height:40px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+.chat-info{display:flex;flex-direction:column}
+.chat-name{font-weight:600;font-size:0.95rem}
+.chat-status{font-size:0.75rem;opacity:0.8}
+.chat-messages{flex:1;padding:1rem;display:flex;flex-direction:column;gap:0.75rem;background:var(--forest-green-50)}
+.message{max-width:85%;padding:0.75rem 1rem;border-radius:16px;font-size:0.875rem;line-height:1.4;animation:messageIn 0.5s ease-out}
+@keyframes messageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.message-received{background:var(--surface);border-bottom-left-radius:4px;align-self:flex-start;box-shadow:var(--shadow-sm)}
+.message-sent{background:linear-gradient(135deg,var(--forest-green-500),var(--forest-green-600));color:white;border-bottom-right-radius:4px;align-self:flex-end}
+.message-typing{display:flex;gap:4px;padding:0.75rem 1rem;background:var(--surface);border-radius:16px;border-bottom-left-radius:4px;align-self:flex-start;box-shadow:var(--shadow-sm)}
+.message-typing span{width:8px;height:8px;background:var(--forest-green-400);border-radius:50%;animation:typing 1.4s infinite}
+.message-typing span:nth-child(2){animation-delay:0.2s}
+.message-typing span:nth-child(3){animation-delay:0.4s}
+@keyframes typing{0%,60%,100%{transform:translateY(0);opacity:0.4}30%{transform:translateY(-8px);opacity:1}}
+.chat-input{display:flex;align-items:center;gap:0.5rem;padding:0.75rem;background:var(--surface);border-top:1px solid var(--divider)}
+.chat-input input{flex:1;padding:0.625rem 1rem;border:1px solid var(--divider);border-radius:var(--radius-full);font-size:0.875rem;outline:none;transition:border-color var(--transition-fast)}
+.chat-input input:focus{border-color:var(--forest-green-400)}
+.send-btn{width:36px;height:36px;background:linear-gradient(135deg,var(--forest-green-500),var(--forest-green-600));border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;transition:transform var(--transition-fast)}
+.send-btn:hover{transform:scale(1.1)}
+.hero-wave{position:absolute;bottom:0;left:0;right:0;line-height:0}
+.hero-wave svg{width:100%;height:80px}
+section{position:relative}
+.section-header{text-align:center;margin-bottom:4rem}
+.section-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;margin-bottom:1rem;color:var(--text-primary)}
+.section-subtitle{font-size:1.125rem;color:var(--text-secondary);max-width:600px;margin:0 auto}
+.section-wave-top,.section-wave-bottom{line-height:0}
+.section-wave-top svg,.section-wave-bottom svg{width:100%;height:80px}
+.features{padding:6rem 0;background:var(--background)}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+.feature-card{background:var(--surface);border-radius:var(--radius-xl);padding:2rem;transition:all var(--transition-normal);border:1px solid var(--divider);position:relative;overflow:hidden}
+.feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--forest-green-500),var(--brazil-blue-500));transform:scaleX(0);transform-origin:left;transition:transform var(--transition-normal)}
+.feature-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl),0 0 40px rgba(82,183,136,0.1);border-color:var(--forest-green-200)}
+.feature-card:hover::before{transform:scaleX(1)}
+.feature-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--forest-green-100),var(--forest-green-50));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:2rem;transition:transform var(--transition-fast)}
+.feature-card:hover .feature-icon{transform:scale(1.1) rotate(5deg)}
+.feature-card h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;color:var(--text-primary)}
+.feature-card p{color:var(--text-secondary);font-size:0.95rem;line-height:1.6}
+.how-it-works{padding:6rem 0;background:linear-gradient(180deg,var(--forest-green-50) 0%,var(--background) 100%)}
+.steps{display:flex;justify-content:center;align-items:flex-start;gap:2rem;flex-wrap:wrap}
+.step{flex:1;min-width:250px;max-width:300px;text-align:center;position:relative}
+.step-number{width:40px;height:40px;background:linear-gradient(135deg,var(--forest-green-500),var(--forest-green-600));color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.125rem;margin:0 auto 1.5rem;box-shadow:var(--shadow-green)}
+.step-icon{width:100px;height:100px;background:var(--surface);border-radius:var(--radius-2xl);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;color:var(--forest-green-600);box-shadow:var(--shadow-lg);transition:all var(--transition-normal)}
+.step:hover .step-icon{transform:translateY(-5px);box-shadow:var(--shadow-xl),var(--shadow-green)}
+.step h3{font-size:1.25rem;font-weight:700;margin-bottom:0.5rem;color:var(--text-primary)}
+.step p{color:var(--text-secondary);font-size:0.95rem}
+.step-connector{display:flex;align-items:center;padding-top:60px}
+.connector-line{width:60px;height:2px;background:linear-gradient(90deg,var(--forest-green-300),var(--forest-green-400));position:relative}
+.connector-dot{width:8px;height:8px;background:var(--forest-green-400);border-radius:50%;animation:pulse 2s infinite}
+.impact{padding:8rem 0;background:linear-gradient(180deg,var(--forest-green-900),var(--forest-green-800));position:relative;overflow:hidden}
+.impact-bg{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden}
+.impact-particles{position:absolute;width:100%;height:100%;background-image:radial-gradient(circle at 20% 30%,rgba(82,183,136,0.15) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(74,144,217,0.15) 0%,transparent 50%)}
+.impact .section-title,.impact .section-subtitle{color:white}
+.impact .section-subtitle{opacity:0.9}
+.impact-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-bottom:4rem;position:relative;z-index:1}
+.stat-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:var(--radius-xl);padding:2rem;text-align:center;border:1px solid rgba(255,255,255,0.1);transition:all var(--transition-normal)}
+.stat-card:hover{background:rgba(255,255,255,0.15);transform:translateY(-5px)}
+.stat-icon{font-size:2.5rem;margin-bottom:1rem}
+.stat-value{font-family:'Plus Jakarta Sans',sans-serif;font-size:2.5rem;font-weight:800;color:white;display:flex;align-items:baseline;justify-content:center;gap:0.25rem}
+.stat-unit{font-size:1rem;font-weight:600;opacity:0.8}
+.stat-label{color:rgba(255,255,255,0.8);font-size:0.95rem;margin-top:0.5rem}
+.amazon-map{position:relative;z-index:1}
+.map-container{max-width:500px;margin:0 auto;text-align:center}
+.amazon-svg{width:100%;max-width:400px;margin:0 auto}
+.amazon-outline{animation:outlinePulse 4s infinite}
+@keyframes outlinePulse{0%,100%{opacity:0.3}50%{opacity:0.5}}
+.tree-dot{fill:var(--forest-green-400);animation:dotGlow 2s infinite}
+.tree-dot:nth-child(odd){animation-delay:0.5s}
+.tree-dot:nth-child(3n){animation-delay:1s}
+@keyframes dotGlow{0%,100%{opacity:0.5;filter:drop-shadow(0 0 3px var(--forest-green-400))}50%{opacity:1;filter:drop-shadow(0 0 10px var(--forest-green-400))}}
+.map-legend{display:flex;align-items:center;justify-content:center;gap:0.5rem;margin-top:1rem;color:rgba(255,255,255,0.7);font-size:0.875rem}
+.legend-dot{width:10px;height:10px;background:var(--forest-green-400);border-radius:50%;animation:dotGlow 2s infinite}
+.pricing{padding:6rem 0;background:var(--background)}
+.section-wave-top.dark svg path{fill:var(--forest-green-900)}
+.pricing-cards{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.pricing-card{background:var(--surface);border-radius:var(--radius-2xl);padding:2.5rem;width:100%;max-width:380px;border:1px solid var(--divider);transition:all var(--transition-normal);position:relative}
+.pricing-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl)}
+.pricing-card.premium{border:2px solid var(--gold-yellow);background:linear-gradient(180deg,var(--gold-yellow-light) 0%,var(--surface) 30%);position:relative;overflow:hidden}
+.pricing-card.premium::before{content:'';position:absolute;top:0;left:-100%;width:200%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,223,0,0.3),transparent);animation:shimmer 3s infinite}
+@keyframes shimmer{0%{left:-100%}100%{left:100%}}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold-yellow),var(--gold-yellow-dark));color:var(--forest-green-900);padding:0.5rem 1.5rem;border-radius:var(--radius-full);font-size:0.875rem;font-weight:700;box-shadow:0 4px 15px rgba(212,184,0,0.3)}
+.pricing-header{text-align:center;margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid var(--divider)}
+.plan-name{font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;color:var(--text-primary)}
+.plan-price{display:flex;align-items:baseline;justify-content:center;gap:0.25rem}
+.plan-price .currency{font-size:1.25rem;font-weight:600;color:var(--text-secondary)}
+.plan-price .amount{font-family:'Plus Jakarta Sans',sans-serif;font-size:3rem;font-weight:800;color:var(--text-primary)}
+.plan-price .period{font-size:1rem;color:var(--text-secondary)}
+.plan-features{margin-bottom:2rem}
+.plan-features li{display:flex;align-items:flex-start;gap:0.75rem;padding:0.75rem 0;border-bottom:1px solid var(--divider);font-size:0.95rem;color:var(--text-primary)}
+.plan-features li:last-child{border-bottom:none}
+.plan-features li svg{flex-shrink:0;color:var(--forest-green-500);margin-top:2px}
+.plan-features li.muted{color:var(--text-tertiary)}
+.plan-features li.muted svg{color:var(--text-tertiary)}
+.plan-features li.highlight{background:var(--forest-green-50);margin:0 -1rem;padding:0.75rem 1rem;border-radius:var(--radius-md);border:none;color:var(--forest-green-700);font-weight:600}
+.tree-emoji{font-size:1.25rem}
+.team{padding:6rem 0;background:var(--background)}
+.team-content{max-width:800px;margin:0 auto}
+.company-card{background:var(--surface);border-radius:var(--radius-2xl);padding:3rem;text-align:center;border:1px solid var(--divider);box-shadow:var(--shadow-lg)}
+.company-logo{width:80px;height:80px;background:linear-gradient(135deg,var(--text-primary),var(--text-secondary));border-radius:var(--radius-xl);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2.5rem}
+.company-card h3{font-size:1.75rem;font-weight:800;margin-bottom:1.5rem;color:var(--text-primary)}
+.company-card p{color:var(--text-secondary);font-size:1rem;line-height:1.7;margin-bottom:1rem}
+.company-link{display:inline-flex;align-items:center;gap:0.5rem;color:var(--forest-green-600);font-weight:600;margin-top:1rem;transition:all var(--transition-fast)}
+.company-link:hover{color:var(--forest-green-700);gap:0.75rem}
+.faq{padding:6rem 0;background:linear-gradient(180deg,var(--forest-green-50) 0%,var(--background) 100%)}
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{background:var(--surface);border-radius:var(--radius-lg);margin-bottom:1rem;border:1px solid var(--divider);overflow:hidden;transition:all var(--transition-normal)}
+.faq-item:hover{border-color:var(--forest-green-200)}
+.faq-question{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;font-size:1rem;font-weight:600;color:var(--text-primary);text-align:left;transition:all var(--transition-fast)}
+.faq-question:hover{background:var(--forest-green-50)}
+.faq-icon{flex-shrink:0;color:var(--forest-green-500);transition:transform var(--transition-normal)}
+.faq-item.active .faq-icon{transform:rotate(180deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height var(--transition-normal),padding var(--transition-normal)}
+.faq-item.active .faq-answer{max-height:300px}
+.faq-answer p{padding:0 1.5rem 1.5rem;color:var(--text-secondary);line-height:1.7}
+.cta{padding:8rem 0;background:linear-gradient(135deg,var(--forest-green-600),var(--forest-green-700),var(--brazil-blue-700));position:relative;overflow:hidden}
+.cta-particles{position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle at 10% 20%,rgba(255,255,255,0.1) 0%,transparent 30%),radial-gradient(circle at 90% 80%,rgba(255,255,255,0.1) 0%,transparent 30%)}
+.cta-content{text-align:center;position:relative;z-index:1}
+.cta-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:white;margin-bottom:1rem}
+.cta-subtitle{font-size:1.25rem;color:rgba(255,255,255,0.9);max-width:600px;margin:0 auto 2.5rem}
+.cta-buttons{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.footer{background:var(--forest-green-900);color:white;padding:4rem 0 2rem}
+.footer-content{display:grid;grid-template-columns:2fr 3fr 1fr;gap:4rem;margin-bottom:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.1)}
+.footer-brand .logo{margin-bottom:1rem}
+.footer-brand .logo-text{color:white}
+.footer-tagline{color:rgba(255,255,255,0.7);font-size:0.95rem}
+.footer-links{display:flex;gap:4rem}
+.footer-col h4{font-size:0.875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1.25rem;color:rgba(255,255,255,0.9)}
+.footer-col ul{display:flex;flex-direction:column;gap:0.75rem}
+.footer-col a{color:rgba(255,255,255,0.7);font-size:0.95rem;transition:color var(--transition-fast)}
+.footer-col a:hover{color:var(--forest-green-300)}
+.footer-social h4{font-size:0.875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1.25rem;color:rgba(255,255,255,0.9)}
+.social-links{display:flex;gap:1rem}
+.social-link{width:44px;height:44px;background:rgba(255,255,255,0.1);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;transition:all var(--transition-fast)}
+.social-link:hover{background:var(--forest-green-600);transform:translateY(-3px)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:0.875rem;color:rgba(255,255,255,0.6)}
+.footer-company{color:var(--forest-green-400);transition:color var(--transition-fast)}
+.footer-company:hover{color:var(--forest-green-300)}
+.animate-on-scroll{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+.feature-card.animate-on-scroll,.stat-card.animate-on-scroll,.faq-item.animate-on-scroll{transition-delay:calc(var(--delay,0) * 0.1s)}
+.step.animate-on-scroll{transition-delay:calc(var(--delay,0) * 0.2s)}
+@media (max-width:1024px){.hero-content{grid-template-columns:1fr;text-align:center}.hero-text{max-width:100%}.hero-subtitle{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.tree-counter{justify-content:center}.footer-content{grid-template-columns:1fr;gap:2rem;text-align:center}.footer-links{justify-content:center}.social-links{justify-content:center}.footer-bottom{flex-direction:column;gap:1rem}}
+@media (max-width:768px){.nav-links{display:none}.hamburger{display:flex}.mobile-menu{display:flex}.nav-cta{display:none}.hero{padding:6rem 0 4rem}.hero-title{font-size:2rem}.hero-mockup{display:none}.phone-mockup{width:240px}.phone-screen{height:440px}.features-grid{grid-template-columns:1fr}.steps{flex-direction:column;align-items:center}.step-connector{display:none}.impact-stats{grid-template-columns:repeat(2,1fr)}.stat-value{font-size:2rem}.pricing-cards{flex-direction:column;align-items:center}.footer-links{flex-direction:column;gap:2rem}.cta-buttons{flex-direction:column;align-items:center}.cta-buttons .btn{width:100%;max-width:300px}}
+@media (max-width:480px){.container{padding:0 1rem}.section-title{font-size:1.75rem}.hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}.tree-counter{flex-direction:column;text-align:center}.impact-stats{grid-template-columns:1fr}.company-card{padding:2rem 1.5rem}.pricing-card{padding:2rem 1.5rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}html{scroll-behavior:auto}.animate-on-scroll{opacity:1;transform:none}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--forest-green-500);outline-offset:2px}
+    </style>
+</head>
+<body>
+    <div id="particles-container" aria-hidden="true"></div>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Tupham AI - Página inicial">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C13.5 4 15 6.5 15 9C15 11 14 12.5 12 13C10 12.5 9 11 9 9C9 6.5 10.5 4 12 2Z" fill="white"/>
+                        <path d="M12 13V22M12 13C8 14 5 17 5 20C5 21 5.5 22 6 22H18C18.5 22 19 21 19 20C19 17 16 14 12 13Z" fill="white"/>
+                        <path d="M7 8C5.5 9 4 11 4 13C4 14.5 5 15.5 6 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M17 8C18.5 9 20 11 20 13C20 14.5 19 15.5 18 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <span class="logo-text"><strong>Tupham</strong> AI</span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
+                <a href="#impacto" data-i18n="nav.impact">Impacto</a>
+                <a href="#planos" data-i18n="nav.plans">Planos</a>
+                <a href="#equipe" data-i18n="nav.team">Equipe</a>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Alternar idioma">
+                    <span class="lang-flag">🇧🇷</span>
+                    <span class="lang-code">PT</span>
+                </button>
+                <a href="#download" class="btn btn-primary nav-cta" data-i18n="nav.download">Baixar App</a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
+            <a href="#impacto" data-i18n="nav.impact">Impacto</a>
+            <a href="#planos" data-i18n="nav.plans">Planos</a>
+            <a href="#equipe" data-i18n="nav.team">Equipe</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="#download" class="btn btn-primary" data-i18n="nav.download">Baixar App</a>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-blobs" aria-hidden="true">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title animate-on-scroll">
+                    <span data-i18n="hero.title1">Inteligência que transforma.</span>
+                    <span class="gradient-text" data-i18n="hero.title2">Tecnologia que refloresta.</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll" data-i18n="hero.subtitle">O Tupham AI é seu assistente inteligente pessoal. Cada conversa que você tem ajuda a reflorestar a Amazônia.</p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+                        <span data-i18n="hero.downloadIOS">Baixar para iOS</span>
+                    </a>
+                    <a href="#download" class="btn btn-secondary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 20.83L14.41 12L3.18 3.17C2.84 3.46 2.63 3.9 2.63 4.39V19.61C2.63 20.1 2.84 20.54 3.18 20.83ZM15.54 12L4.77 21.32L15.95 15.22L15.54 12ZM15.54 12L15.95 8.78L4.77 2.68L15.54 12ZM21.15 10.77L17.89 8.91L16.5 12L17.89 15.09L21.15 13.23C21.87 12.83 21.87 11.17 21.15 10.77Z"/></svg>
+                        <span data-i18n="hero.downloadAndroid">Baixar para Android</span>
+                    </a>
+                </div>
+                <div class="tree-counter animate-on-scroll">
+                    <span class="tree-icon">🌳</span>
+                    <span class="tree-count">+<span id="hero-tree-count">0</span></span>
+                    <span class="tree-text" data-i18n="hero.treesPlanted">árvores plantadas pela comunidade Tupham</span>
+                </div>
+            </div>
+            <div class="hero-mockup animate-on-scroll">
+                <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="chat-header">
+                            <div class="chat-avatar">🌿</div>
+                            <div class="chat-info">
+                                <span class="chat-name">Tupham AI</span>
+                                <span class="chat-status" data-i18n="mockup.online">Online</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message message-received"><p data-i18n="mockup.greeting">Olá! Sou o Tupham, sua IA amiga da Amazônia. Como posso ajudar?</p></div>
+                            <div class="message message-sent"><p data-i18n="mockup.question">Como funciona o reflorestamento?</p></div>
+                            <div class="message message-received"><p data-i18n="mockup.answer">10% da sua assinatura vai direto para plantar árvores na Amazônia! 🌱</p></div>
+                            <div class="message-typing"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Digite sua mensagem..." data-i18n-placeholder="mockup.placeholder" disabled>
+                            <button class="send-btn" aria-label="Enviar"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--background)"/>
+            </svg>
+        </div>
+    </section>
+    <section class="features" id="funcionalidades">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-i18n="features.title">Tudo que você precisa, em um só lugar</h2>
+                <p class="section-subtitle" data-i18n="features.subtitle">Recursos poderosos com impacto positivo para o planeta</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" style="--delay: 0"><div class="feature-icon"><span>💬</span></div><h3 data-i18n="features.chat.title">Chat Inteligente</h3><p data-i18n="features.chat.desc">Converse naturalmente e receba respostas precisas para qualquer pergunta</p></div>
+                <div class="feature-card animate-on-scroll" style="--delay: 1"><div class="feature-icon"><span>🔍</span></div><h3 data-i18n="features.search.title">Pesquisa Web</h3><p data-i18n="features.search.desc">Informações atualizadas da internet em tempo real</p></div>
+                <div class="feature-card animate-on-scroll" style="--delay: 2"><div class="feature-icon"><span>📊</span></div><h3 data-i18n="features.impact.title">Painel de Impacto</h3><p data-i18n="features.impact.desc">Acompanhe sua contribuição ambiental em tempo real</p></div>
+                <div class="feature-card animate-on-scroll" style="--delay: 3"><div class="feature-icon"><span>📱</span></div><h3 data-i18n="features.local.title">IA Local</h3><p data-i18n="features.local.desc">IA roda no seu dispositivo, impactando menos o meio ambiente</p></div>
+                <div class="feature-card animate-on-scroll" style="--delay: 4"><div class="feature-icon"><span>🏆</span></div><h3 data-i18n="features.gamification.title">Gamificação</h3><p data-i18n="features.gamification.desc">Conquiste badges e acompanhe seu impacto ambiental</p></div>
+                <div class="feature-card animate-on-scroll" style="--delay: 5"><div class="feature-icon"><span>🌳</span></div><h3 data-i18n="features.reforestation.title">Reflorestamento</h3><p data-i18n="features.reforestation.desc">10% da receita vai para plantar árvores na Amazônia</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works" id="como-funciona">
+        <div class="section-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 35C1200 30 1320 30 1380 30L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="var(--background)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-i18n="howItWorks.title">Simples de usar, poderoso de verdade</h2>
+                <p class="section-subtitle" data-i18n="howItWorks.subtitle">Três passos para transformar o mundo</p>
+            </div>
+            <div class="steps">
+                <div class="step animate-on-scroll" style="--delay: 0">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+                    <h3 data-i18n="howItWorks.step1.title">Baixe o app</h3>
+                    <p data-i18n="howItWorks.step1.desc">Disponível gratuitamente para iOS e Android</p>
+                </div>
+                <div class="step-connector animate-on-scroll" aria-hidden="true"><div class="connector-line"></div><div class="connector-dot"></div></div>
+                <div class="step animate-on-scroll" style="--delay: 1">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                    <h3 data-i18n="howItWorks.step2.title">Converse com o Tupham</h3>
+                    <p data-i18n="howItWorks.step2.desc">Pergunte qualquer coisa e receba respostas inteligentes</p>
+                </div>
+                <div class="step-connector animate-on-scroll" aria-hidden="true"><div class="connector-line"></div><div class="connector-dot"></div></div>
+                <div class="step animate-on-scroll" style="--delay: 2">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-2.5 7-6 7-10.5 0-3-2.5-5.5-5.5-5.5-1.5 0-2.8.6-3.8 1.5L12 9V2L9.7 4.3C8.2 3.2 6.4 2.5 4.5 2.5 2.5 2.5 1 5 1 8.5c0 4.5 3 8 7 10.5"/><path d="M12 22V9"/><path d="M5.5 8.5c0-1.5 1-2.5 2.5-2.5"/></svg></div>
+                    <h3 data-i18n="howItWorks.step3.title">Ajude a Amazônia</h3>
+                    <p data-i18n="howItWorks.step3.desc">Parte da receita vai para reflorestamento</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-wave-bottom">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--forest-green-900)"/>
+            </svg>
+        </div>
+    </section>
+    <section class="impact" id="impacto">
+        <div class="impact-bg" aria-hidden="true"><div class="impact-particles"></div></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title light" data-i18n="impact.title">Cada conversa planta uma semente</h2>
+                <p class="section-subtitle light" data-i18n="impact.subtitle">10% de toda a receita Premium e de anúncios é destinada ao reflorestamento da Amazônia</p>
+            </div>
+            <div class="impact-stats">
+                <div class="stat-card animate-on-scroll" style="--delay: 0"><div class="stat-icon">🌳</div><div class="stat-value"><span class="counter" data-target="12847">0</span></div><div class="stat-label" data-i18n="impact.trees">Árvores Plantadas</div></div>
+                <div class="stat-card animate-on-scroll" style="--delay: 1"><div class="stat-icon">🌍</div><div class="stat-value"><span class="counter" data-target="256940">0</span><span class="stat-unit">kg</span></div><div class="stat-label" data-i18n="impact.co2">CO₂ Compensado</div></div>
+                <div class="stat-card animate-on-scroll" style="--delay: 2"><div class="stat-icon">🗺️</div><div class="stat-value"><span class="counter" data-target="64235">0</span><span class="stat-unit">m²</span></div><div class="stat-label" data-i18n="impact.area">Área Preservada</div></div>
+                <div class="stat-card animate-on-scroll" style="--delay: 3"><div class="stat-icon">👥</div><div class="stat-value"><span class="counter" data-target="8432">0</span></div><div class="stat-label" data-i18n="impact.supporters">Apoiadores Ativos</div></div>
+            </div>
+            <div class="amazon-map animate-on-scroll">
+                <div class="map-container">
+                    <svg viewBox="0 0 400 300" class="amazon-svg">
+                        <path class="amazon-outline" d="M50,150 Q80,80 150,60 Q220,40 280,70 Q340,100 360,150 Q370,200 330,240 Q280,280 200,270 Q120,260 70,220 Q40,190 50,150 Z" fill="var(--forest-green-700)" opacity="0.3"/>
+                        <g class="tree-dots">
+                            <circle cx="120" cy="120" r="4" class="tree-dot"/><circle cx="180" cy="100" r="3" class="tree-dot"/><circle cx="220" cy="130" r="5" class="tree-dot"/><circle cx="150" cy="160" r="4" class="tree-dot"/><circle cx="260" cy="150" r="3" class="tree-dot"/><circle cx="200" cy="180" r="4" class="tree-dot"/><circle cx="280" cy="120" r="3" class="tree-dot"/><circle cx="170" cy="200" r="5" class="tree-dot"/><circle cx="240" cy="190" r="4" class="tree-dot"/><circle cx="130" cy="180" r="3" class="tree-dot"/><circle cx="300" cy="170" r="4" class="tree-dot"/><circle cx="100" cy="150" r="3" class="tree-dot"/>
+                        </g>
+                    </svg>
+                    <div class="map-legend"><span class="legend-dot"></span><span data-i18n="impact.mapLegend">Áreas de reflorestamento</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="planos">
+        <div class="section-wave-top dark">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 35C1200 30 1320 30 1380 30L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="var(--forest-green-900)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-i18n="pricing.title">Escolha seu plano</h2>
+                <p class="section-subtitle" data-i18n="pricing.subtitle">Comece gratuitamente ou apoie a Amazônia com o Premium</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card animate-on-scroll" style="--delay: 0">
+                    <div class="pricing-header">
+                        <h3 class="plan-name" data-i18n="pricing.free.name">Gratuito</h3>
+                        <div class="plan-price"><span class="currency">R$</span><span class="amount">0</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature1">Chat básico com IA</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature2">5 análises de documentos/mês</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature3">5 análises de imagens/mês</span></li>
+                        <li class="muted"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span data-i18n="pricing.free.feature4">Anúncios discretos</span></li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-block" data-i18n="pricing.free.cta">Começar Grátis</a>
+                </div>
+                <div class="pricing-card premium animate-on-scroll" style="--delay: 1">
+                    <div class="popular-badge" data-i18n="pricing.premium.badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name" data-i18n="pricing.premium.name">Premium</h3>
+                        <div class="plan-price"><span class="currency">R$</span><span class="amount">14,90</span><span class="period" data-i18n="pricing.premium.period">/mês</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature1">Chat ilimitado com IA avançada</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature2">Análises ilimitadas</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature3">Sem anúncios</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature4">Histórico completo</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature5">Suporte prioritário</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature6">Badge "Apoiador da Amazônia"</span></li>
+                        <li class="highlight"><span class="tree-emoji">🌳</span><span data-i18n="pricing.premium.feature7">10% vai para reflorestamento</span></li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-block" data-i18n="pricing.premium.cta">Assinar Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="equipe">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-i18n="team.title">Quem está por trás do Tupham</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">Conheça a empresa que criou o Tupham AI</p>
+            </div>
+            <div class="team-content animate-on-scroll">
+                <div class="company-card">
+                    <div class="company-logo"><span>🐱</span></div>
+                    <h3>Gray Cat Corporation</h3>
+                    <p data-i18n="team.description">A Gray Cat Corporation é uma empresa brasileira de tecnologia focada em criar soluções inovadoras com impacto positivo. Nossa missão é desenvolver produtos que unam tecnologia de ponta com responsabilidade ambiental e social.</p>
+                    <p data-i18n="team.description2">Com o Tupham AI, unimos inteligência artificial e consciência ambiental para criar um assistente que não apenas ajuda você no dia a dia, mas também contribui ativamente para a preservação da Amazônia.</p>
+                    <a href="https://graycatcorp.com" target="_blank" rel="noopener noreferrer" class="company-link">
+                        <span data-i18n="team.visitWebsite">Visitar site</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="section-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 35C1200 30 1320 30 1380 30L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="var(--background)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" data-i18n="faq.title">Perguntas Frequentes</h2>
+                <p class="section-subtitle" data-i18n="faq.subtitle">Tire suas dúvidas sobre o Tupham AI</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll" style="--delay: 0">
+                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">O Tupham é gratuito?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-answer"><p data-i18n="faq.a1">Sim! O Tupham oferece um plano gratuito com funcionalidades básicas. Para recursos ilimitados e para apoiar o reflorestamento da Amazônia, você pode assinar o plano Premium por R$ 14,90/mês.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 1">
+                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">Como funciona o reflorestamento?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-answer"><p data-i18n="faq.a2">10% de toda receita Premium e de anúncios é doada para fundos de reflorestamento da Amazônia com parceiros verificados. Trabalhamos com organizações certificadas para garantir que cada real investido resulte em árvores plantadas de verdade.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 2">
+                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">O app funciona offline?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-answer"><p data-i18n="faq.a3">O Tupham requer conexão com a internet para funcionar. Precisamos de sincronia com nossos servidores para garantir a melhor qualidade na experiência do usuário e manter os dados de impacto ambiental atualizados.</p></div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay: 3">
+                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">Posso cancelar a assinatura a qualquer momento?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-answer"><p data-i18n="faq.a4">Sim, você pode cancelar sua assinatura a qualquer momento, sem multa ou burocracia. O acesso Premium continua até o fim do período já pago.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta" id="download">
+        <div class="cta-particles" aria-hidden="true"></div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title" data-i18n="cta.title">Pronto para fazer a diferença?</h2>
+                <p class="cta-subtitle" data-i18n="cta.subtitle">Baixe o Tupham AI e transforme cada conversa em impacto real para a Amazônia</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-white btn-lg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+                        <span data-i18n="cta.ios">Baixar para iOS</span>
+                    </a>
+                    <a href="#" class="btn btn-outline-white btn-lg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 20.83L14.41 12L3.18 3.17C2.84 3.46 2.63 3.9 2.63 4.39V19.61C2.63 20.1 2.84 20.54 3.18 20.83ZM15.54 12L4.77 21.32L15.95 15.22L15.54 12ZM15.54 12L15.95 8.78L4.77 2.68L15.54 12ZM21.15 10.77L17.89 8.91L16.5 12L17.89 15.09L21.15 13.23C21.87 12.83 21.87 11.17 21.15 10.77Z"/></svg>
+                        <span data-i18n="cta.android">Baixar para Android</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C13.5 4 15 6.5 15 9C15 11 14 12.5 12 13C10 12.5 9 11 9 9C9 6.5 10.5 4 12 2Z" fill="white"/>
+                                <path d="M12 13V22M12 13C8 14 5 17 5 20C5 21 5.5 22 6 22H18C18.5 22 19 21 19 20C19 17 16 14 12 13Z" fill="white"/>
+                                <path d="M7 8C5.5 9 4 11 4 13C4 14.5 5 15.5 6 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M17 8C18.5 9 20 11 20 13C20 14.5 19 15.5 18 16" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text"><strong>Tupham</strong> AI</span>
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">A IA brasileira amiga da Amazônia</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.product">Produto</h4>
+                        <ul>
+                            <li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li>
+                            <li><a href="#impacto" data-i18n="nav.impact">Impacto</a></li>
+                            <li><a href="#planos" data-i18n="nav.plans">Planos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.company">Empresa</h4>
+                        <ul>
+                            <li><a href="#equipe" data-i18n="nav.team">Equipe</a></li>
+                            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                            <li><a href="https://graycatcorp.com" target="_blank" rel="noopener noreferrer">Gray Cat Corp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 data-i18n="footer.legal">Legal</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.terms">Termos de Uso</a></li>
+                            <li><a href="#" data-i18n="footer.privacy">Política de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4 data-i18n="footer.social">Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="#" aria-label="Twitter/X" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tupham — <span data-i18n="footer.madeWith">Feito com</span> 💚 <span data-i18n="footer.forAmazon">para a Amazônia</span></p>
+                <a href="https://graycatcorp.com" target="_blank" rel="noopener noreferrer" class="footer-company">graycatcorp.com</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+const translations={'pt-BR':{'nav.features':'Funcionalidades','nav.impact':'Impacto','nav.plans':'Planos','nav.team':'Equipe','nav.faq':'FAQ','nav.download':'Baixar App','hero.title1':'Inteligência que transforma.','hero.title2':'Tecnologia que refloresta.','hero.subtitle':'O Tupham AI é seu assistente inteligente pessoal. Cada conversa que você tem ajuda a reflorestar a Amazônia.','hero.downloadIOS':'Baixar para iOS','hero.downloadAndroid':'Baixar para Android','hero.treesPlanted':'árvores plantadas pela comunidade Tupham','mockup.online':'Online','mockup.greeting':'Olá! Sou o Tupham, sua IA amiga da Amazônia. Como posso ajudar?','mockup.question':'Como funciona o reflorestamento?','mockup.answer':'10% da sua assinatura vai direto para plantar árvores na Amazônia! 🌱','mockup.placeholder':'Digite sua mensagem...','features.title':'Tudo que você precisa, em um só lugar','features.subtitle':'Recursos poderosos com impacto positivo para o planeta','features.chat.title':'Chat Inteligente','features.chat.desc':'Converse naturalmente e receba respostas precisas para qualquer pergunta','features.search.title':'Pesquisa Web','features.search.desc':'Informações atualizadas da internet em tempo real','features.impact.title':'Painel de Impacto','features.impact.desc':'Acompanhe sua contribuição ambiental em tempo real','features.local.title':'IA Local','features.local.desc':'IA roda no seu dispositivo, impactando menos o meio ambiente','features.gamification.title':'Gamificação','features.gamification.desc':'Conquiste badges e acompanhe seu impacto ambiental','features.reforestation.title':'Reflorestamento','features.reforestation.desc':'10% da receita vai para plantar árvores na Amazônia','howItWorks.title':'Simples de usar, poderoso de verdade','howItWorks.subtitle':'Três passos para transformar o mundo','howItWorks.step1.title':'Baixe o app','howItWorks.step1.desc':'Disponível gratuitamente para iOS e Android','howItWorks.step2.title':'Converse com o Tupham','howItWorks.step2.desc':'Pergunte qualquer coisa e receba respostas inteligentes','howItWorks.step3.title':'Ajude a Amazônia','howItWorks.step3.desc':'Parte da receita vai para reflorestamento','impact.title':'Cada conversa planta uma semente','impact.subtitle':'10% de toda a receita Premium e de anúncios é destinada ao reflorestamento da Amazônia','impact.trees':'Árvores Plantadas','impact.co2':'CO₂ Compensado','impact.area':'Área Preservada','impact.supporters':'Apoiadores Ativos','impact.mapLegend':'Áreas de reflorestamento','pricing.title':'Escolha seu plano','pricing.subtitle':'Comece gratuitamente ou apoie a Amazônia com o Premium','pricing.free.name':'Gratuito','pricing.free.feature1':'Chat básico com IA','pricing.free.feature2':'5 análises de documentos/mês','pricing.free.feature3':'5 análises de imagens/mês','pricing.free.feature4':'Anúncios discretos','pricing.free.cta':'Começar Grátis','pricing.premium.badge':'Mais Popular','pricing.premium.name':'Premium','pricing.premium.period':'/mês','pricing.premium.feature1':'Chat ilimitado com IA avançada','pricing.premium.feature2':'Análises ilimitadas','pricing.premium.feature3':'Sem anúncios','pricing.premium.feature4':'Histórico completo','pricing.premium.feature5':'Suporte prioritário','pricing.premium.feature6':'Badge "Apoiador da Amazônia"','pricing.premium.feature7':'10% vai para reflorestamento','pricing.premium.cta':'Assinar Premium','team.title':'Quem está por trás do Tupham','team.subtitle':'Conheça a empresa que criou o Tupham AI','team.description':'A Gray Cat Corporation é uma empresa brasileira de tecnologia focada em criar soluções inovadoras com impacto positivo. Nossa missão é desenvolver produtos que unam tecnologia de ponta com responsabilidade ambiental e social.','team.description2':'Com o Tupham AI, unimos inteligência artificial e consciência ambiental para criar um assistente que não apenas ajuda você no dia a dia, mas também contribui ativamente para a preservação da Amazônia.','team.visitWebsite':'Visitar site','faq.title':'Perguntas Frequentes','faq.subtitle':'Tire suas dúvidas sobre o Tupham AI','faq.q1':'O Tupham é gratuito?','faq.a1':'Sim! O Tupham oferece um plano gratuito com funcionalidades básicas. Para recursos ilimitados e para apoiar o reflorestamento da Amazônia, você pode assinar o plano Premium por R$ 14,90/mês.','faq.q2':'Como funciona o reflorestamento?','faq.a2':'10% de toda receita Premium e de anúncios é doada para fundos de reflorestamento da Amazônia com parceiros verificados. Trabalhamos com organizações certificadas para garantir que cada real investido resulte em árvores plantadas de verdade.','faq.q3':'O app funciona offline?','faq.a3':'O Tupham requer conexão com a internet para funcionar. Precisamos de sincronia com nossos servidores para garantir a melhor qualidade na experiência do usuário e manter os dados de impacto ambiental atualizados.','faq.q4':'Posso cancelar a assinatura a qualquer momento?','faq.a4':'Sim, você pode cancelar sua assinatura a qualquer momento, sem multa ou burocracia. O acesso Premium continua até o fim do período já pago.','cta.title':'Pronto para fazer a diferença?','cta.subtitle':'Baixe o Tupham AI e transforme cada conversa em impacto real para a Amazônia','cta.ios':'Baixar para iOS','cta.android':'Baixar para Android','footer.tagline':'A IA brasileira amiga da Amazônia','footer.product':'Produto','footer.company':'Empresa','footer.legal':'Legal','footer.terms':'Termos de Uso','footer.privacy':'Política de Privacidade','footer.social':'Redes Sociais','footer.madeWith':'Feito com','footer.forAmazon':'para a Amazônia'},'en-US':{'nav.features':'Features','nav.impact':'Impact','nav.plans':'Plans','nav.team':'Team','nav.faq':'FAQ','nav.download':'Download App','hero.title1':'Intelligence that transforms.','hero.title2':'Technology that reforests.','hero.subtitle':'Tupham AI is your personal intelligent assistant. Every conversation you have helps reforest the Amazon.','hero.downloadIOS':'Download for iOS','hero.downloadAndroid':'Download for Android','hero.treesPlanted':'trees planted by the Tupham community','mockup.online':'Online','mockup.greeting':"Hi! I'm Tupham, your AI friend of the Amazon. How can I help?",'mockup.question':'How does reforestation work?','mockup.answer':'10% of your subscription goes directly to planting trees in the Amazon! 🌱','mockup.placeholder':'Type your message...','features.title':'Everything you need, in one place','features.subtitle':'Powerful features with positive impact for the planet','features.chat.title':'Smart Chat','features.chat.desc':'Chat naturally and get accurate answers to any question','features.search.title':'Web Search','features.search.desc':'Up-to-date information from the internet in real time','features.impact.title':'Impact Dashboard','features.impact.desc':'Track your environmental contribution in real time','features.local.title':'Local AI','features.local.desc':'AI runs on your device, having less impact on the environment','features.gamification.title':'Gamification','features.gamification.desc':'Earn badges and track your environmental impact','features.reforestation.title':'Reforestation','features.reforestation.desc':'10% of revenue goes to planting trees in the Amazon','howItWorks.title':'Simple to use, truly powerful','howItWorks.subtitle':'Three steps to transform the world','howItWorks.step1.title':'Download the app','howItWorks.step1.desc':'Available for free on iOS and Android','howItWorks.step2.title':'Chat with Tupham','howItWorks.step2.desc':'Ask anything and get intelligent answers','howItWorks.step3.title':'Help the Amazon','howItWorks.step3.desc':'Part of the revenue goes to reforestation','impact.title':'Every conversation plants a seed','impact.subtitle':'10% of all Premium and ad revenue is donated to Amazon reforestation','impact.trees':'Trees Planted','impact.co2':'CO₂ Offset','impact.area':'Area Preserved','impact.supporters':'Active Supporters','impact.mapLegend':'Reforestation areas','pricing.title':'Choose your plan','pricing.subtitle':'Start for free or support the Amazon with Premium','pricing.free.name':'Free','pricing.free.feature1':'Basic AI chat','pricing.free.feature2':'5 document analyses/month','pricing.free.feature3':'5 image analyses/month','pricing.free.feature4':'Discreet ads','pricing.free.cta':'Start Free','pricing.premium.badge':'Most Popular','pricing.premium.name':'Premium','pricing.premium.period':'/month','pricing.premium.feature1':'Unlimited chat with advanced AI','pricing.premium.feature2':'Unlimited analyses','pricing.premium.feature3':'No ads','pricing.premium.feature4':'Complete history','pricing.premium.feature5':'Priority support','pricing.premium.feature6':'"Amazon Supporter" badge','pricing.premium.feature7':'10% goes to reforestation','pricing.premium.cta':'Subscribe Premium','team.title':'Who is behind Tupham','team.subtitle':'Meet the company that created Tupham AI','team.description':'Gray Cat Corporation is a Brazilian technology company focused on creating innovative solutions with positive impact. Our mission is to develop products that combine cutting-edge technology with environmental and social responsibility.','team.description2':'With Tupham AI, we combine artificial intelligence and environmental awareness to create an assistant that not only helps you in your daily life, but also actively contributes to the preservation of the Amazon.','team.visitWebsite':'Visit website','faq.title':'Frequently Asked Questions','faq.subtitle':'Get your questions about Tupham AI answered','faq.q1':'Is Tupham free?','faq.a1':'Yes! Tupham offers a free plan with basic features. For unlimited features and to support Amazon reforestation, you can subscribe to the Premium plan for R$ 14.90/month.','faq.q2':'How does reforestation work?','faq.a2':'10% of all Premium and ad revenue is donated to Amazon reforestation funds with verified partners. We work with certified organizations to ensure every dollar invested results in real trees being planted.','faq.q3':'Does the app work offline?','faq.a3':'Tupham requires an internet connection to work. We need synchronization with our servers to ensure the best quality user experience and keep environmental impact data up to date.','faq.q4':'Can I cancel my subscription at any time?','faq.a4':'Yes, you can cancel your subscription at any time, without penalty or hassle. Premium access continues until the end of the already paid period.','cta.title':'Ready to make a difference?','cta.subtitle':'Download Tupham AI and turn every conversation into real impact for the Amazon','cta.ios':'Download for iOS','cta.android':'Download for Android','footer.tagline':"Brazil's AI friend of the Amazon",'footer.product':'Product','footer.company':'Company','footer.legal':'Legal','footer.terms':'Terms of Use','footer.privacy':'Privacy Policy','footer.social':'Social Media','footer.madeWith':'Made with','footer.forAmazon':'for the Amazon'}};
+let currentLanguage='pt-BR';
+function setLanguage(lang){currentLanguage=lang;localStorage.setItem('tupham-language',lang);document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.getAttribute('data-i18n');if(translations[lang]&&translations[lang][key])el.textContent=translations[lang][key]});document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{const key=el.getAttribute('data-i18n-placeholder');if(translations[lang]&&translations[lang][key])el.placeholder=translations[lang][key]});const langToggle=document.getElementById('lang-toggle');if(langToggle){const flagSpan=langToggle.querySelector('.lang-flag');const codeSpan=langToggle.querySelector('.lang-code');if(lang==='pt-BR'){flagSpan.textContent='🇧🇷';codeSpan.textContent='PT'}else{flagSpan.textContent='🇺🇸';codeSpan.textContent='EN'}}document.documentElement.lang=lang==='pt-BR'?'pt-BR':'en'}
+function toggleLanguage(){setLanguage(currentLanguage==='pt-BR'?'en-US':'pt-BR')}
+function initNavbar(){const navbar=document.getElementById('navbar');if(!navbar)return;window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>50)},{passive:true})}
+function initMobileMenu(){const hamburger=document.getElementById('hamburger');const mobileMenu=document.getElementById('mobile-menu');if(!hamburger||!mobileMenu)return;hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mobileMenu.classList.toggle('active');hamburger.setAttribute('aria-expanded',hamburger.classList.contains('active'))});mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{hamburger.classList.remove('active');mobileMenu.classList.remove('active')}));document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!mobileMenu.contains(e.target)){hamburger.classList.remove('active');mobileMenu.classList.remove('active')}})}
+function initSmoothScroll(){document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){const href=this.getAttribute('href');if(href==='#')return;const target=document.querySelector(href);if(target){e.preventDefault();const navbarHeight=document.getElementById('navbar')?.offsetHeight||0;window.scrollTo({top:target.getBoundingClientRect().top+window.pageYOffset-navbarHeight-20,behavior:'smooth'})}})})}
+function initScrollAnimations(){const elements=document.querySelectorAll('.animate-on-scroll');if(!elements.length)return;const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');const counter=entry.target.querySelector('.counter');if(counter&&!counter.dataset.animated){animateCounter(counter);counter.dataset.animated='true'}}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});elements.forEach(el=>observer.observe(el))}
+function animateCounter(el){const target=parseInt(el.dataset.target);const duration=2000;const increment=target/(duration/16);let current=0;function update(){current+=increment;if(current<target){el.textContent=Math.floor(current).toLocaleString('pt-BR');requestAnimationFrame(update)}else{el.textContent=target.toLocaleString('pt-BR')}}requestAnimationFrame(update)}
+function initHeroTreeCounter(){const heroCounter=document.getElementById('hero-tree-count');if(!heroCounter)return;const target=12847;const duration=2500;const increment=target/(duration/16);let current=0;setTimeout(()=>{function update(){current+=increment;if(current<target){heroCounter.textContent=Math.floor(current).toLocaleString('pt-BR');requestAnimationFrame(update)}else{heroCounter.textContent=target.toLocaleString('pt-BR')}}requestAnimationFrame(update)},500)}
+function initFAQ(){document.querySelectorAll('.faq-item').forEach(item=>{item.querySelector('.faq-question')?.addEventListener('click',()=>{const isActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('active');i.querySelector('.faq-question')?.setAttribute('aria-expanded','false')});if(!isActive){item.classList.add('active');item.querySelector('.faq-question')?.setAttribute('aria-expanded','true')}})})}
+function initParticles(){const container=document.getElementById('particles-container');if(!container)return;for(let i=0;i<15;i++){const p=document.createElement('div');p.className=`particle${Math.random()>0.5?' leaf':''}`;p.style.left=`${Math.random()*100}%`;p.style.top=`${Math.random()*100}%`;p.style.animationDelay=`${Math.random()*10}s`;p.style.animationDuration=`${15+Math.random()*10}s`;if(!p.classList.contains('leaf')){const size=5+Math.random()*10;p.style.width=`${size}px`;p.style.height=`${size}px`}container.appendChild(p)}}
+function initLanguageToggle(){document.getElementById('lang-toggle')?.addEventListener('click',toggleLanguage);const saved=localStorage.getItem('tupham-language');if(saved&&(saved==='pt-BR'||saved==='en-US'))setLanguage(saved);else setLanguage('pt-BR')}
+function initTypingAnimation(){const typing=document.querySelector('.message-typing');if(!typing)return;setInterval(()=>{if(Math.random()>0.5){typing.style.display='flex';setTimeout(()=>typing.style.display='none',2000+Math.random()*2000)}},5000)}
+document.addEventListener('DOMContentLoaded',()=>{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelectorAll('.animate-on-scroll').forEach(el=>el.classList.add('visible'));initNavbar();initMobileMenu();initSmoothScroll();initScrollAnimations();initHeroTreeCounter();initFAQ();initParticles();initLanguageToggle();initTypingAnimation();document.body.classList.add('loaded')});
+    </script>
+</body>
+</html>
