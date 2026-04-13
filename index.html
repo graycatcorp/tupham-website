@@ -3,470 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tupham AI - A primeira IA do mundo que preserva o planeta. Assistente inteligente completo com Créditos Verdes para preservação ambiental.">
-    <title>Tupham AI - A primeira IA que preserva o planeta</title>
+    <meta name="description" content="Tupham AI — Plataforma de IA completa feita no Brasil. 100% offline. Currículo, pesquisa, áudio, Brasileirão ao vivo. R$ 14,90/mês. Ou grátis.">
+    <meta property="og:title" content="Tupham AI — A IA do Brasil">
+    <meta property="og:description" content="Faz tudo. Funciona sem internet. R$ 14,90/mês. Ou grátis.">
+    <meta property="og:image" content="logo-tupham.png">
+    <title>Tupham AI — A IA do Brasil</title>
     <link rel="icon" type="image/png" href="mascote-tupham.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="particles-container" aria-hidden="true"></div>
+    <div class="progress" id="progress"></div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="logo-tupham.png" alt="Tupham AI" class="logo-img">
-            </a>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo"><img src="logo-tupham.png" alt="Tupham" height="30"></a>
             <div class="nav-links" id="nav-links">
-                <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
-                <a href="#por-que-tupham" data-i18n="nav.whyTupham">Por que Tupham?</a>
-                <a href="#impacto" data-i18n="nav.impact">Impacto</a>
-                <a href="#planos" data-i18n="nav.plans">Planos</a>
-                <a href="auditoria.html" data-i18n="nav.audit">Auditoria</a>
+                <a href="#features" data-i18n="nav.feat">Funcionalidades</a>
+                <a href="#compare" data-i18n="nav.comp">Comparativo</a>
+                <a href="#pricing" data-i18n="nav.price">Planos</a>
                 <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="auditoria.html" data-i18n="nav.aud">Auditoria</a>
             </div>
-            <div class="nav-actions">
-                <button class="lang-toggle" id="lang-toggle" aria-label="Alternar idioma">
-                    <span class="lang-flag">🇧🇷</span>
-                    <span class="lang-code">PT</span>
-                </button>
-                <a href="#download" class="btn btn-primary nav-cta" data-i18n="nav.download">Baixar App</a>
-                <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
+            <div class="nav-right">
+                <button class="lang" id="lang-toggle"><span class="lang-flag">🇧🇷</span><span class="lang-code">PT</span></button>
+                <a href="#download" class="btn btn-y btn-sm nav-cta" data-i18n="nav.dl">Baixar App</a>
+                <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
             </div>
         </div>
-        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-            <a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a>
-            <a href="#por-que-tupham" data-i18n="nav.whyTupham">Por que Tupham?</a>
-            <a href="#impacto" data-i18n="nav.impact">Impacto</a>
-            <a href="#planos" data-i18n="nav.plans">Planos</a>
-            <a href="auditoria.html" data-i18n="nav.audit">Auditoria</a>
+        <div class="mob-menu" id="mob-menu">
+            <a href="#features" data-i18n="nav.feat">Funcionalidades</a>
+            <a href="#compare" data-i18n="nav.comp">Comparativo</a>
+            <a href="#pricing" data-i18n="nav.price">Planos</a>
             <a href="#faq" data-i18n="nav.faq">FAQ</a>
-            <a href="#download" class="btn btn-primary" data-i18n="nav.download">Baixar App</a>
+            <a href="auditoria.html" data-i18n="nav.aud">Auditoria</a>
+            <a href="#download" class="btn btn-y" data-i18n="nav.dl">Baixar App</a>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="hero">
-        <div class="hero-blobs" aria-hidden="true">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <div class="hero-badges animate-on-scroll">
-                    <span class="hero-badge" data-i18n="hero.badge1">🌿 Créditos Verdes</span>
-                    <span class="hero-badge" data-i18n="hero.badge2">📶 Funciona Offline</span>
-                    <span class="hero-badge" data-i18n="hero.badge3">🇧🇷 IA Brasileira</span>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1 class="hero-h anim-up d1" data-i18n="hero.h">A IA do Brasil.</h1>
+                    <p class="hero-sub anim-up d2" data-i18n="hero.sub">Faz tudo. Funciona sem internet. Grátis.</p>
+                    <p class="hero-desc anim-up d3" data-i18n="hero.desc">Pesquisa com PDF, currículo profissional, plano de estudos, criação de áudio, Brasileirão ao vivo com 40 times, 17 cards visuais e voz nativa. Ilimitado. Um app.</p>
+                    <div class="hero-btns anim-up d4">
+                        <a href="#" class="btn btn-y btn-lg">
+                            <svg width="18" height="22" viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg>
+                            App Store
+                        </a>
+                        <a href="#" class="btn btn-w btn-lg">
+                            <svg width="18" height="20" viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg>
+                            Google Play
+                        </a>
+                    </div>
+                    <div class="hero-pills anim-up d5">
+                        <span class="pill" data-i18n="pill.1">100% Offline</span>
+                        <span class="pill" data-i18n="pill.2">Grátis e ilimitado</span>
+                        <span class="pill" data-i18n="pill.3">40 times ao vivo</span>
+                        <span class="pill" data-i18n="pill.4">17 cards visuais</span>
+                    </div>
                 </div>
-                <h1 class="hero-title animate-on-scroll">
-                    <span data-i18n="hero.title1">A primeira IA do mundo</span>
-                    <span class="gradient-text" data-i18n="hero.title2">que preserva o planeta.</span>
-                </h1>
-                <p class="hero-subtitle animate-on-scroll" data-i18n="hero.subtitle">Tupham é um assistente de inteligência artificial completo — pesquisa, estuda, cria e resolve por você. E cada uso gera Créditos Verdes que se transformam em preservação ambiental real.</p>
-                <div class="hero-buttons animate-on-scroll">
-                    <a href="#download" class="btn btn-primary btn-lg">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
-                        <span data-i18n="hero.downloadIOS">Baixar para iOS</span>
+                <div class="hero-visual anim-up d3">
+                    <div class="hero-glow"></div>
+                    <img src="mascote-tupham.png" alt="Tucano Tupham" class="hero-mascot" id="mascot" width="440" height="440">
+                </div>
+            </div>
+            <svg class="wave wave--hero" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C320,100 640,20 960,60 C1120,80 1320,30 1440,50 L1440,100 L0,100Z"/></svg>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features" id="features">
+            <div class="container">
+                <h2 class="sec-h" data-reveal data-i18n="feat.h">Tudo num app só.</h2>
+                <div class="feat-grid">
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">💬</div>
+                        <h3 data-i18n="f.1t">Chat</h3>
+                        <p data-i18n="f.1d">Entende sotaque. Entende gíria. Entende futebol.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">🔬</div>
+                        <h3 data-i18n="f.2t">Deep Research</h3>
+                        <p data-i18n="f.2d">PDF pronto. Fontes verificadas. Imprime e entrega.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">📄</div>
+                        <h3 data-i18n="f.3t">Currículo</h3>
+                        <p data-i18n="f.3d">Formato BR. PDF + Word. 3 minutos. Pronto pro recrutador.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">📚</div>
+                        <h3 data-i18n="f.4t">Plano de Estudos</h3>
+                        <p data-i18n="f.4d">ENEM. Concursos. Programação. Semana a semana.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">🎵</div>
+                        <h3 data-i18n="f.5t">Áudio</h3>
+                        <p data-i18n="f.5d">Voz brasileira. Lo-Fi, Jingle, Propaganda. Exporta MP3.</p>
+                    </div>
+                    <div class="feat-card feat-card--dark" data-reveal>
+                        <div class="feat-icon">⚽</div>
+                        <h3 data-i18n="f.6t">Brasileirão</h3>
+                        <p data-i18n="f.6d">40 times. Série A+B. Placar ao vivo. Push de gol.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">🎨</div>
+                        <h3 data-i18n="f.7t">17 Cards</h3>
+                        <p data-i18n="f.7d">Receita. Bio. Fórmula. Código. Tradução. E mais 12.</p>
+                    </div>
+                    <div class="feat-card" data-reveal>
+                        <div class="feat-icon">🎙️</div>
+                        <h3 data-i18n="f.8t">Voz</h3>
+                        <p data-i18n="f.8d">Fale e ouça em português brasileiro.</p>
+                    </div>
+                    <div class="feat-card feat-card--splash" data-reveal>
+                        <div class="feat-icon">📶</div>
+                        <h3 data-i18n="f.9t">Offline</h3>
+                        <p data-i18n="f.9d">Sem internet. Sem problema. Roda no celular.</p>
+                    </div>
+                </div>
+            </div>
+            <svg class="wave wave--feat" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C480,100 960,0 1440,40 L1440,100 L0,100Z"/></svg>
+        </section>
+
+        <!-- COMPARE -->
+        <section class="compare" id="compare">
+            <div class="container">
+                <h2 class="sec-h sec-h--w" data-reveal data-i18n="cmp.h">Elas cobram R$ 105+. Tupham é grátis.</h2>
+                <div class="compare-cols">
+                    <div class="compare-col compare-them" data-reveal>
+                        <span class="compare-who" data-i18n="cmp.them">IAs Gringas</span>
+                        <span class="compare-price">R$ 105<small>+/mês</small></span>
+                        <ul>
+                            <li class="cy" data-i18n="cmp.chat">Chat avançado</li>
+                            <li class="cy" data-i18n="cmp.search">Pesquisa web</li>
+                            <li class="cn" data-i18n="cmp.off">Funciona offline</li>
+                            <li class="cn" data-i18n="cmp.foot">Brasileirão ao vivo</li>
+                            <li class="cn" data-i18n="cmp.cv">Currículo BR</li>
+                            <li class="cn" data-i18n="cmp.audio">Criação de áudio</li>
+                            <li class="cn" data-i18n="cmp.cards">17 cards visuais</li>
+                            <li class="cn" data-i18n="cmp.env">Impacto ambiental</li>
+                            <li class="cn" data-i18n="cmp.ctx">Contexto brasileiro</li>
+                        </ul>
+                    </div>
+                    <div class="compare-vs">VS</div>
+                    <div class="compare-col compare-us" data-reveal>
+                        <img src="logo-tupham.png" alt="Tupham" class="compare-logo">
+                        <span class="compare-price compare-price--y" data-i18n="cmp.free">Grátis</span>
+                        <ul>
+                            <li class="cy" data-i18n="cmp.chat">Chat avançado</li>
+                            <li class="cy" data-i18n="cmp.search">Pesquisa web</li>
+                            <li class="cy" data-i18n="cmp.off">Funciona offline</li>
+                            <li class="cy" data-i18n="cmp.foot">Brasileirão ao vivo</li>
+                            <li class="cy" data-i18n="cmp.cv">Currículo BR</li>
+                            <li class="cy" data-i18n="cmp.audio">Criação de áudio</li>
+                            <li class="cy" data-i18n="cmp.cards">17 cards visuais</li>
+                            <li class="cy" data-i18n="cmp.env">Impacto ambiental</li>
+                            <li class="cy" data-i18n="cmp.ctx">Contexto brasileiro</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="compare-kick" data-reveal data-i18n="cmp.kick">Grátis e ilimitado. Tudo que elas fazem — e o que nenhuma faz.</p>
+            </div>
+            <svg class="wave wave--cmp" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,30 C360,90 720,10 1080,50 C1260,70 1380,20 1440,40 L1440,100 L0,100Z"/></svg>
+        </section>
+
+        <!-- VERDIS -->
+        <section class="verdis" id="verdis">
+            <div class="container">
+                <h2 class="sec-h sec-h--g" data-reveal data-i18n="v.h">Cada pergunta é uma árvore.</h2>
+                <p class="verdis-sub" data-reveal data-i18n="v.sub">Não é greenwashing. É a Amazônia em pé.</p>
+                <div class="verdis-grid">
+                    <div class="verdis-card" data-reveal><span class="vi">🌿</span><span class="vn" data-counter="127450">0</span><span class="vl" data-i18n="v.1">Créditos Verdis</span></div>
+                    <div class="verdis-card" data-reveal><span class="vi">🌳</span><span class="vn" data-counter="12847">0</span><span class="vl" data-i18n="v.2">Árvores plantadas</span></div>
+                    <div class="verdis-card" data-reveal><span class="vi">🗺️</span><span class="vn" data-counter="64235">0</span><span class="vl" data-i18n="v.3">m² preservados</span></div>
+                    <div class="verdis-card" data-reveal><span class="vi">👥</span><span class="vn" data-counter="8432">0</span><span class="vl" data-i18n="v.4">Apoiadores</span></div>
+                </div>
+                <a href="auditoria.html" class="verdis-link" data-reveal data-i18n="v.link">Ver auditoria completa &rarr;</a>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <h2 class="sec-h" data-reveal data-i18n="pr.h">Grátis e ilimitado. Premium pra quem quer mais.</h2>
+                <div class="price-grid">
+                    <div class="price-card" data-reveal>
+                        <h3 data-i18n="pr.free">Grátis</h3>
+                        <div class="price-val">R$ 0</div>
+                        <ul>
+                            <li data-i18n="pr.f1">Chat completo</li>
+                            <li data-i18n="pr.f2">Pesquisa web (10/dia)</li>
+                            <li data-i18n="pr.f3">5 análises/mês</li>
+                            <li data-i18n="pr.f4">Créditos Verdis</li>
+                            <li data-i18n="pr.f5">Anúncios discretos</li>
+                        </ul>
+                        <a href="#download" class="btn btn-dark" data-i18n="pr.fc">Começar Grátis</a>
+                    </div>
+                    <div class="price-card price-card--p" data-reveal>
+                        <span class="price-badge" data-i18n="pr.pop">MAIS POPULAR</span>
+                        <h3>Premium</h3>
+                        <div class="price-val price-val--y">R$ 14<small>,90</small><span data-i18n="pr.mo">/mês</span></div>
+                        <p class="price-yr" data-i18n="pr.yr">ou R$ 139,90/ano (28% off)</p>
+                        <ul>
+                            <li data-i18n="pr.p1">Tudo ilimitado</li>
+                            <li class="phl" data-i18n="pr.p2">100% Offline</li>
+                            <li data-i18n="pr.p3">Zero anúncios</li>
+                            <li data-i18n="pr.p4">Verdis dobrados</li>
+                            <li data-i18n="pr.p5">Histórico completo</li>
+                            <li data-i18n="pr.p6">Suporte prioritário</li>
+                        </ul>
+                        <a href="#download" class="btn btn-y" data-i18n="pr.pc">Assinar Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="container container--narrow">
+                <h2 class="sec-h" data-reveal data-i18n="faq.h">FAQ</h2>
+                <div class="faq-list">
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.1q">O que é o Tupham?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.1a">Plataforma de IA completa feita no Brasil. Pesquisa PDF, currículo, plano de estudos, áudio, Brasileirão ao vivo, 17 cards visuais, voz nativa. Tudo num app.</p></div></div>
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.2q">Quanto custa?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.2a">Grátis com anúncios. Premium R$ 14,90/mês ou R$ 139,90/ano. 7x mais barato que qualquer IA gringa.</p></div></div>
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.3q">Funciona sem internet?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.3a">Sim. Premium roda 100% offline no celular. Sertão, metrô, modo avião.</p></div></div>
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.4q">O que são Créditos Verdis?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.4a">Economia verde. Cada uso gera créditos que viram árvores na Amazônia. Rastreável. Verificável.</p></div></div>
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.5q">Como se compara com ChatGPT?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.5a">Tudo que elas fazem + offline, Brasileirão, currículo BR, áudio, 17 cards, Verdis. R$ 14,90. Elas cobram R$ 105+.</p></div></div>
+                    <div class="faq-item" data-reveal><button class="faq-q"><span data-i18n="fq.6q">Posso cancelar?</span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a"><p data-i18n="fq.6a">Sim. Sem multa. Sem burocracia.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" id="download">
+            <div class="cta-inner">
+                <h2 class="cta-h" data-i18n="cta.h">Baixe. Use. Refloreste.</h2>
+                <div class="cta-btns">
+                    <a href="#" class="btn btn-y btn-lg">
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg>
+                        App Store
                     </a>
-                    <a href="#download" class="btn btn-secondary btn-lg">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 20.83L14.41 12L3.18 3.17C2.84 3.46 2.63 3.9 2.63 4.39V19.61C2.63 20.1 2.84 20.54 3.18 20.83ZM15.54 12L4.77 21.32L15.95 15.22L15.54 12ZM15.54 12L15.95 8.78L4.77 2.68L15.54 12ZM21.15 10.77L17.89 8.91L16.5 12L17.89 15.09L21.15 13.23C21.87 12.83 21.87 11.17 21.15 10.77Z"/></svg>
-                        <span data-i18n="hero.downloadAndroid">Baixar para Android</span>
+                    <a href="#" class="btn btn-w btn-lg">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg>
+                        Google Play
                     </a>
                 </div>
-                <div class="tree-counter animate-on-scroll">
-                    <span class="tree-icon">🌿</span>
-                    <span class="tree-count">+<span id="hero-tree-count">0</span></span>
-                    <span class="tree-text" data-i18n="hero.creditsGenerated">créditos verdes gerados pela comunidade Tupham</span>
-                </div>
             </div>
-            <div class="hero-mockup animate-on-scroll">
-                <div class="phone-mockup">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="chat-header">
-                            <div class="chat-avatar">
-                                <img src="mascote-tupham.png" alt="Tupham" class="chat-avatar-img">
-                            </div>
-                            <div class="chat-info">
-                                <span class="chat-name">Tupham AI</span>
-                                <span class="chat-status" data-i18n="mockup.online">Online</span>
-                            </div>
-                        </div>
-                        <div class="chat-messages">
-                            <div class="message message-received"><p data-i18n="mockup.greeting">Olá! Sou o Tupham, sua IA completa e amiga do planeta. Como posso ajudar?</p></div>
-                            <div class="message message-sent"><p data-i18n="mockup.question">Preciso de ajuda com um trabalho escolar</p></div>
-                            <div class="message message-received"><p data-i18n="mockup.answer">Claro! Me conte o tema e vou te ajudar com pesquisa, redação e referências. E você ainda ganha Créditos Verdes! 🌿</p></div>
-                            <div class="message-typing"><span></span><span></span><span></span></div>
-                        </div>
-                        <div class="chat-input">
-                            <input type="text" placeholder="Digite sua mensagem..." disabled>
-                            <button class="send-btn" aria-label="Enviar"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-wave"><svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none"><path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--background)"/></svg></div>
-    </section>
+        </section>
+    </main>
 
-    <!-- FEATURES -->
-    <section class="features" id="funcionalidades">
+    <footer class="foot">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="features.title">Tudo que você precisa. Tudo em um só app.</h2>
-                <p class="section-subtitle" data-i18n="features.subtitle">Um assistente de IA completo que faz tudo — e ainda gera impacto positivo para o planeta</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>💬</span></div>
-                    <h3 data-i18n="features.chat.title">Chat Inteligente</h3>
-                    <p data-i18n="features.chat.desc">Converse naturalmente sobre qualquer assunto. Respostas precisas, contextuais e em português.</p>
+            <div class="foot-grid">
+                <div class="foot-brand">
+                    <img src="logo-tupham.png" alt="Tupham" class="foot-logo">
+                    <p class="foot-tag" data-i18n="ft.tag">A IA do Brasil.</p>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>🔍</span></div>
-                    <h3 data-i18n="features.search.title">Pesquisa Web</h3>
-                    <p data-i18n="features.search.desc">Busque informações atualizadas na internet em tempo real. Notícias, dados, cotações e muito mais.</p>
+                <div class="foot-col">
+                    <h4 data-i18n="ft.h1">Produto</h4>
+                    <a href="#features" data-i18n="nav.feat">Funcionalidades</a>
+                    <a href="#compare" data-i18n="nav.comp">Comparativo</a>
+                    <a href="#pricing" data-i18n="nav.price">Planos</a>
+                    <a href="auditoria.html" data-i18n="ft.aud">Auditoria</a>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>📚</span></div>
-                    <h3 data-i18n="features.school.title">Trabalhos Escolares</h3>
-                    <p data-i18n="features.school.desc">Ajuda completa em redações, resumos, exercícios, TCC e trabalhos acadêmicos de qualquer área.</p>
+                <div class="foot-col">
+                    <h4 data-i18n="ft.h2">Empresa</h4>
+                    <a href="https://graycatcorp.com" target="_blank" rel="noopener">Graycat Corp</a>
+                    <a href="mailto:contato@tupham.com.br">contato@tupham.com.br</a>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>✈️</span></div>
-                    <h3 data-i18n="features.travel.title">Pesquisa de Viagens</h3>
-                    <p data-i18n="features.travel.desc">Encontre passagens aéreas, hotéis, roteiros e dicas de viagem personalizadas para qualquer destino.</p>
+                <div class="foot-col">
+                    <h4 data-i18n="ft.h3">Legal</h4>
+                    <a href="#" data-i18n="ft.terms">Termos de Uso</a>
+                    <a href="#" data-i18n="ft.priv">Privacidade</a>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>🌐</span></div>
-                    <h3 data-i18n="features.translation.title">Tradução Inteligente</h3>
-                    <p data-i18n="features.translation.desc">Traduza textos, documentos e conversas entre dezenas de idiomas com precisão nativa.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>📝</span></div>
-                    <h3 data-i18n="features.textAnalysis.title">Análise de Textos</h3>
-                    <p data-i18n="features.textAnalysis.desc">Resuma artigos, corrija redações, interprete textos complexos e extraia informações-chave em segundos.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>🎨</span></div>
-                    <h3 data-i18n="features.content.title">Criação de Conteúdo</h3>
-                    <p data-i18n="features.content.desc">Crie textos, posts para redes sociais, e-mails profissionais e roteiros criativos sob medida.</p>
-                </div>
-                <div class="feature-card feature-card-highlight animate-on-scroll">
-                    <div class="feature-icon"><span>📶</span></div>
-                    <h3 data-i18n="features.offline.title">Modo Offline</h3>
-                    <p data-i18n="features.offline.desc">Use a IA sem internet. Perfeito para viagens, áreas rurais e quando você mais precisa. Exclusivo Premium.</p>
-                    <span class="feature-badge" data-i18n="features.offline.badge">Premium</span>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>📊</span></div>
-                    <h3 data-i18n="features.impact.title">Painel de Impacto</h3>
-                    <p data-i18n="features.impact.desc">Acompanhe em tempo real seus Créditos Verdes e o impacto ambiental que você está gerando.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon"><span>🏆</span></div>
-                    <h3 data-i18n="features.gamification.title">Gamificação Verde</h3>
-                    <p data-i18n="features.gamification.desc">Conquiste badges, acumule Créditos Verdes e compare seu impacto ambiental com amigos.</p>
-                </div>
-                <div class="feature-card feature-card-green animate-on-scroll">
-                    <div class="feature-icon"><span>🌳</span></div>
-                    <h3 data-i18n="features.greenCredits.title">Créditos Verdes</h3>
-                    <p data-i18n="features.greenCredits.desc">Ao usar o Tupham, você acumula Créditos Verdes que se transformam em ações reais de preservação ambiental.</p>
+                <div class="foot-col">
+                    <h4>Social</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">TikTok</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works" id="como-funciona">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="howItWorks.title">Simples de usar, poderoso de verdade</h2>
-                <p class="section-subtitle" data-i18n="howItWorks.subtitle">Três passos para transformar o seu dia — e o planeta</p>
-            </div>
-            <div class="steps">
-                <div class="step animate-on-scroll">
-                    <div class="step-number">1</div>
-                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
-                    <h3 data-i18n="howItWorks.step1.title">Baixe o app</h3>
-                    <p data-i18n="howItWorks.step1.desc">Disponível gratuitamente para iOS e Android</p>
-                </div>
-                <div class="step-connector animate-on-scroll"><div class="connector-line"></div><div class="connector-dot"></div></div>
-                <div class="step animate-on-scroll">
-                    <div class="step-number">2</div>
-                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-                    <h3 data-i18n="howItWorks.step2.title">Use no seu dia a dia</h3>
-                    <p data-i18n="howItWorks.step2.desc">Pesquise, estude, crie e resolva qualquer tarefa com IA</p>
-                </div>
-                <div class="step-connector animate-on-scroll"><div class="connector-line"></div><div class="connector-dot"></div></div>
-                <div class="step animate-on-scroll">
-                    <div class="step-number">3</div>
-                    <div class="step-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L15 8.5L22 9.27L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9.27L9 8.5L12 2Z"/></svg></div>
-                    <h3 data-i18n="howItWorks.step3.title">Ganhe Créditos Verdes</h3>
-                    <p data-i18n="howItWorks.step3.desc">Cada uso gera Créditos Verdes que viram ações reais de preservação</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY TUPHAM -->
-    <section class="why-tupham" id="por-que-tupham">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="whyTupham.title">Tudo que as grandes IAs fazem — e mais.</h2>
-                <p class="section-subtitle" data-i18n="whyTupham.subtitle">Tupham reúne o poder de um assistente de IA completo com um propósito real: preservar o planeta</p>
-            </div>
-            <div class="comparison-grid animate-on-scroll">
-                <div class="comparison-item">
-                    <div class="comparison-check">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item1.title">Chat inteligente avançado</h4>
-                        <p data-i18n="whyTupham.item1.desc">Respostas precisas e contextuais como as melhores IAs do mercado</p>
-                    </div>
-                </div>
-                <div class="comparison-item">
-                    <div class="comparison-check">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item2.title">Pesquisa web em tempo real</h4>
-                        <p data-i18n="whyTupham.item2.desc">Informações atualizadas direto da internet, sempre</p>
-                    </div>
-                </div>
-                <div class="comparison-item">
-                    <div class="comparison-check">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item3.title">Análise de textos e imagens</h4>
-                        <p data-i18n="whyTupham.item3.desc">Interprete, resuma e extraia dados de qualquer conteúdo</p>
-                    </div>
-                </div>
-                <div class="comparison-item comparison-exclusive">
-                    <div class="comparison-check exclusive">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item4.title">Modo offline completo</h4>
-                        <p data-i18n="whyTupham.item4.desc">Use sem internet — exclusivo Tupham Premium</p>
-                        <span class="exclusive-badge" data-i18n="whyTupham.exclusive">Exclusivo Tupham</span>
-                    </div>
-                </div>
-                <div class="comparison-item comparison-exclusive">
-                    <div class="comparison-check exclusive">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item5.title">Créditos Verdes</h4>
-                        <p data-i18n="whyTupham.item5.desc">Cada uso gera impacto ambiental positivo real</p>
-                        <span class="exclusive-badge" data-i18n="whyTupham.exclusive">Exclusivo Tupham</span>
-                    </div>
-                </div>
-                <div class="comparison-item comparison-exclusive">
-                    <div class="comparison-check exclusive">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item6.title">IA brasileira, feita para você</h4>
-                        <p data-i18n="whyTupham.item6.desc">Otimizada para português com entendimento cultural local</p>
-                        <span class="exclusive-badge" data-i18n="whyTupham.exclusive">Exclusivo Tupham</span>
-                    </div>
-                </div>
-                <div class="comparison-item">
-                    <div class="comparison-check">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    </div>
-                    <div class="comparison-text">
-                        <h4 data-i18n="whyTupham.item7.title">Privacidade — IA local no dispositivo</h4>
-                        <p data-i18n="whyTupham.item7.desc">Seus dados ficam seguros, processados direto no seu celular</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- IMPACT -->
-    <section class="impact" id="impacto">
-        <div class="impact-bg"><div class="impact-particles"></div></div>
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="impact.title">Cada uso gera impacto real</h2>
-                <p class="section-subtitle" data-i18n="impact.subtitle">Seus Créditos Verdes se transformam em ações concretas de preservação ambiental</p>
-            </div>
-            <div class="impact-stats">
-                <div class="stat-card animate-on-scroll"><div class="stat-icon">🌿</div><div class="stat-value"><span class="counter" data-target="127450">0</span></div><div class="stat-label" data-i18n="impact.credits">Créditos Verdes Gerados</div></div>
-                <div class="stat-card animate-on-scroll"><div class="stat-icon">🌳</div><div class="stat-value"><span class="counter" data-target="12847">0</span></div><div class="stat-label" data-i18n="impact.trees">Árvores Plantadas</div></div>
-                <div class="stat-card animate-on-scroll"><div class="stat-icon">🗺️</div><div class="stat-value"><span class="counter" data-target="64235">0</span><span class="stat-unit">m²</span></div><div class="stat-label" data-i18n="impact.area">Área Preservada</div></div>
-                <div class="stat-card animate-on-scroll"><div class="stat-icon">👥</div><div class="stat-value"><span class="counter" data-target="8432">0</span></div><div class="stat-label" data-i18n="impact.supporters">Apoiadores Ativos</div></div>
-            </div>
-            <div class="amazon-map animate-on-scroll">
-                <div class="map-container">
-                    <svg viewBox="0 0 400 300" class="amazon-svg">
-                        <path class="amazon-outline" d="M50,150 Q80,80 150,60 Q220,40 280,70 Q340,100 360,150 Q370,200 330,240 Q280,280 200,270 Q120,260 70,220 Q40,190 50,150 Z" fill="var(--forest-green-700)" opacity="0.3"/>
-                        <g class="tree-dots">
-                            <circle cx="120" cy="120" r="4" class="tree-dot"/><circle cx="180" cy="100" r="3" class="tree-dot"/><circle cx="220" cy="130" r="5" class="tree-dot"/><circle cx="150" cy="160" r="4" class="tree-dot"/><circle cx="260" cy="150" r="3" class="tree-dot"/><circle cx="200" cy="180" r="4" class="tree-dot"/><circle cx="280" cy="120" r="3" class="tree-dot"/><circle cx="170" cy="200" r="5" class="tree-dot"/><circle cx="240" cy="190" r="4" class="tree-dot"/><circle cx="130" cy="180" r="3" class="tree-dot"/><circle cx="300" cy="170" r="4" class="tree-dot"/><circle cx="100" cy="150" r="3" class="tree-dot"/>
-                        </g>
-                    </svg>
-                    <div class="map-legend"><span class="legend-dot"></span><span data-i18n="impact.mapLegend">Áreas de preservação e reflorestamento</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="pricing" id="planos">
-        <div class="section-wave-top dark"><svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none"><path d="M0 0L60 10C120 20 240 40 360 50C480 60 600 60 720 55C840 50 960 40 1080 35C1200 30 1320 30 1380 30L1440 30V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0Z" fill="var(--forest-green-900)"/></svg></div>
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="pricing.title">Escolha seu plano</h2>
-                <p class="section-subtitle" data-i18n="pricing.subtitle">Comece gratuitamente ou desbloqueie todo o poder do Tupham com o Premium</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card animate-on-scroll">
-                    <div class="pricing-header">
-                        <h3 class="plan-name" data-i18n="pricing.free.name">Gratuito</h3>
-                        <div class="plan-price"><span class="currency">R$</span><span class="amount">0</span></div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature1">Chat básico com IA</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature2">Pesquisa web limitada (10/dia)</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature3">5 análises de textos/mês</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.free.feature4">Acumule Créditos Verdes a cada uso</span></li>
-                        <li class="muted"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span data-i18n="pricing.free.feature5">Anúncios discretos</span></li>
-                    </ul>
-                    <a href="#download" class="btn btn-secondary btn-block" data-i18n="pricing.free.cta">Começar Grátis</a>
-                </div>
-                <div class="pricing-card premium animate-on-scroll">
-                    <div class="popular-badge" data-i18n="pricing.premium.badge">Mais Popular</div>
-                    <div class="pricing-header">
-                        <h3 class="plan-name" data-i18n="pricing.premium.name">Premium</h3>
-                        <div class="plan-price"><span class="currency">R$</span><span class="amount">14,90</span><span class="period" data-i18n="pricing.premium.period">/mês</span></div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature1">Chat ilimitado com IA avançada</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature2">Pesquisa web ilimitada</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature3">Análises ilimitadas</span></li>
-                        <li class="highlight"><span class="feature-emoji">📶</span><span data-i18n="pricing.premium.feature4">Modo Offline completo</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature5">Sem anúncios</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature6">Histórico completo</span></li>
-                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg><span data-i18n="pricing.premium.feature7">Suporte prioritário</span></li>
-                        <li class="highlight"><span class="tree-emoji">🌿</span><span data-i18n="pricing.premium.feature8">Créditos Verdes em dobro</span></li>
-                    </ul>
-                    <a href="#download" class="btn btn-primary btn-block" data-i18n="pricing.premium.cta">Assinar Premium</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="team" id="equipe">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="team.title">Quem está por trás do Tupham</h2>
-                <p class="section-subtitle" data-i18n="team.subtitle">Conheça a empresa que criou o Tupham AI</p>
-            </div>
-            <div class="team-content animate-on-scroll">
-                <div class="company-card">
-                    <div class="company-logo"><span>🐱</span></div>
-                    <h3>Gray Cat Corporation</h3>
-                    <p data-i18n="team.description">A Gray Cat Corporation é uma empresa brasileira de tecnologia focada em criar soluções inovadoras com impacto positivo. Nossa missão é desenvolver produtos que unam tecnologia de ponta com responsabilidade ambiental e social.</p>
-                    <p data-i18n="team.description2">Com o Tupham AI, criamos a primeira inteligência artificial do mundo que gera Créditos Verdes — transformando cada interação em preservação ambiental real.</p>
-                    <a href="https://graycatcorp.com" target="_blank" rel="noopener noreferrer" class="company-link"><span data-i18n="team.visitWebsite">Visitar site</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2 class="section-title" data-i18n="faq.title">Perguntas Frequentes</h2>
-                <p class="section-subtitle" data-i18n="faq.subtitle">Tire suas dúvidas sobre o Tupham AI</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q1">O Tupham é gratuito?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a1">Sim! O Tupham oferece um plano gratuito com chat básico, pesquisa web limitada e acúmulo de Créditos Verdes. Para recursos ilimitados, modo offline e Créditos Verdes em dobro, assine o Premium por R$ 14,90/mês.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q2">O que o Tupham pode fazer?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a2">Tupham é um assistente de IA completo. Ele pesquisa na web, ajuda em trabalhos escolares e acadêmicos, encontra passagens aéreas e hotéis, traduz textos, analisa documentos, cria conteúdo para redes sociais, redige e-mails profissionais, e muito mais. Tudo que você espera das melhores IAs do mercado — e ainda gera Créditos Verdes para preservação ambiental.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q3">O app funciona offline?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a3">O plano gratuito requer conexão com a internet. Já o plano Premium inclui modo offline completo — a IA roda diretamente no seu dispositivo, permitindo uso em qualquer lugar, mesmo sem conexão. Perfeito para viagens, áreas rurais ou quando você simplesmente não tem internet.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q4">O que são Créditos Verdes?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a4">Créditos Verdes são gerados automaticamente cada vez que você usa o Tupham. Eles representam sua contribuição para a preservação ambiental. Seus créditos se transformam em ações reais como plantio de árvores, preservação de áreas naturais e apoio a projetos ambientais verificados. Acompanhe seu impacto no Painel de Impacto dentro do app.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q5">Como o Tupham se compara a outras IAs?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a5">Tupham oferece todas as funcionalidades das principais IAs do mercado — chat inteligente, pesquisa web, análise de textos, tradução, criação de conteúdo — com três diferenciais exclusivos: é a única IA que gera Créditos Verdes para preservação ambiental, é brasileira e otimizada para português, e possui modo offline completo no plano Premium.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q6">Para onde vão os recursos de preservação?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a6">Todos os recursos gerados pelos Créditos Verdes são direcionados para fundos e organizações de preservação ambiental verificados. Trabalhamos com parceiros certificados para garantir que cada crédito resulte em impacto real. Confira todos os detalhes na nossa <a href="auditoria.html">página de Auditoria</a>, onde publicamos doações, parceiros e metodologia de forma totalmente transparente.</p></div>
-                </div>
-                <div class="faq-item animate-on-scroll">
-                    <button class="faq-question" aria-expanded="false"><span data-i18n="faq.q7">Posso cancelar a assinatura a qualquer momento?</span><svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-                    <div class="faq-answer"><p data-i18n="faq.a7">Sim, você pode cancelar sua assinatura a qualquer momento, sem multa ou burocracia. O acesso Premium continua até o fim do período já pago.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta" id="download">
-        <div class="cta-particles"></div>
-        <div class="container">
-            <div class="cta-content animate-on-scroll">
-                <h2 class="cta-title" data-i18n="cta.title">Use IA de verdade. Preserve o planeta de verdade.</h2>
-                <p class="cta-subtitle" data-i18n="cta.subtitle">Baixe o Tupham AI e transforme cada uso em impacto ambiental real com Créditos Verdes</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-white btn-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg><span data-i18n="cta.ios">Baixar para iOS</span></a>
-                    <a href="#" class="btn btn-outline-white btn-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 20.83L14.41 12L3.18 3.17C2.84 3.46 2.63 3.9 2.63 4.39V19.61C2.63 20.1 2.84 20.54 3.18 20.83ZM15.54 12L4.77 21.32L15.95 15.22L15.54 12ZM15.54 12L15.95 8.78L4.77 2.68L15.54 12ZM21.15 10.77L17.89 8.91L16.5 12L17.89 15.09L21.15 13.23C21.87 12.83 21.87 11.17 21.15 10.77Z"/></svg><span data-i18n="cta.android">Baixar para Android</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <img src="logo-tupham.png" alt="Tupham AI" class="logo-img logo-img-footer">
-                    </a>
-                    <p class="footer-tagline" data-i18n="footer.tagline">A primeira IA do mundo que preserva o planeta</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col"><h4 data-i18n="footer.product">Produto</h4><ul><li><a href="#funcionalidades" data-i18n="nav.features">Funcionalidades</a></li><li><a href="#impacto" data-i18n="nav.impact">Impacto</a></li><li><a href="#planos" data-i18n="nav.plans">Planos</a></li></ul></div>
-                    <div class="footer-col"><h4 data-i18n="footer.company">Empresa</h4><ul><li><a href="#equipe" data-i18n="nav.team">Equipe</a></li><li><a href="auditoria.html" data-i18n="nav.audit">Auditoria</a></li><li><a href="https://graycatcorp.com" target="_blank">Gray Cat Corp</a></li></ul></div>
-                    <div class="footer-col"><h4 data-i18n="footer.legal">Legal</h4><ul><li><a href="#" data-i18n="footer.terms">Termos de Uso</a></li><li><a href="#" data-i18n="footer.privacy">Política de Privacidade</a></li></ul></div>
-                </div>
-                <div class="footer-social">
-                    <h4 data-i18n="footer.social">Redes Sociais</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                        <a href="#" aria-label="Twitter/X" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                        <a href="#" aria-label="LinkedIn" class="social-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Tupham — <span data-i18n="footer.madeWith">Feito com</span> 💚 <span data-i18n="footer.forPlanet">para o planeta</span></p>
-                <a href="https://graycatcorp.com" target="_blank" rel="noopener noreferrer" class="footer-company">graycatcorp.com</a>
+            <div class="foot-bottom">
+                <p>&copy; 2026 Tupham AI — <a href="https://graycatcorp.com" target="_blank" rel="noopener">Graycat Corp</a>. Salvador, BA.</p>
             </div>
         </div>
     </footer>
