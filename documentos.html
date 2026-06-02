@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentos — Tupham AI · Currículo, PDF e Word no celular</title>
+<meta name="description" content="Crie, edite, converta e analise documentos direto no celular. Currículo no padrão BR, 12 modelos, editar PDF, converter Word↔PDF — em PDF e Word, sem marca-d'água. Nada vai pra nuvem.">
+<meta name="theme-color" content="#6BC4E8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Documentos — Tupham AI">
+<meta property="og:description" content="Sua papelada, pronta no celular. Currículo, contrato, procuração, recibo. Editar e converter PDF. Tudo roda no aparelho.">
+<meta property="og:image" content="assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/img/og.png">
+<link rel="icon" type="image/png" href="assets/img/brand/mascote-tupham.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tupham.css">
+<style>
+  /* scoped helpers — built from existing tokens only */
+  .tpl-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .3s}
+  .tpl-card:hover{transform:translateY(-5px);box-shadow:var(--sh-sm);border-color:transparent}
+  .tpl-ico{font-size:26px;line-height:1;margin-bottom:12px}
+  .tpl-card h4{font-family:var(--font-display);font-weight:700;font-size:16.5px;letter-spacing:-.01em;color:var(--ink-900);margin-bottom:6px}
+  .tpl-cat{font-family:var(--font-mono);font-size:10.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--sky-600)}
+  .swatch{display:inline-flex;gap:7px;align-items:center}
+  .swatch i{width:18px;height:18px;border-radius:50%;display:inline-block;box-shadow:var(--sh-xs)}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ===== NAV (shared) ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo" aria-label="Tupham — início"><img src="assets/img/brand/logo-tupham.png" alt="Tupham"></a>
+    <div class="nav-links">
+      <a href="esportes.html">Esportes</a>
+      <a href="documentos.html">Documentos</a>
+      <a href="criacao.html">Criação</a>
+      <a href="pesquisa.html">Pesquisa</a>
+      <a href="como-salvamos-o-mundo.html">Planeta</a>
+      <a href="auditoria.html">Auditoria</a>
+      <a href="planos.html">Planos</a>
+    </div>
+    <div class="nav-right">
+      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobnav" id="mobnav">
+  <a href="esportes.html">Esportes &amp; Bolões<span class="arr">→</span></a>
+  <a href="documentos.html">Documentos<span class="arr">→</span></a>
+  <a href="criacao.html">Criação<span class="arr">→</span></a>
+  <a href="pesquisa.html">Pesquisa &amp; Estudos<span class="arr">→</span></a>
+  <a href="como-salvamos-o-mundo.html">Como salvamos o mundo<span class="arr">→</span></a>
+  <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
+  <a href="planos.html">Planos<span class="arr">→</span></a>
+  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+</div>
+
+<main>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="section bg-sky grain">
+  <div class="sec-orb glow--gold" style="width:360px;height:360px;top:-8%;right:-4%;opacity:.5"></div>
+  <div class="sec-orb glow--sky" style="width:320px;height:320px;bottom:-12%;left:-6%"></div>
+  <div class="wrap split split--wide-text">
+    <div data-reveal>
+      <span class="eyebrow">Modo Documentos</span>
+      <h1 class="display mt-2">Sua papelada,<br>pronta no celular.</h1>
+      <p class="lead mt-3" style="color:var(--ink-800)">Criar, editar, converter e analisar documentos direto no aparelho — em PDF e Word, sem marca-d'água. E nada vai pra nuvem.</p>
+      <div class="btn-row mt-4">
+        <a href="planos.html" class="btn btn-ink btn-lg">Baixar app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="criacao.html" class="btn btn-ghost btn-lg">Ver também Criação</a>
+      </div>
+      <div class="pill-row mt-4">
+        <span class="pill"><span class="dot"></span>PDF + Word</span>
+        <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Sem marca-d'água</span>
+        <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>Roda no aparelho</span>
+      </div>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--gold" style="width:280px;height:280px"></div>
+      <div class="phone phone--tilt-r"><img src="assets/img/screens/09_criacao_curriculo.PNG" alt="Painel de Documentos do Tupham, com criação de currículo profissional" loading="eager"></div>
+    </div>
+  </div>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#FBFCFD" d="M0,64 C240,108 520,20 760,52 C1020,86 1240,28 1440,58 L1440,110 L0,110Z"/></svg>
+</section>
+
+<!-- ===== 1 · CURRÍCULO PADRÃO BR ===== -->
+<section class="section">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow">Currículo no padrão BR</span>
+      <h2 class="h-sec mt-2">Um currículo bonito<br>em 6 etapas.</h2>
+      <p class="lead mt-2">Um assistente te guia passo a passo, no contexto e nos campos que o mercado brasileiro espera. Escolha o visual, ajuste a cor e exporte — sem nenhuma marca do app no arquivo.</p>
+      <ul class="checks mt-3">
+        <li><b>3 layouts visuais:</b> Clássico, Moderno e Minimalista.</li>
+        <li><b>5 cores de destaque</b> pra dar a sua cara ao documento.</li>
+        <li><b>Exporta em PDF e Word</b> — limpo, sem marca-d'água.</li>
+        <li><b>Botão "IA escreve por mim":</b> a IA local sugere o resumo profissional e as descrições com base no que você preencheu.</li>
+      </ul>
+      <div class="swatch mt-4">
+        <i style="background:var(--ink-800)"></i>
+        <i style="background:var(--sky-500)"></i>
+        <i style="background:var(--leaf-500)"></i>
+        <i style="background:var(--gold-500)"></i>
+        <i style="background:var(--no)"></i>
+        <span class="muted" style="font-size:13.5px;margin-left:6px">5 cores de destaque</span>
+      </div>
+      <div class="pill-row mt-4">
+        <span class="pill">PDF + Word</span>
+        <span class="pill">Sem marca-d'água</span>
+        <span class="pill">IA escreve por mim</span>
+      </div>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--sky" style="width:300px;height:300px;opacity:.5"></div>
+      <div class="phone phone--tilt"><img src="assets/img/screens/09_criacao_curriculo.PNG" alt="Assistente de currículo do Tupham com layouts e cores de destaque"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2 · 12 MODELOS (bento) ===== -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center">12 modelos prontos</span>
+      <h2 class="h-sec mt-2">A papelada do dia a dia,<br>resolvida.</h2>
+      <p class="lead mx-auto maxw-md mt-2">Doze modelos em cinco categorias, com os campos em português. Preencha, ajuste e exporte — todos saem em PDF, e cinco deles também em Word.</p>
+    </div>
+
+    <div class="grid grid-4" data-reveal-stagger>
+      <div class="tpl-card">
+        <div class="tpl-ico">🤝</div>
+        <span class="tpl-cat">Profissional</span>
+        <h4>Contrato de prestação de serviço</h4>
+        <p class="muted" style="font-size:13.5px">Acordo simples entre as partes. <b style="color:var(--leaf-600)">PDF + Word</b></p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">🧾</div>
+        <span class="tpl-cat">Profissional</span>
+        <h4>Recibo</h4>
+        <p class="muted" style="font-size:13.5px">Comprovante de pagamento, prontinho.</p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">💼</div>
+        <span class="tpl-cat">Empreendedor</span>
+        <h4>Proposta / orçamento</h4>
+        <p class="muted" style="font-size:13.5px">Apresente seu trabalho com valores. <b style="color:var(--leaf-600)">PDF + Word</b></p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">🏷️</div>
+        <span class="tpl-cat">Empreendedor</span>
+        <h4>Tabela de preços</h4>
+        <p class="muted" style="font-size:13.5px">Sua lista de serviços, organizada.</p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">🏠</div>
+        <span class="tpl-cat">Cidadania</span>
+        <h4>Declaração de residência</h4>
+        <p class="muted" style="font-size:13.5px">Pro que pede comprovante de endereço. <b style="color:var(--leaf-600)">PDF + Word</b></p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">✍️</div>
+        <span class="tpl-cat">Cidadania</span>
+        <h4>Procuração simples</h4>
+        <p class="muted" style="font-size:13.5px">Autorize alguém a resolver por você. <b style="color:var(--leaf-600)">PDF + Word</b></p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">🧳</div>
+        <span class="tpl-cat">Cidadania</span>
+        <h4>Autorização de viagem de menor</h4>
+        <p class="muted" style="font-size:13.5px">Pra viagem com responsável ou sozinho.</p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">📚</div>
+        <span class="tpl-cat">Estudos</span>
+        <h4>Trabalho escolar</h4>
+        <p class="muted" style="font-size:13.5px">Capa e estrutura em ABNT light. <b style="color:var(--leaf-600)">PDF + Word</b></p>
+      </div>
+      <div class="tpl-card">
+        <div class="tpl-ico">📨</div>
+        <span class="tpl-cat">Pessoal</span>
+        <h4>Carta de apresentação</h4>
+        <p class="muted" style="font-size:13.5px">Pra acompanhar o currículo.</p>
+      </div>
+    </div>
+
+    <p class="center muted mt-4" data-reveal style="font-size:14px"><b style="color:var(--ink-900)">12 modelos</b> em 5 categorias — Profissional, Cidadania, Empreendedor, Estudos e Pessoal. <b style="color:var(--ink-900)">5 dos 12</b> exportam Word, além de PDF.</p>
+  </div>
+</section>
+
+<!-- ===== 3 · EDITAR PDF (split reverse) ===== -->
+<section class="section">
+  <div class="wrap split split--reverse">
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--leaf" style="width:300px;height:300px;opacity:.45"></div>
+      <div class="card card--ink" style="width:min(420px,100%);box-shadow:var(--sh-lg)">
+        <div class="card-ico card-ico--ink" style="background:rgba(255,255,255,.1)">🛠️</div>
+        <h3>Kit de edição de PDF</h3>
+        <p>Tudo direto no celular, sem precisar de computador.</p>
+        <ul class="checks mt-3 on-dark" style="--ink-900:#fff">
+          <li><b>Reorganizar</b> a ordem das páginas</li>
+          <li><b>Girar</b> páginas de cabeça pra baixo</li>
+          <li><b>Dividir</b> um arquivo em partes</li>
+          <li><b>Apagar</b> páginas que sobraram</li>
+          <li><b>Adicionar</b> páginas ao documento</li>
+        </ul>
+      </div>
+    </div>
+    <div data-reveal>
+      <span class="eyebrow eyebrow--leaf">Editar PDF</span>
+      <h2 class="h-sec mt-2">Mexa no PDF<br>sem abrir o PC.</h2>
+      <p class="lead mt-2">Recebeu um PDF fora de ordem, de cabeça pra baixo ou com uma página a mais? Resolva na hora: reorganize, gire, divida, apague e adicione páginas — tudo no aparelho.</p>
+      <div class="grid grid-2 mt-4 gap-sm">
+        <div class="stat stat--leaf"><span class="stat-num">500<span class="u">páginas</span></span><span class="stat-lbl">tamanho máximo por arquivo</span></div>
+        <div class="stat stat--sky"><span class="stat-num">50<span class="u">MB</span></span><span class="stat-lbl">limite de peso do PDF</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4 · CONVERTER (3 cards) ===== -->
+<section class="section bg-ink grain on-dark">
+  <div class="sec-orb glow--sky" style="width:420px;height:420px;top:-12%;left:-6%;opacity:.45"></div>
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center eyebrow--light">Converter</span>
+      <h2 class="h-sec mt-2">Troca de formato<br>num toque.</h2>
+      <p class="lead mx-auto maxw-md mt-2">Três conversões essenciais, feitas no próprio celular — sem virar maratona de site com propaganda.</p>
+    </div>
+    <div class="grid grid-3" data-reveal-stagger>
+      <div class="card card--sky">
+        <div class="card-ico" style="background:rgba(255,255,255,.45)">📝</div>
+        <h3>Word → PDF</h3>
+        <p>Transforme o seu .docx num PDF pronto pra enviar, com a formatação preservada.</p>
+      </div>
+      <div class="card card--gold">
+        <div class="card-ico" style="background:rgba(255,255,255,.4)">📄</div>
+        <h3>PDF → Word editável</h3>
+        <p>Recebeu um PDF e precisa mudar algo? Abra como Word e edite à vontade.</p>
+      </div>
+      <div class="card card--leaf">
+        <div class="card-ico" style="background:rgba(255,255,255,.22)">🖼️</div>
+        <h3>Imagens → um PDF</h3>
+        <p>Junte várias fotos ou prints num único PDF, na ordem que você quiser.</p>
+      </div>
+    </div>
+    <p class="center muted mt-4 on-dark" data-reveal style="font-size:14px;color:rgba(255,255,255,.6)">São essas três direções de conversão.</p>
+  </div>
+</section>
+
+<!-- ===== 5 · ANALISAR PDF (split) ===== -->
+<section class="section">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow">Analisar PDF</span>
+      <h2 class="h-sec mt-2">Entenda o documento<br>antes de assinar.</h2>
+      <p class="lead mt-2">Escolha um arquivo e deixe a IA local fazer a leitura pesada por você. Você decide o tipo de saída — e pode dar um foco pra ela olhar com mais atenção.</p>
+      <div class="grid grid-2 mt-3 gap" data-reveal-stagger>
+        <div class="card">
+          <div class="card-ico card-ico--sky">🔑</div>
+          <h3>Resumo</h3>
+          <p>Os pontos-chave do documento em tópicos curtos e diretos.</p>
+        </div>
+        <div class="card">
+          <div class="card-ico card-ico--gold">🗂️</div>
+          <h3>Análise estruturada</h3>
+          <p>Uma leitura organizada em seções, com o que importa em cada parte.</p>
+        </div>
+      </div>
+      <ul class="checks mt-4">
+        <li><b>Foco opcional:</b> aponte o que quer destacar — ex.: cláusulas de rescisão, valores.</li>
+        <li><b>Roda localmente:</b> a leitura acontece no aparelho, sem upload do arquivo.</li>
+      </ul>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--gold" style="width:280px;height:280px;opacity:.5"></div>
+      <div class="card" style="width:min(420px,100%);box-shadow:var(--sh)">
+        <span class="tag tag--gold">Exemplo</span>
+        <h3 style="margin-top:14px">Contrato de aluguel.pdf</h3>
+        <p class="muted" style="font-size:13.5px;margin-top:4px">Foco: cláusulas de rescisão</p>
+        <ul class="checks mt-3">
+          <li>Prazo de aviso prévio: <b>30 dias</b>.</li>
+          <li>Multa por saída antecipada proporcional ao tempo restante.</li>
+          <li>Devolução do imóvel nas condições da vistoria inicial.</li>
+        </ul>
+        <p class="muted mt-3" style="font-size:12.5px;font-family:var(--font-mono)">Resumo gerado no aparelho · sem upload</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6 · PRIVACIDADE + BIBLIOTECA ===== -->
+<section class="section bg-leaf grain on-dark">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow eyebrow--light">Privacidade &amp; biblioteca</span>
+      <h2 class="h-sec mt-2">Seus documentos<br>são só seus.</h2>
+      <p class="lead mt-2">Criar, editar, converter e analisar — tudo roda no próprio aparelho. Nada do seu documento sai pra nuvem. E o que você gera fica guardado, organizado e fácil de achar de novo.</p>
+      <ul class="checks mt-3">
+        <li><b>Tudo no aparelho:</b> nada do conteúdo vai pra nuvem.</li>
+        <li><b>Biblioteca de documentos:</b> seus arquivos num só lugar.</li>
+        <li><b>Com lixeira:</b> apagou sem querer? Dá pra recuperar.</li>
+      </ul>
+      <a href="como-salvamos-o-mundo.html" class="btn-link btn-link--light mt-4">Como cuidamos de privacidade e do planeta <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="grid gap" style="width:min(420px,100%)">
+        <div class="card card--ink" style="text-align:center">
+          <div class="stat" style="align-items:center">
+            <span class="stat-num on-dark">0</span>
+            <span class="stat-lbl" style="color:rgba(255,255,255,.7)">arquivos enviados pra nuvem</span>
+          </div>
+        </div>
+        <div class="grid grid-2 gap-sm">
+          <div class="card card--ink" style="text-align:center">
+            <div class="card-ico card-ico--ink" style="background:rgba(255,255,255,.1);margin:0 auto 12px">📚</div>
+            <h3 style="font-size:17px">Biblioteca</h3>
+          </div>
+          <div class="card card--ink" style="text-align:center">
+            <div class="card-ico card-ico--ink" style="background:rgba(255,255,255,.1);margin:0 auto 12px">🗑️</div>
+            <h3 style="font-size:17px">Lixeira</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band cta-band--ink grain on-dark" data-reveal>
+      <span class="eyebrow eyebrow--center eyebrow--light">Modo Documentos</span>
+      <h2 class="h-sec mt-2" style="font-size:clamp(34px,6vw,64px)">Toda a sua papelada,<br>no seu bolso.</h2>
+      <p class="lead mx-auto maxw-sm mt-2">Currículo, contrato, recibo, PDF editado e convertido — sem marca-d'água e sem mandar nada pra nuvem. Comece grátis.</p>
+      <div class="btn-row mt-4" style="justify-content:center">
+        <a href="planos.html" class="btn btn-gold btn-lg">Baixar app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="pesquisa.html" class="btn btn-glass btn-lg">Ver Pesquisa &amp; Estudos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (shared) ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/img/brand/logo-tupham.png" alt="Tupham">
+        <p>A IA do Brasil. Roda no seu celular, entende o seu jeito e ajuda a manter a floresta em pé.</p>
+        <div class="store-row">
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg><span><small>Baixar na</small><b>App Store</b></span></a>
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg><span><small>Baixar no</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Produto</h4>
+        <a href="esportes.html">Esportes &amp; Bolões</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="criacao.html">Criação</a>
+        <a href="pesquisa.html">Pesquisa &amp; Estudos</a>
+        <a href="planos.html">Planos</a>
+      </div>
+      <div class="foot-col">
+        <h4>Planeta</h4>
+        <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
+        <a href="auditoria.html">Auditoria &amp; transparência</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="https://graycatcorp.com" target="_blank" rel="noopener">Graycat Corp</a>
+        <a href="mailto:suporte@tupham.com.br">suporte@tupham.com.br</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span data-year>2026</span> Tupham AI · Graycat Corp · Salvador, BA 🌴</p>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.14 0-3.51.01-4.75.07-2.43.11-3.66 1.32-3.77 3.77-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.11 2.43 1.32 3.66 3.77 3.77 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c2.43-.11 3.66-1.32 3.77-3.77.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.11-2.43-1.32-3.66-3.77-3.77-1.24-.06-1.61-.07-4.75-.07zM12 6.84A5.16 5.16 0 1 0 12 17.16 5.16 5.16 0 0 0 12 6.84zm0 8.5A3.34 3.34 0 1 1 12 8.66a3.34 3.34 0 0 1 0 6.68zm5.34-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.93a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.78.12v-3.28a5.86 5.86 0 0 0-.78-.05A5.87 5.87 0 1 0 15.62 16V9.4a7.43 7.43 0 0 0 4.34 1.39V7.6a4.28 4.28 0 0 1-3.36-1.78z"/></svg></a>
+        <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/tupham.js"></script>
+</body>
+</html>

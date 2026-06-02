@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planos — Tupham AI · Grátis pra sempre ou Premium por R$ 14,90/mês</title>
+<meta name="description" content="A IA do Brasil cabe no orçamento brasileiro: plano gratuito completo, sustentado por anúncios, e Premium por R$ 14,90/mês ou R$ 139,90/ano. Sete vezes mais barato que as IAs gringas. Cancele quando quiser.">
+<meta name="theme-color" content="#6BC4E8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planos — Tupham AI">
+<meta property="og:description" content="Comece grátis. Premium quando quiser, por R$ 14,90/mês. A IA do Brasil que cabe no orçamento brasileiro.">
+<meta property="og:image" content="assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/img/og.png">
+<link rel="icon" type="image/png" href="assets/img/brand/mascote-tupham.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tupham.css">
+<style>
+  /* scoped tweaks — feature-comparison table built only from existing tokens */
+  .feat-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden}
+  .feat-table th,.feat-table td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line-soft);font-size:14.5px}
+  .feat-table thead th{font-family:var(--font-display);font-weight:700;color:var(--ink-900);font-size:15px;background:var(--bg-soft);letter-spacing:-.01em}
+  .feat-table tbody td:first-child{font-weight:700;color:var(--ink-900)}
+  .feat-table td.col-plan{text-align:center;color:var(--tx-2);width:30%}
+  .feat-table th.col-plan{text-align:center}
+  .feat-table tbody tr:last-child td{border-bottom:none}
+  .feat-table tbody tr:hover td{background:var(--line-soft)}
+  .feat-y{color:var(--yes);font-weight:700}
+  .feat-n{color:var(--tx-3);font-weight:600}
+  .feat-table .col-pro{background:rgba(107,196,232,.06)}
+  @media(max-width:680px){.feat-table th,.feat-table td{padding:12px 11px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ===== NAV (shared) ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo" aria-label="Tupham — início"><img src="assets/img/brand/logo-tupham.png" alt="Tupham"></a>
+    <div class="nav-links">
+      <a href="esportes.html">Esportes</a>
+      <a href="documentos.html">Documentos</a>
+      <a href="criacao.html">Criação</a>
+      <a href="pesquisa.html">Pesquisa</a>
+      <a href="como-salvamos-o-mundo.html">Planeta</a>
+      <a href="auditoria.html">Auditoria</a>
+      <a href="planos.html">Planos</a>
+    </div>
+    <div class="nav-right">
+      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobnav" id="mobnav">
+  <a href="esportes.html">Esportes &amp; Bolões<span class="arr">→</span></a>
+  <a href="documentos.html">Documentos<span class="arr">→</span></a>
+  <a href="criacao.html">Criação<span class="arr">→</span></a>
+  <a href="pesquisa.html">Pesquisa &amp; Estudos<span class="arr">→</span></a>
+  <a href="como-salvamos-o-mundo.html">Como salvamos o mundo<span class="arr">→</span></a>
+  <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
+  <a href="planos.html">Planos<span class="arr">→</span></a>
+  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+</div>
+
+<main>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="section bg-sky grain">
+  <div class="sec-orb glow--gold" style="width:380px;height:380px;top:-8%;right:6%;opacity:.5"></div>
+  <div class="sec-orb glow--sky" style="width:340px;height:340px;bottom:-12%;left:-4%;opacity:.6"></div>
+  <div class="wrap split split--wide-text">
+    <div data-reveal>
+      <span class="eyebrow">Planos</span>
+      <h1 class="display mt-2" style="font-size:clamp(40px,7vw,76px)">Comece grátis.<br>Premium quando<br>quiser.</h1>
+      <p class="lead mt-3" style="color:var(--ink-800);max-width:34ch">A IA do Brasil cabe no orçamento brasileiro: plano gratuito completo e Premium por <b>R$ 14,90/mês</b>.</p>
+      <div class="btn-row mt-4">
+        <a href="#planos" class="btn btn-ink btn-lg">Ver os planos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#incluso" class="btn btn-ghost btn-lg">O que está incluso</a>
+      </div>
+      <div class="pill-row mt-3">
+        <span class="pill"><span class="dot"></span>Grátis pra sempre</span>
+        <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>Cancele quando quiser</span>
+        <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Cada uso planta floresta</span>
+      </div>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--sky" style="width:300px;height:300px"></div>
+      <div class="phone phone--tilt-r"><img src="assets/img/screens/01_chat_principal.PNG" alt="Tela inicial do Tupham AI" loading="eager"></div>
+    </div>
+  </div>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#FBFCFD" d="M0,64 C240,108 520,20 760,52 C1020,86 1240,28 1440,58 L1440,110 L0,110Z"/></svg>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="section" id="planos">
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center">Os dois planos</span>
+      <h2 class="h-sec mt-2">Escolha como quiser.<br>Comece sem cartão.</h2>
+      <p class="lead mx-auto maxw-md mt-2">O plano gratuito faz muita coisa. O Premium tira todos os limites e libera o modo offline completo.</p>
+    </div>
+    <div class="price-grid" data-reveal>
+      <div class="price-card">
+        <div class="price-name">Grátis</div>
+        <div class="price-tag"><span class="v">R$ 0</span></div>
+        <div class="price-sub">Pra sempre, sustentado por anúncios discretos.</div>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Chat completo com IA local</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Esportes ao vivo &amp; bolão</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Notícias e cards visuais</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Gera Verdis e planta floresta</li>
+          <li class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>1ª pesquisa profunda grátis</li>
+        </ul>
+        <a href="planos.html" class="btn btn-ghost">Começar grátis</a>
+      </div>
+      <div class="price-card price-card--pro">
+        <span class="price-badge">MAIS POPULAR</span>
+        <div class="price-name">Premium</div>
+        <div class="price-tag"><span class="v">R$ 14</span><span class="c">,90</span><span class="per">/mês</span></div>
+        <div class="price-sub">ou R$ 139,90/ano — economia de ~22% (~R$ 11,66/mês).</div>
+        <ul class="price-feats">
+          <li class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Tudo ilimitado</li>
+          <li class="hl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Modo offline completo (PIN/biometria)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Zero anúncios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Verdis todo mês</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Pesquisas e criações sem limite</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Suporte prioritário</li>
+        </ul>
+        <a href="planos.html" class="btn btn-gold">Assinar Premium</a>
+      </div>
+    </div>
+    <p class="center muted mt-4" data-reveal style="font-size:14px;max-width:60ch;margin-left:auto;margin-right:auto">Trial grátis quando a conta é elegível. Restaurar compras a qualquer momento. <b style="color:var(--ink-900)">Cancele quando quiser</b>, sem multa.</p>
+  </div>
+</section>
+
+<!-- ===== COMPARE vs GRINGAS ===== -->
+<section class="section bg-ink-2 grain on-dark">
+  <div class="sec-orb glow--gold" style="width:360px;height:360px;top:-6%;right:0;opacity:.32"></div>
+  <div class="wrap wrap--narrow">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center eyebrow--light">A conta não fecha</span>
+      <h2 class="h-sec mt-2">Elas cobram R$ 105+.<br>O Tupham, R$ 14,90.</h2>
+      <p class="lead mx-auto maxw-md mt-2">Sete vezes mais barato — e faz o que nenhuma delas faz.</p>
+    </div>
+    <div class="compare" data-reveal>
+      <div class="compare-col compare-them">
+        <div class="compare-who">IAs gringas</div>
+        <div class="compare-price">R$ 105<small>+/mês</small></div>
+        <ul>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Chat avançado</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Pesquisa na web</li>
+          <li><i class="n"><svg viewBox="0 0 24 24" fill="none" stroke="#F0556A" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg></i>Roda no seu celular</li>
+          <li><i class="n"><svg viewBox="0 0 24 24" fill="none" stroke="#F0556A" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg></i>Brasileirão &amp; bolão</li>
+          <li><i class="n"><svg viewBox="0 0 24 24" fill="none" stroke="#F0556A" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg></i>Currículo &amp; PDF no padrão BR</li>
+          <li><i class="n"><svg viewBox="0 0 24 24" fill="none" stroke="#F0556A" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg></i>Parte da receita pro planeta</li>
+        </ul>
+      </div>
+      <div class="compare-vs">VS</div>
+      <div class="compare-col compare-us">
+        <div class="compare-who" style="color:var(--sky-300)">Tupham AI</div>
+        <div class="compare-price compare-price--gold">R$ 14,90<small>/mês</small></div>
+        <ul>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Chat avançado</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Pesquisa com fontes</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Roda no seu celular</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Brasileirão &amp; bolão</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Currículo &amp; PDF no padrão BR</li>
+          <li><i class="y"><svg viewBox="0 0 24 24" fill="none" stroke="#27B765" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Parte da receita pro planeta</li>
+        </ul>
+      </div>
+    </div>
+    <p class="center lead mt-5" data-reveal style="color:rgba(255,255,255,.78)">O ChatGPT Plus custa cerca de <b style="color:#fff">7% do salário mínimo</b>. O Tupham Premium, cerca de <b style="color:var(--gold-400)">1%</b>.</p>
+  </div>
+</section>
+
+<!-- ===== O QUE ESTÁ INCLUSO ===== -->
+<section class="section bg-soft" id="incluso">
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center">O que está incluso</span>
+      <h2 class="h-sec mt-2">Tudo do Grátis.<br>Sem limites no Premium.</h2>
+      <p class="lead mx-auto maxw-md mt-2">O essencial já vem no plano gratuito. O Premium tira os limites e libera o que mais pesa: offline, zero anúncios e Verdis garantidos.</p>
+    </div>
+    <div data-reveal style="overflow-x:auto">
+      <table class="feat-table">
+        <thead>
+          <tr>
+            <th>Recurso</th>
+            <th class="col-plan">Grátis</th>
+            <th class="col-plan col-pro">Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chat com IA local</td>
+            <td class="col-plan"><span class="feat-y">Incluso</span></td>
+            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
+          </tr>
+          <tr>
+            <td>Esportes &amp; bolão</td>
+            <td class="col-plan"><span class="feat-y">Incluso</span></td>
+            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
+          </tr>
+          <tr>
+            <td>Notícias &amp; cards visuais</td>
+            <td class="col-plan"><span class="feat-y">Incluso</span></td>
+            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
+          </tr>
+          <tr>
+            <td>Pesquisa profunda</td>
+            <td class="col-plan">1ª grátis</td>
+            <td class="col-plan col-pro"><span class="feat-y">Ilimitada</span></td>
+          </tr>
+          <tr>
+            <td>Criação de áudio &amp; design</td>
+            <td class="col-plan">Via Verdis / anúncios</td>
+            <td class="col-plan col-pro"><span class="feat-y">Livre</span></td>
+          </tr>
+          <tr>
+            <td>Modo offline (PIN/biometria)</td>
+            <td class="col-plan"><span class="feat-n">—</span></td>
+            <td class="col-plan col-pro"><span class="feat-y">Completo</span></td>
+          </tr>
+          <tr>
+            <td>Anúncios</td>
+            <td class="col-plan">Discretos</td>
+            <td class="col-plan col-pro"><span class="feat-y">Zero</span></td>
+          </tr>
+          <tr>
+            <td>Verdis por mês</td>
+            <td class="col-plan">Gera usando</td>
+            <td class="col-plan col-pro"><span class="feat-y">Bônus garantido</span></td>
+          </tr>
+          <tr>
+            <td>Suporte prioritário</td>
+            <td class="col-plan"><span class="feat-n">—</span></td>
+            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="center muted mt-4" data-reveal style="font-size:14px">Tanto no Grátis quanto no Premium, a IA pensa dentro do seu aparelho. <a href="pesquisa.html" class="btn-link" style="display:inline-flex">Como funciona a tecnologia</a></p>
+  </div>
+</section>
+
+<!-- ===== FAQ COMPLETO ===== -->
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="center mb-4" data-reveal>
+      <span class="eyebrow eyebrow--center">Perguntas</span>
+      <h2 class="h-sec mt-2">Tira a dúvida.</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <div class="faq-item"><button class="faq-q">O que é o Tupham?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">É uma plataforma de IA brasileira que roda no seu celular. Num app só você tem chat, currículo e documentos, esportes ao vivo, bolão da Copa, pesquisa com fontes, música, plano de estudos e mais — tudo em português de verdade.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Precisa de internet?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O chat com IA roda no próprio aparelho. O modo offline completo, que funciona 100% sem conexão, é um recurso do plano Premium — desbloqueado com PIN ou biometria. Funções que dependem de dados em tempo real (notícias, esportes, busca) usam internet quando disponível.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Quanto custa?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Tem um plano gratuito completo, sustentado por anúncios. O Premium custa R$ 14,90/mês ou R$ 139,90/ano (economia de ~22%, equivalente a ~R$ 11,66/mês) — cerca de sete vezes mais barato que as IAs gringas, que passam de R$ 105/mês.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Como funciona o plano gratuito?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O plano Grátis é sustentado por anúncios discretos e pela economia de Verdis, a moeda verde do app — você gera Verdis usando o Tupham e os aplica em recursos como criação de áudio e design. O chat com IA local, esportes, bolão e notícias estão liberados, sem limite rígido por dia. Sua primeira pesquisa profunda também é gratuita.</div></div></div>
+      <div class="faq-item"><button class="faq-q">O que é o modo offline?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">É o recurso Premium que deixa a IA funcionar 100% sem internet — no metrô, no avião ou no sítio sem sinal. Você desbloqueia com PIN ou biometria e o modelo de linguagem responde direto no aparelho, via llama.cpp, usando a GPU do celular quando ela existe.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Posso cancelar quando quiser?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Pode, sem multa. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja quando quiser. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Como o Tupham ajuda o planeta?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Cada uso gera Verdis, a moeda verde do app, e uma parte da nossa receita é destinada a causas ambientais auditadas por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada. <a href="como-salvamos-o-mundo.html" class="btn-link" style="display:inline-flex">Ver o passo a passo</a></div></div></div>
+      <div class="faq-item"><button class="faq-q">Meus dados ficam seguros?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A IA raciocina dentro do seu aparelho — suas conversas não precisam sair do celular pra serem respondidas. Quando você usa busca ou notícias, só a consulta necessária vai para os serviços de pesquisa. Em caso de dúvida sobre dados, fale com privacidade@tupham.com.br.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Em quais aparelhos funciona?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Funciona em iPhone e Android. O Tupham detecta o hardware do seu celular ao iniciar e se adapta a ele — usa a GPU quando há (Metal no iPhone, Vulkan no Android) e ajusta a inferência ao seu aparelho, do mais simples ao topo de linha.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EMPRESA / CONTATO ===== -->
+<section class="section bg-soft">
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center">Empresa &amp; contato</span>
+      <h2 class="h-sec mt-2">Gente de verdade,<br>aqui no Brasil.</h2>
+      <p class="lead mx-auto maxw-md mt-2">O Tupham é feito pela Graycat Corp, em Salvador. Precisou falar com a gente? É só escrever.</p>
+    </div>
+    <div class="grid grid-3" data-reveal-stagger>
+      <div class="card">
+        <div class="card-ico card-ico--sky">🏢</div>
+        <h3>Quem faz</h3>
+        <p>Graycat Corp · Salvador, Bahia 🌴 — a empresa por trás do Tupham AI.</p>
+        <a href="https://graycatcorp.com" target="_blank" rel="noopener" class="btn-link mt-2">graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card">
+        <div class="card-ico card-ico--leaf">✉️</div>
+        <h3>Suporte</h3>
+        <p>Dúvidas, sugestões ou um problema no app? Fale direto com o time.</p>
+        <a href="mailto:suporte@tupham.com.br" class="btn-link btn-link--leaf mt-2">suporte@tupham.com.br <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card">
+        <div class="card-ico card-ico--gold">🔒</div>
+        <h3>Privacidade &amp; dados</h3>
+        <p>Encarregado de dados (DPO) para assuntos de privacidade e LGPD.</p>
+        <a href="mailto:privacidade@tupham.com.br" class="btn-link mt-2">privacidade@tupham.com.br <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band grain" data-reveal>
+      <span class="eyebrow eyebrow--center">Disponível em breve nas lojas</span>
+      <h2 class="h-sec mt-2" style="font-size:clamp(34px,6vw,64px)">Comece grátis.<br>Refloreste usando.</h2>
+      <p class="lead mx-auto maxw-sm mt-2" style="color:var(--ink-800)">A IA do Brasil, no seu bolso, por R$ 14,90/mês — ou de graça pra sempre.</p>
+      <div class="store-row mt-4" style="justify-content:center">
+        <a href="planos.html" class="store-btn"><svg viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg><span><small>Baixar na</small><b>App Store</b></span></a>
+        <a href="planos.html" class="store-btn"><svg viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg><span><small>Baixar no</small><b>Google Play</b></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (shared) ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/img/brand/logo-tupham.png" alt="Tupham">
+        <p>A IA do Brasil. Roda no seu celular, entende o seu jeito e ajuda a manter a floresta em pé.</p>
+        <div class="store-row">
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg><span><small>Baixar na</small><b>App Store</b></span></a>
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg><span><small>Baixar no</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Produto</h4>
+        <a href="esportes.html">Esportes &amp; Bolões</a>
+        <a href="documentos.html">Documentos</a>
+        <a href="criacao.html">Criação</a>
+        <a href="pesquisa.html">Pesquisa &amp; Estudos</a>
+        <a href="planos.html">Planos</a>
+      </div>
+      <div class="foot-col">
+        <h4>Planeta</h4>
+        <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
+        <a href="auditoria.html">Auditoria &amp; transparência</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="https://graycatcorp.com" target="_blank" rel="noopener">Graycat Corp</a>
+        <a href="mailto:suporte@tupham.com.br">suporte@tupham.com.br</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span data-year>2026</span> Tupham AI · Graycat Corp · Salvador, BA 🌴</p>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.14 0-3.51.01-4.75.07-2.43.11-3.66 1.32-3.77 3.77-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.11 2.43 1.32 3.66 3.77 3.77 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c2.43-.11 3.66-1.32 3.77-3.77.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.11-2.43-1.32-3.66-3.77-3.77-1.24-.06-1.61-.07-4.75-.07zM12 6.84A5.16 5.16 0 1 0 12 17.16 5.16 5.16 0 0 0 12 6.84zm0 8.5A3.34 3.34 0 1 1 12 8.66a3.34 3.34 0 0 1 0 6.68zm5.34-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.93a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.78.12v-3.28a5.86 5.86 0 0 0-.78-.05A5.87 5.87 0 1 0 15.62 16V9.4a7.43 7.43 0 0 0 4.34 1.39V7.6a4.28 4.28 0 0 1-3.36-1.78z"/></svg></a>
+        <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/tupham.js"></script>
+</body>
+</html>
