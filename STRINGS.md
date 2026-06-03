@@ -1,10 +1,25 @@
 # Strings do site Tupham — para refino de copy
 
-> **Como usar:** edite **apenas o texto à direita do `]`** em cada linha. **Não altere os `[ids]`** — são a chave que eu uso pra remapear cada texto de volta no HTML certo. Pode mexer livremente no tom, nas palavras, na pontuação. Quando terminar, me devolve este arquivo que eu aplico tudo nas páginas.
+> **Como usar:** edite **apenas o texto à direita do `]`**. **Não altere os `[ids]`** (são a chave pra remapear no HTML). Me devolve o arquivo que eu aplico tudo nas páginas.
 >
-> **Escopo:** cobre o site já com a nova página **Habilidades** (que consolidou Esportes + Documentos + Criação + Pesquisa). 5 páginas: `index`, `habilidades`, `como-salvamos-o-mundo` (Planeta), `auditoria`, `planos`.
->
-> **Convenções:** `<br>` = quebra de linha proposital no título. `&amp;` = "&". Emojis fazem parte da copy. O ano do rodapé é automático (não editável). Textos de SVG decorativos não entram aqui. Os `alt` de imagem de cada página estão no bloco "Imagens (alt)" no fim de cada seção.
+> **Esta versão (v2):** peguei o tom que você adotou nas suas edições e repliquei pra TODO o resto. Cortes seus = readequados no tom (ou removidos, ver abaixo). Suas notas de refatoração = executadas. As partes de Verdis/impacto (que você curtiu) ficaram quase intactas. Corrigi acentos/typos dos seus textos, mantendo as suas palavras e a sua voz.
+
+> **🎙️ Guia de tom (o que apliquei):**
+> 1. Voz coletiva e nacional: "nossa IA", "comemoramos juntos", "Do Brasil para os brasileiros".
+> 2. "Grátis e ilimitado" é mantra; "De graça." como fecho.
+> 3. Marca = **Tupham** (sem "AI", sem "local"). Copyright legal mantém "Tupham AI".
+> 4. **Zero jargão.** Nada de Metal/Vulkan/llama.cpp/GPU/inferência. "datacenter" → "grandes centros de processamento de dados". O offline é **"funciona com e sem internet"**.
+> 5. Casual, caloroso, divertido; imperativo convidativo; menos travessões (—), mais vírgula/ponto.
+> 6. Benefício > especificação (sem contagens tipo "12 modelos", "9 vibes").
+
+> **🔧 Decisões estruturais (mudei além do texto — confirma se concorda):**
+> - **index:** removida a seção "Teaser Pesquisa / Notícias" (sua nota "(remover)").
+> - **Habilidades · Conversa:** refeita sem citar os "8 cards" (você disse que não é diferencial). Pills viraram usos do dia a dia.
+> - **Habilidades · Esportes:** pills agora Brasileirão / Libertadores / Copa do Mundo; bolão reescrito como "começa na Copa, em breve todos os campeonatos". ⚠️ *Ver nota de precisão no fim.*
+> - **Habilidades · Criação:** removidas as pills de "9 vibes" e a nota técnica.
+> - **Habilidades · seção 05:** refatorada pra **dedicada ao Tupham Estuda** (era "Pesquisa & Estudos"). Label no menu/rodapé/TOC → "Estudos". Âncora segue `#pesquisa` por ora (renomeável pra `#estuda` depois).
+> - **Habilidades · "IA no aparelho":** reescrita inteira como "funciona com e sem internet", sem nenhum jargão.
+> - **planos:** propaguei o tom que faltava — tirei "local", removi jargão do FAQ (Metal/GPU/llama.cpp), "Tupham" no lugar de "Tupham AI". Preços mantidos (R$ 14,90 / R$ 139,90).
 
 ---
 
@@ -31,7 +46,7 @@
 - [shared.store.google.big] Google Play
 
 ### Rodapé — marca
-- [shared.foot.tagline] A IA do Brasil. 
+- [shared.foot.tagline] A IA do Brasil.
 
 ### Rodapé — coluna Produto
 - [shared.foot.produto.titulo] Produto
@@ -39,7 +54,7 @@
 - [shared.foot.produto.esportes] Esportes &amp; Bolões
 - [shared.foot.produto.documentos] Documentos
 - [shared.foot.produto.criacao] Criação
-- [shared.foot.produto.pesquisa] Pesquisa &amp; Estudos
+- [shared.foot.produto.pesquisa] Estudos
 - [shared.foot.produto.planos] Planos
 
 ### Rodapé — coluna Planeta
@@ -64,7 +79,7 @@
 
 ### Meta / SEO
 - [index.meta.title] Tupham — A IA do Brasil.
-- [index.meta.description] Tupham: Converse no chat e pesquise, gere e edite documentos, esportes ao vivo, faça bolões com amigos, gere áudios e aprenda com a nossa plataforma de estudos personalizada. Grátis e ilimitado.
+- [index.meta.description] Tupham: converse no chat e pesquise, gere e edite documentos, esportes ao vivo, faça bolões com amigos, gere áudios e aprenda com a nossa plataforma de estudos personalizada. Grátis e ilimitado.
 - [index.meta.og_title] Tupham — A IA do Brasil
 - [index.meta.og_description] Feita para o nosso ritmo, para a nossa cultura, para o nosso jeito de falar.
 
@@ -82,61 +97,53 @@
 - [index.marquee.3] Brasileirão ao vivo
 - [index.marquee.4] Bolão da Copa com amigos
 - [index.marquee.5] Pesquisa estruturada
-- [index.marquee.6] Plataforma de estudos 
-- [index.marquee.7] Audios divertidos
-- [index.marquee.8] Notícias 
-- [index.marquee.9] Convites &amp; folders 
+- [index.marquee.6] Plataforma de estudos
+- [index.marquee.7] Áudios divertidos
+- [index.marquee.8] Notícias
+- [index.marquee.9] Convites &amp; folders
 
 ### Pilares ("Um app. Tudo dentro.")
-- [index.pillars.eyebrow] Um app. IA, Pesquisa, Designs, Documentos, Futebol, Bolão com amigos, Audios e muito mais!
+- [index.pillars.eyebrow] Um app. IA, Pesquisa, Designs, Documentos, Futebol, Bolão com amigos, Áudios e muito mais!
 - [index.pillars.h2] Não é + uma IA.<br>É a nossa IA.
-- [index.pillars.lead] Tudo que você precisa no dia a dia, sem precisar de cinco assinaturas de IAs gringas, grátis e ilimitado.
+- [index.pillars.lead] Tudo que você precisa no dia a dia, sem precisar de cinco assinaturas de IAs gringas. Grátis e ilimitado.
 - [index.pillars.chat.titulo] Chat que entende o Brasil
 - [index.pillars.chat.texto] Pergunta do seu jeito, Tupham responde.
 - [index.pillars.chat.link] Ver como funciona
 - [index.pillars.documentos.titulo] Documentos
-- [index.pillars.documentos.texto] Faça curriculos pra aquela vaga dos sonhos, contratos, procurações e recibos, sem marca-d'água. Edite e converta PDFs. De graça.
+- [index.pillars.documentos.texto] Faça currículos pra aquela vaga dos sonhos, contratos, procurações e recibos, sem marca-d'água. Edite e converta PDFs. De graça.
 - [index.pillars.documentos.link] Abrir
 - [index.pillars.esportes.titulo] Esportes &amp; Bolão
-- [index.pillars.esportes.texto] Jogos do Brasileirão ao vivo, lance a lance, comemora os gols junto com você. Faça bolões com a turma do trabalho, com os amigos, com gato, cachorro... as possiblidades sao infinitas!
+- [index.pillars.esportes.texto] Jogos do Brasileirão ao vivo, lance a lance, comemora os gols junto com você. Faça bolões com a turma do trabalho, com os amigos, com gato, cachorro... as possibilidades são infinitas!
 - [index.pillars.esportes.link] Abrir
 - [index.pillars.criacao.titulo] Criação
 - [index.pillars.criacao.texto] Crie um áudio hilário com voz cantada em diversos estilos, ou um convite de aniversário, panfletos, cartões de visita e muito mais!
 - [index.pillars.criacao.link] Abrir
-- [index.pillars.pesquisa.titulo] Pesquisa de verdade, 
+- [index.pillars.pesquisa.titulo] Pesquisa de verdade.
 - [index.pillars.pesquisa.texto] Um dossiê navegável sobre qualquer tema, que reúne notícias de várias fontes brasileiras e deixa tudo clicável. Exporta em PDF pra mandar no WhatsApp.
 - [index.pillars.pesquisa.link] Ver pesquisa e estudos
 
-### On-device ("A IA pensa dentro do seu aparelho")
+### On-device ("A IA que funciona com e sem internet")
 - [index.ondevice.eyebrow] A diferença que ninguém tem
-- [index.ondevice.h2] 
-- [index.ondevice.lead] O Tupham funciona dentro do seu celular.
+- [index.ondevice.h2] A IA que funciona<br>com e sem internet.
+- [index.ondevice.lead] O Tupham funciona dentro do seu celular, com ou sem internet.
 - [index.ondevice.check1] **Privacidade:** a IA raciocina no aparelho, coletamos dados apenas para melhorias, suas conversas não vão para terceiros.
-- [index.ondevice.check2] **Modo offline no Premium:** A unica IA do mundo que funciona até sem internet, funciona no metrô, no avião, no sítio sem sinal. (apenas para usuários premium)
-- [index.ondevice.check3] 
-- [index.ondevice.check4] **Com internet, fica melhor ainda:** Sem internet te ajuda com calculos, definições, traduções e conceitos basicos. Com internet, faz pesquisas, traz dados atualizados de clima, cotações e noticias.
+- [index.ondevice.check2] **Modo offline no Premium:** a única IA do mundo que funciona até sem internet: no metrô, no avião, no sítio sem sinal. (apenas no Premium)
+- [index.ondevice.check3] **Leve e rápido:** roda bem em qualquer celular, sem travar.
+- [index.ondevice.check4] **Com internet, fica melhor ainda:** sem internet, te ajuda com cálculos, definições, traduções e conceitos básicos. Com internet, faz pesquisas e traz dados atualizados de clima, cotações e notícias.
 - [index.ondevice.link] Conhecer a tecnologia
 
 ### Teaser Esportes
 - [index.esportes.eyebrow] Esportes &amp; Bolões
 - [index.esportes.h2] Seu time ao vivo,<br>lance a lance.
-- [index.esportes.lead] Escolha seu time do coração e acompanhe os jogos da copa em tempo real: placar, gols, cartões e estatísticas, comemoramos juntos.
+- [index.esportes.lead] Escolha seu time do coração e acompanhe os jogos em tempo real: placar, gols, cartões e estatísticas. Comemoramos juntos.
 - [index.esportes.pill1] Brasileirão e Copa
-- [index.esportes.pill2] 
+- [index.esportes.pill2] Bolão com amigos
 - [index.esportes.pill3] Alertas de gols e cartões
 - [index.esportes.pill4] Classificação
 - [index.esportes.lead2] E na Copa do Mundo 2026, a tradição do **bolão** vira app: crie o seu, convide a turma por um link e dispute um ranking ao vivo. Premiamos com Verdis, a moeda verde do Tupham, mas você pode combinar outras premiações por fora do app com os amigos!
 - [index.esportes.btn] Ver esportes e bolões
 
-### Teaser Pesquisa / Notícias (remover)
-- [index.pesquisa.eyebrow] Pesquisa &amp; Notícias
-- [index.pesquisa.h2] Respostas com fonte.<br>Não com achismo.
-- [index.pesquisa.lead] O Tupham junta o que os principais veículos estão dizendo sobre o mesmo fato, prioriza o mais recente e te entrega o resumo — com o link de cada fonte pra você conferir.
-- [index.pesquisa.stat1.num] Fontes
-- [index.pesquisa.stat1.lbl] reunidas e priorizadas por confiabilidade
-- [index.pesquisa.stat2.num] PDF
-- [index.pesquisa.stat2.lbl] dossiê exportável, com tudo clicável
-- [index.pesquisa.btn] Ver pesquisa e estudos
+> 🗑️ **Seção "Teaser Pesquisa / Notícias" removida** (sua nota "(remover)"). Ids `index.pesquisa.*` saíram do doc e o bloco sai do index.html.
 
 ### Teaser Planeta
 - [index.planeta.eyebrow] Como salvamos o mundo
@@ -156,15 +163,15 @@
 - [index.compare.them.who] IAs gringas
 - [index.compare.them.price] R$ 105+/mês
 - [index.compare.us.who] Tupham
-- [index.compare.us.price] Grátis ou 14,90/mês no plano premium.
+- [index.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
 - [index.compare.row1] Chat avançado
 - [index.compare.row2.them] Pesquisa na web
-- [index.compare.row2.us] 
+- [index.compare.row2.us] Pesquisa com fontes
 - [index.compare.row3] Roda no seu celular
 - [index.compare.row4] Brasileirão &amp; bolão
 - [index.compare.row5] Currículo &amp; PDFs
 - [index.compare.row6] Parte da receita pro planeta
-- [index.compare.footer] Sete vezes mais barato. E faz o que nenhuma delas faz.
+- [index.compare.footer] Muito mais barato. E faz o que nenhuma delas faz.
 
 ### Planos (resumo)
 - [index.pricing.eyebrow] Planos
@@ -172,7 +179,7 @@
 - [index.pricing.free.nome] Grátis
 - [index.pricing.free.preco] R$ 0
 - [index.pricing.free.sub] Pra sempre, sustentado por anúncios discretos.
-- [index.pricing.free.feat1] Chat completo com IA 
+- [index.pricing.free.feat1] Chat completo com IA
 - [index.pricing.free.feat2] Esportes ao vivo &amp; bolão
 - [index.pricing.free.feat3] Notícias e cards visuais
 - [index.pricing.free.feat4] Gera Verdis e planta floresta
@@ -180,7 +187,7 @@
 - [index.pricing.pro.badge] MAIS POPULAR
 - [index.pricing.pro.nome] Premium
 - [index.pricing.pro.preco] R$ 14,90/mês
-- [index.pricing.pro.sub] ou R$ 139,90/ano — economize.
+- [index.pricing.pro.sub] ou R$ 139,90/ano. Você economiza.
 - [index.pricing.pro.feat1] Tudo ilimitado
 - [index.pricing.pro.feat2] Modo offline completo
 - [index.pricing.pro.feat3] Zero anúncios
@@ -193,16 +200,16 @@
 - [index.faq.eyebrow] Perguntas
 - [index.faq.h2] Tira a dúvida.
 - [index.faq.q1] O que é o Tupham?
-- [index.faq.a1] É uma plataforma de IA brasileira que roda no seu celular. Num app só você tem chat, currículo e documentos, esportes ao vivo, bolão da Copa, pesquisa com fontes, música, plano de estudos e mais — tudo em português de verdade.
+- [index.faq.a1] É a IA do Brasil, num app só: chat, currículo e documentos, esportes ao vivo, bolão com amigos, pesquisa com fontes, áudios, plano de estudos e muito mais. Tudo em português de verdade, grátis e ilimitado.
 - [index.faq.q2] Precisa de internet?
-- [index.faq.a2] O chat com IA roda no próprio aparelho. No plano Premium, o modo offline funciona 100% sem conexão — desbloqueado com PIN ou biometria. Funções que dependem de dados em tempo real (notícias, esportes, busca) usam internet quando disponível.
+- [index.faq.a2] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.
 - [index.faq.q3] Quanto custa?
-- [index.faq.a3] Tem um plano gratuito completo, sustentado por anúncios. O Premium custa R$ 14,90/mês ou R$ 139,90/ano — cerca de sete vezes mais barato que as IAs gringas, que passam de R$ 105/mês.
+- [index.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
 - [index.faq.q4] Como o Tupham ajuda o planeta?
-- [index.faq.a4] Cada uso gera Verdis, a moeda verde do app, e uma parte da nossa receita é destinada a causas ambientais auditadas por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
+- [index.faq.a4] Cada uso gera Verdis, a nossa moeda verde, e uma parte da nossa receita vira preservação ambiental auditada por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
 - [index.faq.a4_link] Ver o passo a passo
 - [index.faq.q5] Meus dados ficam seguros?
-- [index.faq.a5] A IA raciocina dentro do seu aparelho — suas conversas não precisam sair do celular pra serem respondidas. Quando você usa busca ou notícias, só a consulta necessária vai para os serviços de pesquisa.
+- [index.faq.a5] A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias e nada vai para terceiros.
 
 ### CTA final
 - [index.cta.eyebrow] Disponível em breve nas lojas
@@ -211,133 +218,122 @@
 
 ### Imagens (alt)
 - [index.alt.hero_back] Tupham funcionando offline
-- [index.alt.hero_front] Tela inicial do Tupham AI
+- [index.alt.hero_front] Tela inicial do Tupham
 - [index.alt.ondevice] Tupham gerando uma legenda offline, em modo avião
 - [index.alt.esportes] Jogo ao vivo no Tupham, lance a lance
 - [index.alt.pesquisa] Card de notícias com fontes no Tupham
 
 ---
 
-## 🧠 habilidades.html — Habilidades (página nova)
+## 🧠 habilidades.html — Habilidades
 
 ### Meta / SEO
 - [hab.meta.title] Habilidades — Tupham · Para você, de graça e ilimitado.
-- [hab.meta.description] 
-- [hab.meta.og_title] Habilidades — Tupham 
-- [hab.meta.og_description] Tudo o que o Tupham faz, num lugar só: conversa, documentos, esportes & bolão, criação e pesquisa & estudos.
+- [hab.meta.description] Tudo o que o Tupham faz num lugar só: conversa, documentos, esportes e bolão, criação e estudos. Grátis e ilimitado, feito por brasileiros.
+- [hab.meta.og_title] Habilidades — Tupham
+- [hab.meta.og_description] Tudo o que o Tupham faz, num lugar só: conversa, documentos, esportes & bolão, criação e estudos.
 
 ### Hero
 - [hab.hero.eyebrow] Tudo num app só
 - [hab.hero.h1] As habilidades<br>do Tupham.
-- [hab.hero.lead] Conversa, documentos, esportes, criação e pesquisa, com um modelo de IA criado por brasileiros. Aqui está cada coisa que o Tupham faz, organizada por área.
+- [hab.hero.lead] Conversa, documentos, esportes, criação e estudos, com um modelo de IA criado por brasileiros. Aqui está cada coisa que o Tupham faz, organizada por área.
 - [hab.hero.btn] Baixar o app
 - [hab.hero.toc1] Conversa
 - [hab.hero.toc2] Documentos
 - [hab.hero.toc3] Esportes &amp; Bolões
 - [hab.hero.toc4] Criação
-- [hab.hero.toc5] Pesquisa &amp; Estudos
+- [hab.hero.toc5] Estudos
 
-### 01 · Conversa & Inteligência ( refazer, nao precisa citar cards, nao é diferencial competitivo) 
+### 01 · Conversa & Inteligência (refeita — sem citar cards)
 - [hab.conversa.eyebrow] Conversa &amp; Inteligência
 - [hab.conversa.h2] Um chat que entende<br>o jeito brasileiro.
-- [hab.conversa.lead] O coração do Tupham: você pergunta do seu jeito — gíria, sotaque, futebol — e a IA responde em cards bonitos, com os Smart Chips afinando o pedido antes mesmo da resposta.
-- [hab.conversa.skill1] **Chat que entende o Brasil:** gíria, sotaque e contexto local — e a IA raciocina dentro do aparelho.
-- [hab.conversa.skill2] **8 Cards Inteligentes:** a resposta vira um card visual rico, escolhido pelo contexto da pergunta.
-- [hab.conversa.skill3] **Smart Chips:** ângulos sugeridos e mini-formulários aparecem **antes** da resposta, pra acertar de primeira.
-- [hab.conversa.pills_titulo] 8 tipos de card
-- [hab.conversa.pill1] Conta &amp; matemática
-- [hab.conversa.pill2] Código
-- [hab.conversa.pill3] Notícias com fontes
-- [hab.conversa.pill4] Biografia
-- [hab.conversa.pill5] Placar
-- [hab.conversa.pill6] Cotação de mercado
-- [hab.conversa.pill7] Comparação
-- [hab.conversa.pill8] Texto criativo
+- [hab.conversa.lead] O coração do Tupham: você pergunta do seu jeito, com gíria, sotaque e tudo, e ele responde como um amigo que manja de tudo.
+- [hab.conversa.skill1] **Entende o Brasil:** gíria, sotaque, futebol e o nosso jeito de falar, sem precisar explicar.
+- [hab.conversa.skill2] **Resolve o dia a dia:** tira dúvidas, faz contas, escreve textos, dá ideias e ajuda no que você precisar.
+- [hab.conversa.skill3] **Responde do seu jeito:** vai direto ao ponto ou se aprofunda, do jeito que você pediu.
+- [hab.conversa.pills_titulo] Pra que serve
+- [hab.conversa.pill1] Tira dúvidas
+- [hab.conversa.pill2] Faz contas
+- [hab.conversa.pill3] Escreve textos
+- [hab.conversa.pill4] Dá ideias
+
+> 🗑️ Pills `pill5`–`pill8` removidas (eram tipos de card). `pills_titulo` deixou de ser "8 tipos de card".
 
 ### 02 · Documentos
 - [hab.documentos.eyebrow] Documentos
 - [hab.documentos.h2] Toda a papelada,<br>pronta no celular.
-- [hab.documentos.lead] Criar, editar, converter e analisar documentos direto no aparelho — em PDF e Word, sem marca-d'água, e sem mandar nada pra nuvem.
+- [hab.documentos.lead] Criar, editar, converter e analisar documentos direto no aparelho, em PDF e Word, sem marca-d'água, e sem mandar nada pra nuvem.
 - [hab.documentos.skill1] **Currículo:** assistente inteligente, diversos layouts.
 - [hab.documentos.skill2] **Modelos prontos:** contrato, recibo, procuração, declaração e mais.
 - [hab.documentos.skill3] **Editar PDF:** reorganizar, girar, dividir, apagar e adicionar páginas.
 - [hab.documentos.skill4] **Converter:** Word → PDF, PDF → Word editável e várias imagens num PDF.
-- [hab.documentos.skill5] 
+- [hab.documentos.skill5] **Analisar PDF:** mande um documento e tire suas dúvidas sobre ele.
 - [hab.documentos.skill6] **Privacidade &amp; biblioteca:** nada do conteúdo vai pra nuvem; seus arquivos ficam guardados no seu celular.
 - [hab.documentos.pill1] PDF + Word
 - [hab.documentos.pill2] Sem marca-d'água
-- [hab.documentos.pill3] 
+- [hab.documentos.pill3] De graça
 
 ### 03 · Esportes & Bolões
 - [hab.esportes.eyebrow] Esportes &amp; Bolões
 - [hab.esportes.h2] Seu time ao vivo,<br>e o bolão com a turma.
-- [hab.esportes.lead] Os times do Brasileirão ao vivo, lance a lance, com push de gol no bolso. E a tradição do bolão da Copa integra toda a experiência.
+- [hab.esportes.lead] Os jogos ao vivo, lance a lance, com alerta de gol no bolso. E a tradição do bolão integra toda a experiência.
 - [hab.esportes.skill1] **Ao vivo:** placar, gols, cartões, posse e chutes em tempo real, com notificações que te deixam sempre antenado.
-- [hab.esportes.skill2] 
+- [hab.esportes.skill2] **Seus campeonatos:** Brasileirão, Libertadores, Copa do Mundo e mais, com próximos jogos, resultados e tabela.
 - [hab.esportes.skill3] **Classificação:** a tabela inteira com as zonas coloridas, V / E / D, pontos e saldo.
 - [hab.esportes.skill4] **Raio-X + Palpite da Torcida:** os números da temporada do time e a votação ao vivo da galera.
-- [hab.esportes.skill5] **Bolão da Copa 2026:** "REFAZER, boloes começa com copa mas serão permanentes pra todas as categorias"
-- [hab.esportes.pill1] Brasileirão, libertadores, copa do mundo, etc etc (REFAZER
-- [hab.esportes.pill2] 
-- [hab.esportes.pill3] 
+- [hab.esportes.skill5] **Bolões com a turma:** começa na Copa do Mundo 2026 e, em breve, todos os campeonatos. Crie o seu, convide por link e dispute o ranking ao vivo.
+- [hab.esportes.pill1] Brasileirão
+- [hab.esportes.pill2] Libertadores
+- [hab.esportes.pill3] Copa do Mundo
 
 ### 04 · Criação
 - [hab.criacao.eyebrow] Criação
 - [hab.criacao.h2] Música cantada e artes<br>prontas pra postar.
 - [hab.criacao.lead] Descreva a ideia e o Tupham tira do papel: uma música completa com voz cantada em português, ou uma arte pronta pra publicar.
-- [hab.criacao.skill1] **Áudio Studio:** título, letra, melodia, arranjo e voz cantada com varios estilos.
-- [hab.criacao.skill2] **Modo Design:** Convite, Cartão de Visita, Panfleto, Frase e Banner de LinkedIn, gere criativos para diversos propositos.
-- [hab.criacao.pills_titulo] 
-- [hab.criacao.pill1] 
-- [hab.criacao.pill2] 
-- [hab.criacao.pill3] 
-- [hab.criacao.pill4] 
-- [hab.criacao.pill5] 
-- [hab.criacao.pill6] 
-- [hab.criacao.pill7] 
-- [hab.criacao.pill8] 
-- [hab.criacao.pill9] 
-- [hab.criacao.nota] 
+- [hab.criacao.skill1] **Áudio Studio:** título, letra, melodia, arranjo e voz cantada com vários estilos.
+- [hab.criacao.skill2] **Modo Design:** Convite, Cartão de Visita, Panfleto, Frase e Banner de LinkedIn, gere criativos para diversos propósitos.
 - [hab.criacao.card1.titulo] Áudio Studio
 - [hab.criacao.card1.texto] Música completa com voz cantada em português.
 - [hab.criacao.card2.titulo] Modo Design
 - [hab.criacao.card2.texto] Vários tipos de arte, com editor integrado.
 
-### 05 · Estudos (REFATORAR PARA DEDICADO A ESTUDA) 
-- [hab.pesquisa.eyebrow] Pesquisa &amp; Estudos
-- [hab.pesquisa.h2] Respostas com fonte.<br>Estudo com plano.
-- [hab.pesquisa.lead] Pesquisa séria que você pode auditar, notícias reunidas de várias fontes e um plano de estudos diário pro ENEM — tudo em português.
-- [hab.pesquisa.skill1] **Hub de Pesquisa:** um dossiê determinístico sobre qualquer tema, com cada bloco vindo de uma fonte clicável e exportável em PDF.
-- [hab.pesquisa.skill2] **Notícias:** os principais veículos reunidos; quando vários cobrem o mesmo fato, vira um evento só, com o mais recente primeiro.
-- [hab.pesquisa.skill3] **Turbinar:** o hub de superpoderes — Pesquisa Profunda, Análise de Documentos, Plano de Estudos e Criação, com progresso ao vivo.
-- [hab.pesquisa.skill4] **Tupham Estuda:** um plano diário recalculado, 100% algorítmico e offline, orientado a ENEM — até 3 passos por dia.
-- [hab.pesquisa.pill1] Fontes clicáveis
-- [hab.pesquisa.pill2] PDF exportável
-- [hab.pesquisa.pill3] Sem achismo
+> 🗑️ Pills de "9 vibes" (`pills_titulo`, `pill1`–`pill9`) e a `nota` técnica removidas.
 
-### A IA roda no seu aparelho (fecho) -> TUDO QUE VOCE FEZ EM RELACAO A"IA QUE RODA NO SEU APARELHO" FICOU MUITO RUIM, É A IA QUE FUNCIONA COM E SEM INTERNET, JA TE FALEI MIL VEZES QUE FICA HORRIVEL QUANDO VOCE SE POSICIONA ASSIM "METAL NO IHPONE" QUE MERDA É ESSA, QUE USUARIO DE IA QUE SABE O QUE É METAL, AINDA MAIS UMA IA DE "VAREJO" 
+### 05 · Estudos (refatorada — dedicada ao Tupham Estuda)
+- [hab.pesquisa.eyebrow] Tupham Estuda
+- [hab.pesquisa.h2] Um plano de estudos<br>que muda com você.
+- [hab.pesquisa.lead] O Tupham monta um plano diário pro seu objetivo (ENEM, vestibular ou concurso) e recalcula todo dia, focando no que você mais precisa.
+- [hab.pesquisa.skill1] **Plano diário:** até 3 passos por dia, recalculados pra mirar a sua maior dificuldade.
+- [hab.pesquisa.skill2] **Revisão na hora certa:** flashcards que voltam quando você precisa fixar.
+- [hab.pesquisa.skill3] **Questões no estilo da prova:** blocos pra treinar de verdade e medir o seu avanço.
+- [hab.pesquisa.skill4] **Pesquisa com fontes:** quando precisa ir fundo num tema, o Tupham monta um dossiê com as fontes pra você conferir.
+- [hab.pesquisa.pill1] ENEM e vestibular
+- [hab.pesquisa.pill2] Plano diário
+- [hab.pesquisa.pill3] Estuda offline
+
+### A IA que funciona com e sem internet (fecho — reescrito sem jargão)
 - [hab.ialocal.eyebrow] A diferença que ninguém tem
-- [hab.ialocal.h2] A IA pensa dentro<br>do seu aparelho.
-- [hab.ialocal.lead] Por trás de todas as habilidades, um modelo de linguagem de verdade roda no próprio celular, via llama.cpp — arquitetura de dois estágios, Router + Writer, usando a GPU quando ela existe.
-- [hab.ialocal.check1] **Privacidade real:** a inferência acontece no aparelho — sua pergunta não precisa sair do celular pra ser respondida.
-- [hab.ialocal.check2] **Modo offline no Premium:** funciona sem nenhuma conexão, desbloqueado por PIN ou biometria.
-- [hab.ialocal.check3] **Se adapta ao seu celular:** Metal no iPhone, Vulkan no Android, ajustando a inferência ao seu hardware.
-- [hab.ialocal.check4] **Com internet, fica melhor:** buscas e notícias usam a rede quando disponível — mas a inferência é local.
+- [hab.ialocal.h2] A IA que funciona<br>com e sem internet.
+- [hab.ialocal.lead] Sem internet, o Tupham resolve cálculos, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz clima, cotações e notícias na hora.
+- [hab.ialocal.check1] **Privacidade:** a IA pensa no seu celular; coletamos dados só pra melhorias e suas conversas não vão pra terceiros.
+- [hab.ialocal.check2] **Offline no Premium:** a única IA que funciona até sem conexão: no metrô, no avião, no sítio sem sinal.
+- [hab.ialocal.check3] **Leve e rápido:** roda bem em qualquer celular, sem travar.
+- [hab.ialocal.check4] **Sempre do seu lado:** com internet fica ainda melhor, mas nunca depende dela pra te ajudar.
 
 ### CTA final
 - [hab.cta.eyebrow] Uma habilidade pra cada dia
 - [hab.cta.h2] Tudo isso<br>num app só.
-- [hab.cta.lead] A IA do Brasil, no seu bolso — faz tudo, em português, e cada uso ajuda a manter a floresta em pé. Comece grátis hoje.
+- [hab.cta.lead] A IA do Brasil no seu bolso: faz tudo, em português, e cada uso ainda ajuda o planeta. Grátis e ilimitado.
 
 ### Imagens (alt)
 - [hab.alt.hero_back] Smart Chips do Tupham
-- [hab.alt.hero_front] Tela inicial do Tupham AI
-- [hab.alt.conversa_back] Resposta formatada em card no Tupham
+- [hab.alt.hero_front] Tela inicial do Tupham
+- [hab.alt.conversa_back] Resposta formatada no Tupham
 - [hab.alt.conversa_front] Card de notícias com fontes no Tupham
 - [hab.alt.documentos] Assistente de currículo do Tupham
 - [hab.alt.esportes] Jogo ao vivo no Tupham, lance a lance
-- [hab.alt.pesquisa_back] Painel do Turbinar com progresso ao vivo no Tupham
-- [hab.alt.pesquisa_front] Notícias agrupadas por evento com as fontes no Tupham
+- [hab.alt.pesquisa_back] Plano de estudos do Tupham
+- [hab.alt.pesquisa_front] Notícias agrupadas por evento no Tupham
 - [hab.alt.ialocal] Tupham funcionando offline no Premium
 
 ---
@@ -345,24 +341,24 @@
 ## 🌳 como-salvamos-o-mundo.html — Planeta
 
 ### Meta / SEO
-- [planeta.meta.title] Como salvamos o mundo — Tupham AI
+- [planeta.meta.title] Como salvamos o mundo — Tupham
 - [planeta.meta.description] Usar IA aqui não custa pro planeta, devolve. Cada uso do Tupham gera Verdis, a moeda verde, e vira impacto ambiental rastreável e auditável. Veja o passo a passo.
-- [planeta.meta.og_title] Como salvamos o mundo — Tupham 
+- [planeta.meta.og_title] Como salvamos o mundo — Tupham
 - [planeta.meta.og_description] Enquanto as IAs gringas queimam energia em grandes centros de processamento de dados, o Tupham roda no seu celular e transforma cada uso em impacto ambiental real.
 
 ### Hero
 - [planeta.hero.eyebrow] Como salvamos o mundo
 - [planeta.hero.h1] Usar IA aqui não custa<br>pro planeta. Devolve.
-- [planeta.hero.lead] Enquanto as IAs gringas queimam energia em datacenter, o Tupham roda no seu celular e transforma cada uso em impacto ambiental real — rastreável e auditável.
+- [planeta.hero.lead] Enquanto as IAs gringas queimam energia em grandes centros de processamento de dados, o Tupham roda no seu celular e transforma cada uso em impacto ambiental real, rastreável e auditável.
 - [planeta.hero.btn1] Ver o passo a passo
 - [planeta.hero.btn2] Ver a auditoria
 
 ### Passo a passo
 - [planeta.passo.eyebrow] O passo a passo
 - [planeta.passo.h2] Do toque na tela<br>à floresta em pé.
-- [planeta.passo.lead] Cinco passos simples. Você só usa o app do seu jeito — o impacto acontece junto, sem esforço extra.
+- [planeta.passo.lead] Cinco passos simples. Você só usa o app do seu jeito, o impacto acontece junto, sem esforço extra.
 - [planeta.passo.1.titulo] 1 · Você usa o Tupham
-- [planeta.passo.1.texto] Cada conversa, pesquisa e interação gera Verdis automaticamente. 
+- [planeta.passo.1.texto] Cada conversa, pesquisa e interação gera Verdis automaticamente.
 - [planeta.passo.2.titulo] 2 · Acompanhe seu impacto
 - [planeta.passo.2.texto] Na tela "Seu Impacto" você vê seus Verdis, seu nível verde e quanto falta pro próximo marco.
 - [planeta.passo.3.titulo] 3 · Acelere se quiser
@@ -385,7 +381,7 @@
 ### Verdis explicado
 - [planeta.verdis.eyebrow] Verdis explicado
 - [planeta.verdis.h2] A moeda verde<br>do Tupham.
-- [planeta.verdis.lead] Verdis são gerados automaticamente com o uso do app — e também desbloqueiam funções premium pra quem é gratuito. Quanto mais você usa, mais Verdis acumula.
+- [planeta.verdis.lead] Verdis são gerados automaticamente com o uso do app, e também desbloqueiam funções premium pra quem é gratuito. Quanto mais você usa, mais Verdis acumula.
 - [planeta.verdis.check1] **Vale de verdade:** pequeno por unidade, grande no acumulado da comunidade.
 - [planeta.verdis.check2] **Boas-vindas:** novos usuários já começam com um bônus de Verdis.
 - [planeta.verdis.check3] **Premium acumula mais:** um bom bônus de Verdis todo mês pra quem assina.
@@ -427,16 +423,16 @@
 ## 🔍 auditoria.html — Auditoria & Transparência
 
 ### Meta / SEO
-- [audit.meta.title] Auditoria & Transparência — Tupham 
+- [audit.meta.title] Auditoria &amp; Transparência — Tupham
 - [audit.meta.description] Transparência total: acompanhe como o compromisso ambiental do Tupham vira preservação real, com método, repasses auditados por terceiros independentes e prestação de contas pública.
-- [audit.meta.og_title] Auditoria & Transparência — Tupham 
+- [audit.meta.og_title] Auditoria &amp; Transparência — Tupham
 - [audit.meta.og_description] Acompanhe como o compromisso ambiental do Tupham vira preservação real, com método e prestação de contas pública.
 
 ### Hero
 - [audit.hero.backlink] ← Voltar
 - [audit.hero.eyebrow] Auditoria &amp; Transparência
 - [audit.hero.h1] Transparência<br>total.
-- [audit.hero.lead] Acompanhe como o compromisso ambiental do Tupham vira preservação real — com método, repasses auditados por terceiros independentes e prestação de contas pública.
+- [audit.hero.lead] Acompanhe como o compromisso ambiental do Tupham vira preservação real, com método, repasses auditados por terceiros independentes e prestação de contas pública.
 - [audit.hero.pill1] Repasses auditados
 - [audit.hero.pill2] Registro público
 - [audit.hero.pill3] Métricas verificadas
@@ -447,19 +443,19 @@
 - [audit.como.lead] Os **Créditos Verdes** conectam cada conversa no app a preservação ambiental concreta. Sem mistério, sem letra miúda.
 - [audit.como.1.tag] PASSO 1
 - [audit.como.1.titulo] Você usa o Tupham
-- [audit.como.1.texto] Cada conversa, pesquisa ou criação no app gera Créditos Verdes — sem esforço extra da sua parte.
+- [audit.como.1.texto] Cada conversa, pesquisa ou criação no app gera Créditos Verdes, sem esforço extra da sua parte.
 - [audit.como.2.tag] PASSO 2
 - [audit.como.2.titulo] Os créditos se acumulam na comunidade
 - [audit.como.2.texto] O uso de toda a base de usuários se soma e é consolidado em lote, formando um fundo coletivo destinado a causas ambientais.
 - [audit.como.3.tag] PASSO 3
 - [audit.como.3.titulo] Viram preservação real
-- [audit.como.3.texto] O lote é repassado a organizações verificadas e auditado por terceiros — virando árvores, mata preservada e CO₂ compensado.
+- [audit.como.3.texto] O lote é repassado a organizações verificadas e auditado por terceiros, virando árvores, mata preservada e CO₂ compensado.
 
 ### Nosso compromisso
 - [audit.compromisso.eyebrow] Nosso compromisso
-- [audit.compromisso.h2] Uma parcela <br>da receita vai pro planeta.
+- [audit.compromisso.h2] Uma parcela<br>da receita vai pro planeta.
 - [audit.compromisso.lead] Assumimos publicamente o compromisso de destinar **parte da nossa receita** a causas ambientais, sempre. Esse valor é consolidado em lote e auditado por terceiros independentes, e os resultados serão publicados aqui.
-- [audit.compromisso.nota] O app está em fase de lançamento. Este é um compromisso público: à medida que os primeiros repasses acontecerem, eles passam a aparecer no registro abaixo — com data, valor, destinatário e comprovante.
+- [audit.compromisso.nota] O app está em fase de lançamento. Este é um compromisso público: à medida que os primeiros repasses acontecerem, eles passam a aparecer no registro abaixo, com data, valor, destinatário e comprovante.
 - [audit.compromisso.pill1] Consolidado em lote
 - [audit.compromisso.pill2] Auditado por terceiros
 - [audit.compromisso.pill3] Publicado aqui
@@ -467,13 +463,13 @@
 ### Registro de doações
 - [audit.registro.eyebrow] Prestação de contas
 - [audit.registro.h2] Registro de doações.
-- [audit.registro.lead] Cada repasse aparece aqui com data, valor, destinatário e comprovante — público e conferível por qualquer pessoa.
+- [audit.registro.lead] Cada repasse aparece aqui com data, valor, destinatário e comprovante, público e conferível por qualquer pessoa.
 - [audit.registro.col1] Data
 - [audit.registro.col2] Valor
 - [audit.registro.col3] Destinatário
 - [audit.registro.col4] Comprovante
 - [audit.registro.empty.titulo] Em breve
-- [audit.registro.empty.texto] As primeiras doações serão publicadas aqui assim que o app for lançado e os primeiros repasses forem feitos. Volte para acompanhar — cada linha virá com comprovante.
+- [audit.registro.empty.texto] As primeiras doações serão publicadas aqui assim que o app for lançado e os primeiros repasses forem feitos. Volte para acompanhar, cada linha virá com comprovante.
 
 ### Metodologia
 - [audit.metodologia.eyebrow] Metodologia
@@ -487,10 +483,10 @@
 - [audit.metodologia.2.texto] Repasses trimestrais aos parceiros verificados, a partir do lote consolidado da comunidade. Ciclo regular, valores rastreáveis.
 - [audit.metodologia.3.tag] ETAPA 03
 - [audit.metodologia.3.titulo] Auditoria e relatórios
-- [audit.metodologia.3.texto] Cada repasse é auditado por terceiros independentes e publicado aqui, com comprovante — para que qualquer pessoa possa conferir.
+- [audit.metodologia.3.texto] Cada repasse é auditado por terceiros independentes e publicado aqui, com comprovante, para que qualquer pessoa possa conferir.
 - [audit.metodologia.4.tag] ETAPA 04
 - [audit.metodologia.4.titulo] Impacto mensurável
-- [audit.metodologia.4.texto] Cada parceiro reporta métricas — árvores plantadas, área preservada e CO₂ — verificadas de forma independente e publicadas para acompanhamento.
+- [audit.metodologia.4.texto] Cada parceiro reporta métricas (árvores plantadas, área preservada e CO₂), verificadas de forma independente e publicadas para acompanhamento.
 
 ### Parceiros de preservação
 - [audit.parceiros.eyebrow] Parceiros de preservação
@@ -499,18 +495,18 @@
 - [audit.parceiros.1.titulo] Certificação obrigatória
 - [audit.parceiros.1.texto] Só consideramos organizações com certificações ambientais reconhecidas e histórico documentado de atuação na preservação.
 - [audit.parceiros.2.titulo] Transparência financeira
-- [audit.parceiros.2.texto] O parceiro precisa prestar contas dos recursos que recebe, com relatórios abertos e rastreáveis — mesmo padrão que aplicamos a nós.
+- [audit.parceiros.2.texto] O parceiro precisa prestar contas dos recursos que recebe, com relatórios abertos e rastreáveis, mesmo padrão que aplicamos a nós.
 - [audit.parceiros.3.titulo] Impacto comprovado
 - [audit.parceiros.3.texto] Avaliamos resultados reais e mensuráveis em campo. Boas intenções não bastam: precisa de métrica e verificação.
 - [audit.parceiros.4.titulo] Parceiro em definição
-- [audit.parceiros.4.texto] Os parceiros estão sendo selecionados sob esses critérios. Cada organização confirmada aparecerá nesta página, com seu status — sem nomes antes da hora.
+- [audit.parceiros.4.texto] Os parceiros estão sendo selecionados sob esses critérios. Cada organização confirmada aparecerá nesta página, com seu status, sem nomes antes da hora.
 - [audit.parceiros.5.titulo] Status público
 - [audit.parceiros.5.texto] Em avaliação, confirmado ou ativo: o status de cada parceiro fica visível aqui, atualizado conforme os repasses avançam.
 
 ### CTA final
 - [audit.cta.eyebrow] Transparência de verdade
 - [audit.cta.h2] Usar IA aqui devolve<br>pro planeta.
-- [audit.cta.lead] Entenda o passo a passo dos Créditos Verdes — e comece a reflorestar a cada conversa.
+- [audit.cta.lead] Entenda o passo a passo dos Créditos Verdes e comece a reflorestar a cada conversa.
 - [audit.cta.btn] Como salvamos o mundo
 
 ---
@@ -519,14 +515,14 @@
 
 ### Meta / SEO
 - [planos.meta.title] Planos — Tupham · Grátis pra sempre ou Premium por R$ 14,90/mês
-- [planos.meta.description] A IA do Brasil cabe no orçamento brasileiro: plano gratuito completo, sustentado por anúncios, e Premium por R$ 14,90/mês ou R$ 139,90/ano. Sete vezes mais barato que as IAs gringas. Cancele quando quiser.
-- [planos.meta.og_title] Planos — Tupham AI
-- [planos.meta.og_description] Comece grátis. Premium quando quiser, por R$ 14,90/mês. A IA do Brasil que cabe no orçamento brasileiro.
+- [planos.meta.description] A IA do Brasil cabe no seu bolso: plano gratuito completo e ilimitado, sustentado por anúncios, e Premium por R$ 14,90/mês ou R$ 139,90/ano. Cancele quando quiser.
+- [planos.meta.og_title] Planos — Tupham
+- [planos.meta.og_description] Comece grátis. Premium quando quiser, por R$ 14,90/mês. A IA do Brasil que cabe no seu bolso.
 
 ### Hero
 - [planos.hero.eyebrow] Planos
 - [planos.hero.h1] Comece grátis.<br>Premium quando<br>quiser.
-- [planos.hero.lead] A IA do Brasil cabe no orçamento brasileiro: plano gratuito completo e Premium por **R$ 14,90/mês**.
+- [planos.hero.lead] A IA do Brasil é grátis e ilimitada. Quem quiser mais tem o Premium por **R$ 14,90/mês**.
 - [planos.hero.btn1] Ver os planos
 - [planos.hero.btn2] O que está incluso
 - [planos.hero.pill1] Grátis pra sempre
@@ -536,11 +532,11 @@
 ### Os dois planos
 - [planos.pricing.eyebrow] Os dois planos
 - [planos.pricing.h2] Escolha como quiser.<br>Comece sem cartão.
-- [planos.pricing.lead] O plano gratuito faz muita coisa. O Premium tira todos os limites e libera o modo offline completo.
+- [planos.pricing.lead] O plano gratuito faz muita coisa, grátis e ilimitado. O Premium tira todos os limites e libera o modo offline completo.
 - [planos.pricing.free.nome] Grátis
 - [planos.pricing.free.preco] R$ 0
 - [planos.pricing.free.sub] Pra sempre, sustentado por anúncios discretos.
-- [planos.pricing.free.feat1] Chat completo com IA local
+- [planos.pricing.free.feat1] Chat completo com IA
 - [planos.pricing.free.feat2] Esportes ao vivo &amp; bolão
 - [planos.pricing.free.feat3] Notícias e cards visuais
 - [planos.pricing.free.feat4] Gera Verdis e planta floresta
@@ -549,30 +545,30 @@
 - [planos.pricing.pro.badge] MAIS POPULAR
 - [planos.pricing.pro.nome] Premium
 - [planos.pricing.pro.preco] R$ 14,90/mês
-- [planos.pricing.pro.sub] ou R$ 139,90/ano — economia de ~22% (~R$ 11,66/mês).
+- [planos.pricing.pro.sub] ou R$ 139,90/ano. Você economiza.
 - [planos.pricing.pro.feat1] Tudo ilimitado
-- [planos.pricing.pro.feat2] Modo offline completo (PIN/biometria)
+- [planos.pricing.pro.feat2] Modo offline completo
 - [planos.pricing.pro.feat3] Zero anúncios
 - [planos.pricing.pro.feat4] Verdis todo mês
 - [planos.pricing.pro.feat5] Pesquisas e criações sem limite
 - [planos.pricing.pro.feat6] Suporte prioritário
 - [planos.pricing.pro.btn] Assinar Premium
-- [planos.pricing.nota] Trial grátis quando a conta é elegível. Restaurar compras a qualquer momento. **Cancele quando quiser**, sem multa.
+- [planos.pricing.nota] Trial grátis quando a conta é elegível. Restaure compras a qualquer momento. **Cancele quando quiser**, sem multa.
 
 ### Comparativo (vs gringas)
 - [planos.compare.eyebrow] A conta não fecha
-- [planos.compare.h2] Elas cobram R$ 105+.<br>O Tupham, R$ 14,90.
-- [planos.compare.lead] Sete vezes mais barato — e faz o que nenhuma delas faz.
+- [planos.compare.h2] Elas cobram muito.<br>O Tupham é grátis e ilimitado.
+- [planos.compare.lead] Muito mais barato, e faz o que nenhuma delas faz.
 - [planos.compare.them.who] IAs gringas
 - [planos.compare.them.price] R$ 105+/mês
-- [planos.compare.us.who] Tupham AI
-- [planos.compare.us.price] R$ 14,90/mês
+- [planos.compare.us.who] Tupham
+- [planos.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
 - [planos.compare.row1] Chat avançado
 - [planos.compare.row2.them] Pesquisa na web
 - [planos.compare.row2.us] Pesquisa com fontes
 - [planos.compare.row3] Roda no seu celular
 - [planos.compare.row4] Brasileirão &amp; bolão
-- [planos.compare.row5] Currículo &amp; PDF no padrão BR
+- [planos.compare.row5] Currículo &amp; PDFs
 - [planos.compare.row6] Parte da receita pro planeta
 - [planos.compare.footer] O ChatGPT Plus custa cerca de **7% do salário mínimo**. O Tupham Premium, cerca de **1%**.
 
@@ -583,7 +579,7 @@
 - [planos.incluso.col.recurso] Recurso
 - [planos.incluso.col.gratis] Grátis
 - [planos.incluso.col.premium] Premium
-- [planos.incluso.r1.nome] Chat com IA local
+- [planos.incluso.r1.nome] Chat com IA
 - [planos.incluso.r1.gratis] Incluso
 - [planos.incluso.r1.premium] Incluso
 - [planos.incluso.r2.nome] Esportes &amp; bolão
@@ -610,38 +606,38 @@
 - [planos.incluso.r9.nome] Suporte prioritário
 - [planos.incluso.r9.gratis] —
 - [planos.incluso.r9.premium] Incluso
-- [planos.incluso.nota] Tanto no Grátis quanto no Premium, a IA pensa dentro do seu aparelho.
+- [planos.incluso.nota] Tanto no Grátis quanto no Premium, a IA funciona com e sem internet.
 - [planos.incluso.nota_link] Como funciona a tecnologia
 
 ### FAQ
 - [planos.faq.eyebrow] Perguntas
 - [planos.faq.h2] Tira a dúvida.
 - [planos.faq.q1] O que é o Tupham?
-- [planos.faq.a1] É uma plataforma de IA brasileira que roda no seu celular. Num app só você tem chat, currículo e documentos, esportes ao vivo, bolão da Copa, pesquisa com fontes, música, plano de estudos e mais — tudo em português de verdade.
+- [planos.faq.a1] É a IA do Brasil, num app só: chat, currículo e documentos, esportes ao vivo, bolão com amigos, pesquisa com fontes, áudios, plano de estudos e muito mais. Tudo em português de verdade, grátis e ilimitado.
 - [planos.faq.q2] Precisa de internet?
-- [planos.faq.a2] O chat com IA roda no próprio aparelho. O modo offline completo, que funciona 100% sem conexão, é um recurso do plano Premium — desbloqueado com PIN ou biometria. Funções que dependem de dados em tempo real (notícias, esportes, busca) usam internet quando disponível.
+- [planos.faq.a2] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. O modo 100% offline é um recurso Premium, desbloqueado com PIN ou biometria. Funções que dependem de dados em tempo real (notícias, esportes, busca) usam internet quando disponível.
 - [planos.faq.q3] Quanto custa?
-- [planos.faq.a3] Tem um plano gratuito completo, sustentado por anúncios. O Premium custa R$ 14,90/mês ou R$ 139,90/ano (economia de ~22%, equivalente a ~R$ 11,66/mês) — cerca de sete vezes mais barato que as IAs gringas, que passam de R$ 105/mês.
+- [planos.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios. O Premium custa R$ 14,90/mês ou R$ 139,90/ano, com offline completo, zero anúncios e Verdis todo mês.
 - [planos.faq.q4] Como funciona o plano gratuito?
-- [planos.faq.a4] O plano Grátis é sustentado por anúncios discretos e pela economia de Verdis, a moeda verde do app — você gera Verdis usando o Tupham e os aplica em recursos como criação de áudio e design. O chat com IA local, esportes, bolão e notícias estão liberados, sem limite rígido por dia. Sua primeira pesquisa profunda também é gratuita.
+- [planos.faq.a4] O plano Grátis é completo e ilimitado, sustentado por anúncios discretos e pela economia de Verdis, a nossa moeda verde. Você gera Verdis usando o Tupham e aplica em recursos como criação de áudio e design. Chat, esportes, bolão e notícias estão liberados. Sua primeira pesquisa profunda também é gratuita.
 - [planos.faq.q5] O que é o modo offline?
-- [planos.faq.a5] É o recurso Premium que deixa a IA funcionar 100% sem internet — no metrô, no avião ou no sítio sem sinal. Você desbloqueia com PIN ou biometria e o modelo de linguagem responde direto no aparelho, via llama.cpp, usando a GPU do celular quando ela existe.
+- [planos.faq.a5] É o recurso Premium que deixa a IA funcionar 100% sem internet: no metrô, no avião ou no sítio sem sinal. Você desbloqueia com PIN ou biometria e a IA responde direto no seu celular.
 - [planos.faq.q6] Posso cancelar quando quiser?
 - [planos.faq.a6] Pode, sem multa. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja quando quiser. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.
 - [planos.faq.q7] Como o Tupham ajuda o planeta?
-- [planos.faq.a7] Cada uso gera Verdis, a moeda verde do app, e uma parte da nossa receita é destinada a causas ambientais auditadas por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
+- [planos.faq.a7] Cada uso gera Verdis, a nossa moeda verde, e uma parte da nossa receita é destinada a causas ambientais auditadas por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
 - [planos.faq.a7_link] Ver o passo a passo
 - [planos.faq.q8] Meus dados ficam seguros?
-- [planos.faq.a8] A IA raciocina dentro do seu aparelho — suas conversas não precisam sair do celular pra serem respondidas. Quando você usa busca ou notícias, só a consulta necessária vai para os serviços de pesquisa. Em caso de dúvida sobre dados, fale com privacidade@tupham.com.br.
+- [planos.faq.a8] A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias. Em caso de dúvida, fale com privacidade@tupham.com.br.
 - [planos.faq.q9] Em quais aparelhos funciona?
-- [planos.faq.a9] Funciona em iPhone e Android. O Tupham detecta o hardware do seu celular ao iniciar e se adapta a ele — usa a GPU quando há (Metal no iPhone, Vulkan no Android) e ajusta a inferência ao seu aparelho, do mais simples ao topo de linha.
+- [planos.faq.a9] Funciona em iPhone e Android. O Tupham se ajusta sozinho ao seu celular, do mais simples ao top de linha, pra rodar bem em qualquer aparelho.
 
 ### Empresa & contato
 - [planos.empresa.eyebrow] Empresa &amp; contato
 - [planos.empresa.h2] Gente de verdade,<br>aqui no Brasil.
 - [planos.empresa.lead] O Tupham é feito pela Graycat Corp, em Salvador. Precisou falar com a gente? É só escrever.
 - [planos.empresa.1.titulo] Quem faz
-- [planos.empresa.1.texto] Graycat Corp · Salvador, Bahia 🌴 — a empresa por trás do Tupham AI.
+- [planos.empresa.1.texto] Graycat Corp · Salvador, Bahia 🌴 — a empresa por trás do Tupham.
 - [planos.empresa.1.link] graycatcorp.com
 - [planos.empresa.2.titulo] Suporte
 - [planos.empresa.2.texto] Dúvidas, sugestões ou um problema no app? Fale direto com o time.
@@ -656,4 +652,11 @@
 - [planos.cta.lead] A IA do Brasil, no seu bolso, de graça pra sempre ou R$ 14,90 por mês.
 
 ### Imagens (alt)
-- [planos.alt.hero] Tela inicial do Tupham AI
+- [planos.alt.hero] Tela inicial do Tupham
+
+---
+
+## ⚠️ Nota de precisão (pra você confirmar)
+
+- **Esportes — Libertadores / Copa do Mundo:** marquei como destaque (pills e skill) seguindo a sua direção. No app de hoje, Libertadores/Copa do Brasil apareciam como referência cruzada e Copa do Mundo como placeholder. Se já está no roadmap, beleza; se não, a gente suaviza pra não prometer demais. Você decide.
+- **Bolão "permanente pra todas as categorias":** escrevi como "começa na Copa, em breve todos os campeonatos" (futuro), pra não afirmar que já existe hoje.
