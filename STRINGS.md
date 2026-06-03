@@ -260,12 +260,11 @@
 ### 02 · Documentos
 - [hab.documentos.eyebrow] Documentos
 - [hab.documentos.h2] Toda a papelada,<br>pronta no celular.
-- [hab.documentos.lead] Criar, editar, converter e analisar documentos direto no aparelho, em PDF e Word, sem marca-d'água, e sem mandar nada pra nuvem.
+- [hab.documentos.lead] Criar, editar e converter documentos direto no aparelho, em PDF e Word, sem marca-d'água, e sem mandar nada pra nuvem.
 - [hab.documentos.skill1] **Currículo:** assistente inteligente, diversos layouts.
 - [hab.documentos.skill2] **Modelos prontos:** contrato, recibo, procuração, declaração e mais.
 - [hab.documentos.skill3] **Editar PDF:** reorganizar, girar, dividir, apagar e adicionar páginas.
 - [hab.documentos.skill4] **Converter:** Word → PDF, PDF → Word editável e várias imagens num PDF.
-- [hab.documentos.skill5] **Analisar PDF:** mande um documento e tire suas dúvidas sobre ele.
 - [hab.documentos.skill6] **Privacidade &amp; biblioteca:** nada do conteúdo vai pra nuvem; seus arquivos ficam guardados no seu celular.
 - [hab.documentos.pill1] PDF + Word
 - [hab.documentos.pill2] Sem marca-d'água
