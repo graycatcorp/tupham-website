@@ -165,8 +165,6 @@
 - [index.compare.us.who] Tupham
 - [index.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
 - [index.compare.row1] Chat avançado
-- [index.compare.row2.them] Pesquisa na web
-- [index.compare.row2.us] Pesquisa com fontes
 - [index.compare.row3] Roda no seu celular
 - [index.compare.row4] Brasileirão &amp; bolão
 - [index.compare.row5] Currículo &amp; PDFs
@@ -564,8 +562,6 @@
 - [planos.compare.us.who] Tupham
 - [planos.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
 - [planos.compare.row1] Chat avançado
-- [planos.compare.row2.them] Pesquisa na web
-- [planos.compare.row2.us] Pesquisa com fontes
 - [planos.compare.row3] Roda no seu celular
 - [planos.compare.row4] Brasileirão &amp; bolão
 - [planos.compare.row5] Currículo &amp; PDFs
@@ -653,10 +649,3 @@
 
 ### Imagens (alt)
 - [planos.alt.hero] Tela inicial do Tupham
-
----
-
-## ⚠️ Nota de precisão (pra você confirmar)
-
-- **Esportes — Libertadores / Copa do Mundo:** marquei como destaque (pills e skill) seguindo a sua direção. No app de hoje, Libertadores/Copa do Brasil apareciam como referência cruzada e Copa do Mundo como placeholder. Se já está no roadmap, beleza; se não, a gente suaviza pra não prometer demais. Você decide.
-- **Bolão "permanente pra todas as categorias":** escrevi como "começa na Copa, em breve todos os campeonatos" (futuro), pra não afirmar que já existe hoje.
