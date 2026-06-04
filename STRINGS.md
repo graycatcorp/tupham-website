@@ -717,7 +717,7 @@
 - [ajuda.legal.doc3.titulo] EULA
 - [ajuda.legal.doc3.texto] A licença de uso do software para o usuário final.
 - [ajuda.legal.link] Ler documento
-- [ajuda.legal.tag] Em breve
+- [ajuda.legal.nota] Os documentos abrem em PDF, em uma nova aba.
 
 ### CTA final
 - [ajuda.cta.eyebrow] A gente tá aqui
