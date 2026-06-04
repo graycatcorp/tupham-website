@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central de Ajuda — Tupham · Suporte, contato e documentos</title>
+<meta name="description" content="Precisa de ajuda com o Tupham? Fale com o suporte em português, entre em contato com a gente para imprensa e parcerias, e consulte nossos documentos legais. Gente de verdade, do Brasil.">
+<meta name="theme-color" content="#6BC4E8">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Central de Ajuda — Tupham">
+<meta property="og:description" content="Suporte em português, contato para imprensa e parcerias, e os documentos legais do Tupham — num lugar só.">
+<meta property="og:image" content="assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/img/og.png">
+<link rel="icon" type="image/png" href="assets/img/brand/mascote-tupham.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tupham.css">
+<style>
+  /* scoped helpers — só com tokens existentes */
+  .helpsec{scroll-margin-top:90px}
+  .toc{display:flex;flex-wrap:wrap;gap:9px}
+  .toc a{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.3px;padding:8px 15px;border-radius:var(--r-pill);background:rgba(15,36,64,.06);border:1px solid rgba(15,36,64,.08);color:var(--ink-800);transition:transform .25s var(--ease),background .2s,color .2s}
+  .toc a:hover{transform:translateY(-2px);background:rgba(15,36,64,.1);color:var(--ink-900)}
+  .legal-card{display:flex;flex-direction:column;height:100%}
+  .legal-card .btn-link{margin-top:auto;padding-top:14px}
+  .mail-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ===== NAV (shared) ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-in">
+    <a href="index.html" class="nav-logo" aria-label="Tupham — início"><img src="assets/img/brand/logo-tupham.png" alt="Tupham"></a>
+    <div class="nav-links">
+      <a href="habilidades.html">Habilidades</a>
+      <a href="como-salvamos-o-mundo.html">Conheça nossa missão</a>
+      <a href="auditoria.html">Auditoria</a>
+      <a href="planos.html">Planos</a>
+    </div>
+    <div class="nav-right">
+      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobnav" id="mobnav">
+  <a href="habilidades.html">Habilidades<span class="arr">→</span></a>
+  <a href="como-salvamos-o-mundo.html">Conheça nossa missão<span class="arr">→</span></a>
+  <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
+  <a href="planos.html">Planos<span class="arr">→</span></a>
+  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+</div>
+
+<main>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="section bg-sky grain">
+  <div class="sec-orb glow--gold" style="width:360px;height:360px;top:-10%;right:-4%;opacity:.5"></div>
+  <div class="sec-orb glow--leaf" style="width:300px;height:300px;bottom:-14%;left:-6%;opacity:.45"></div>
+  <div class="wrap split split--wide-text">
+    <div data-reveal>
+      <span class="eyebrow">Suporte &amp; contato</span>
+      <h1 class="display mt-2" style="font-size:clamp(40px,7vw,78px)">Como podemos<br>te ajudar?</h1>
+      <p class="lead mt-3" style="color:var(--ink-800)">Tira dúvida com o suporte, fala com a gente sobre qualquer assunto ou consulta nossos documentos. Em português, com gente de verdade.</p>
+      <nav class="toc mt-4" aria-label="Seções">
+        <a href="#suporte"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--leaf-500)"></span> Suporte</a>
+        <a href="#contato"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--sky-500)"></span> Contato &amp; Imprensa</a>
+        <a href="#legal"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--gold-500)"></span> Documentos legais</a>
+      </nav>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--gold" style="width:300px;height:300px"></div>
+      <img src="assets/img/brand/mascote-tupham.png" alt="Mascote do Tupham" class="mascot mascot--float" style="width:clamp(210px,50vw,310px);position:relative;z-index:1">
+    </div>
+  </div>
+  <svg class="wave wave--bottom" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#FBFCFD" d="M0,64 C240,108 520,20 760,52 C1020,86 1240,28 1440,58 L1440,110 L0,110Z"/></svg>
+</section>
+
+<!-- ===== SUPORTE ===== -->
+<section class="section helpsec" id="suporte">
+  <div class="wrap split">
+    <div data-reveal>
+      <span class="eyebrow eyebrow--leaf">Suporte</span>
+      <h2 class="h-sec mt-2">Tá com alguma<br>dúvida?</h2>
+      <p class="lead mt-2">Manda pra gente que a gente resolve. Talvez sua resposta já esteja aqui embaixo, mas se não estiver, é só chamar o suporte.</p>
+      <ul class="checks mt-3">
+        <li><b>Em português de verdade:</b> sem robô que não entende o que você fala.</li>
+        <li><b>Gente de verdade:</b> a gente lê e responde cada mensagem.</li>
+        <li><b>Pra tudo do app:</b> conta, planos, offline, esportes, documentos.</li>
+      </ul>
+      <div class="mail-row mt-4">
+        <a href="mailto:suportebr@graycatcorp.com" class="btn btn-leaf btn-lg">Falar com o suporte</a>
+        <a href="mailto:suportebr@graycatcorp.com" class="btn-link btn-link--leaf">suportebr@graycatcorp.com</a>
+      </div>
+    </div>
+    <div class="split-visual" data-reveal>
+      <div class="glow glow--leaf" style="width:300px;height:300px;opacity:.5"></div>
+      <div class="card card--ink" style="width:min(420px,100%);position:relative;z-index:1">
+        <div class="card-ico card-ico--ink" style="background:rgba(255,255,255,.1)">💬</div>
+        <h3>Suporte do Tupham</h3>
+        <p>Conta o que aconteceu — quanto mais detalhe, mais rápido a gente resolve. Atendimento em português, de pessoas de verdade.</p>
+        <div class="stack gap-sm mt-3">
+          <span class="pill pill--light"><span class="dot"></span>App, conta e cobrança</span>
+          <span class="pill pill--light"><span class="dot" style="background:var(--sky-300)"></span>Bugs e sugestões</span>
+        </div>
+        <a href="mailto:suportebr@graycatcorp.com" class="btn btn-gold mt-4">suportebr@graycatcorp.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section bg-soft">
+  <div class="wrap wrap--narrow">
+    <div class="center mb-4" data-reveal>
+      <span class="eyebrow eyebrow--center">Perguntas frequentes</span>
+      <h2 class="h-sec mt-2">As dúvidas mais comuns.</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <div class="faq-item"><button class="faq-q">Precisa de internet?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Quanto custa?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios. <a href="planos.html" class="btn-link" style="display:inline-flex">Ver os planos</a></div></div></div>
+      <div class="faq-item"><button class="faq-q">Como cancelo a assinatura?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Sem multa, quando quiser. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Meus dados ficam seguros?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A IA raciocina dentro do seu celular — suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias e nada vai para terceiros. Dúvidas sobre dados? Fale com contato@graycatcorp.com.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO & INSTITUCIONAL ===== -->
+<section class="section helpsec" id="contato">
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center">Contato &amp; Imprensa</span>
+      <h2 class="h-sec mt-2">Fala com a gente.</h2>
+      <p class="lead mx-auto maxw-md mt-2">Imprensa, parcerias ou qualquer outro assunto institucional: é só mandar um e-mail que a gente responde.</p>
+    </div>
+    <div class="grid grid-3" data-reveal-stagger>
+      <div class="card">
+        <div class="card-ico card-ico--sky">📰</div>
+        <h3>Imprensa</h3>
+        <p>Pautas, materiais e tudo sobre o Tupham pra quem vai falar da gente.</p>
+        <a href="mailto:contato@graycatcorp.com?subject=Imprensa" class="btn-link mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card">
+        <div class="card-ico card-ico--gold">🤝</div>
+        <h3>Parcerias</h3>
+        <p>Quer construir junto com a gente? Chega mais que a conversa é boa.</p>
+        <a href="mailto:contato@graycatcorp.com?subject=Parceria" class="btn-link mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card">
+        <div class="card-ico card-ico--leaf">✉️</div>
+        <h3>Geral &amp; institucional</h3>
+        <p>Qualquer outro assunto que não seja suporte do app é por aqui.</p>
+        <a href="mailto:contato@graycatcorp.com" class="btn-link btn-link--leaf mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <p class="center muted mt-4" data-reveal style="font-size:14px">O Tupham é feito pela <a href="https://graycatcorp.com" target="_blank" rel="noopener" class="btn-link" style="display:inline-flex">Graycat Corp</a>, em Salvador, Bahia 🌴</p>
+  </div>
+</section>
+
+<!-- ===== DOCUMENTOS LEGAIS ===== -->
+<section class="section bg-ink grain on-dark helpsec" id="legal">
+  <div class="sec-orb glow--sky" style="width:420px;height:420px;top:-10%;left:-6%;opacity:.45"></div>
+  <div class="wrap">
+    <div class="center mb-5" data-reveal>
+      <span class="eyebrow eyebrow--center eyebrow--light">Documentos legais</span>
+      <h2 class="h-sec mt-2">O combinado,<br>no claro.</h2>
+      <p class="lead mx-auto maxw-md mt-2">As regras do jogo, de forma transparente. Consulte a qualquer momento.</p>
+    </div>
+    <div class="grid grid-3" data-reveal-stagger>
+      <div class="card legal-card">
+        <div class="card-ico card-ico--gold">🔒</div>
+        <h3>Política de Privacidade</h3>
+        <p>Como tratamos, protegemos e damos transparência aos seus dados.</p>
+        <a href="#" class="btn-link">Ler documento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card legal-card">
+        <div class="card-ico card-ico--gold">📜</div>
+        <h3>Termos de Uso</h3>
+        <p>As condições de uso do Tupham e do nosso serviço.</p>
+        <a href="#" class="btn-link">Ler documento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="card legal-card">
+        <div class="card-ico card-ico--gold">📄</div>
+        <h3>EULA</h3>
+        <p>A licença de uso do software para o usuário final.</p>
+        <a href="#" class="btn-link">Ler documento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <p class="center mt-4" data-reveal><span class="tag tag--gold">Em breve</span></p>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band grain" data-reveal>
+      <span class="eyebrow eyebrow--center">A gente tá aqui</span>
+      <h2 class="h-sec mt-2" style="font-size:clamp(34px,6vw,60px)">Não achou<br>o que precisava?</h2>
+      <p class="lead mx-auto maxw-sm mt-2" style="color:var(--ink-800)">Manda uma mensagem pro suporte que a gente te ajuda.</p>
+      <div class="btn-row mt-4" style="justify-content:center">
+        <a href="mailto:suportebr@graycatcorp.com" class="btn btn-ink btn-lg">Falar com o suporte <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (shared) ===== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/img/brand/logo-tupham.png" alt="Tupham">
+        <p>A IA do Brasil.</p>
+        <div class="store-row">
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 22" fill="currentColor"><path d="M14.94 18.45c-.85.82-1.78.69-2.68.3-.95-.4-1.82-.41-2.82 0-1.25.53-1.91.38-2.66-.3C2.43 13.9 3.06 7.3 7.88 7.06c1.17.06 1.99.64 2.68.7 1.03-.21 2.01-.81 3.1-.73 1.32.1 2.31.62 2.96 1.56-2.72 1.63-2.07 5.2.42 6.2-.5 1.3-1.14 2.6-2.21 3.56zM10.5 7.03c-.13-1.94 1.44-3.54 3.25-3.7.28 2.02-1.83 3.87-3.25 3.7z"/></svg><span><small>Baixe na</small><b>App Store</b></span></a>
+          <a href="planos.html" class="store-btn store-btn--light"><svg viewBox="0 0 18 20" fill="currentColor"><path d="M1.22.27L10.95 10 1.22 19.73C1.08 19.42 1 19.07 1 18.71V1.29C1 .93 1.08.58 1.22.27zM2.05 0L12.42 10.38 10.17 12.63.01 2.47C.26 1.24 1.03.34 2.05 0zM2.05 20L.01 17.53 10.17 7.37l2.25 2.25L2.05 20zM17 10c0 .65-.38 1.22-.94 1.5L13.1 10.95 10.95 10l2.15-1.95 1.96.45c.56.28.94.85.94 1.5z"/></svg><span><small>Baixe no</small><b>Google Play</b></span></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Produto</h4>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="habilidades.html#esportes">Esportes &amp; Bolões</a>
+        <a href="habilidades.html#documentos">Documentos</a>
+        <a href="habilidades.html#criacao">Criação</a>
+        <a href="habilidades.html#pesquisa">Estudos</a>
+        <a href="planos.html">Planos</a>
+      </div>
+      <div class="foot-col">
+        <h4>Planeta</h4>
+        <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
+        <a href="auditoria.html">Auditoria &amp; transparência</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="ajuda.html">Central de Ajuda</a>
+        <a href="ajuda.html#contato">Contato &amp; Imprensa</a>
+        <a href="https://graycatcorp.com" target="_blank" rel="noopener">Graycat Corp</a>
+        <a href="ajuda.html#legal">Termos, Privacidade &amp; EULA</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span data-year>2026</span> Tupham AI · Graycat Corp · Salvador, BA 🌴</p>
+      <div class="foot-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.14 0-3.51.01-4.75.07-2.43.11-3.66 1.32-3.77 3.77-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.11 2.43 1.32 3.66 3.77 3.77 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c2.43-.11 3.66-1.32 3.77-3.77.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.11-2.43-1.32-3.66-3.77-3.77-1.24-.06-1.61-.07-4.75-.07zM12 6.84A5.16 5.16 0 1 0 12 17.16 5.16 5.16 0 0 0 12 6.84zm0 8.5A3.34 3.34 0 1 1 12 8.66a3.34 3.34 0 0 1 0 6.68zm5.34-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.93a2.59 2.59 0 1 1-2.59-2.59c.27 0 .53.04.78.12v-3.28a5.86 5.86 0 0 0-.78-.05A5.87 5.87 0 1 0 15.62 16V9.4a7.43 7.43 0 0 0 4.34 1.39V7.6a4.28 4.28 0 0 1-3.36-1.78z"/></svg></a>
+        <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/tupham.js"></script>
+</body>
+</html>

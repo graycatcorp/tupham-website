@@ -65,10 +65,10 @@
 
 ### Rodapé — coluna Empresa
 - [shared.foot.empresa.titulo] Empresa
+- [shared.foot.empresa.ajuda] Central de Ajuda
+- [shared.foot.empresa.contato] Contato &amp; Imprensa
 - [shared.foot.empresa.graycat] Graycat Corp
-- [shared.foot.empresa.suporte] suporte@tupham.com.br
-- [shared.foot.empresa.termos] Termos de Uso
-- [shared.foot.empresa.privacidade] Privacidade
+- [shared.foot.empresa.legal] Termos, Privacidade &amp; EULA
 
 ### Rodapé — base
 - [shared.foot.copyright] © 2026 Tupham AI · Graycat Corp · Salvador, BA 🌴
@@ -623,7 +623,7 @@
 - [planos.faq.a7] Cada uso gera Verdis, a nossa moeda verde, e uma parte da nossa receita é destinada a causas ambientais auditadas por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
 - [planos.faq.a7_link] Ver o passo a passo
 - [planos.faq.q8] Meus dados ficam seguros?
-- [planos.faq.a8] A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias. Em caso de dúvida, fale com privacidade@tupham.com.br.
+- [planos.faq.a8] A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias. Em caso de dúvida, fale com contato@graycatcorp.com.
 - [planos.faq.q9] Em quais aparelhos funciona?
 - [planos.faq.a9] Funciona em iPhone e Android. O Tupham se ajusta sozinho ao seu celular, do mais simples ao top de linha, pra rodar bem em qualquer aparelho.
 
@@ -636,10 +636,10 @@
 - [planos.empresa.1.link] graycatcorp.com
 - [planos.empresa.2.titulo] Suporte
 - [planos.empresa.2.texto] Dúvidas, sugestões ou um problema no app? Fale direto com o time.
-- [planos.empresa.2.link] suporte@tupham.com.br
+- [planos.empresa.2.link] suportebr@graycatcorp.com
 - [planos.empresa.3.titulo] Privacidade &amp; dados
 - [planos.empresa.3.texto] Encarregado de dados (DPO) para assuntos de privacidade e LGPD.
-- [planos.empresa.3.link] privacidade@tupham.com.br
+- [planos.empresa.3.link] contato@graycatcorp.com
 
 ### CTA final
 - [planos.cta.eyebrow] Disponível em breve nas lojas
@@ -648,3 +648,82 @@
 
 ### Imagens (alt)
 - [planos.alt.hero] Tela inicial do Tupham
+
+---
+
+## 🆘 ajuda.html — Central de Ajuda
+
+### Meta / SEO
+- [ajuda.meta.title] Central de Ajuda — Tupham · Suporte, contato e documentos
+- [ajuda.meta.description] Precisa de ajuda com o Tupham? Fale com o suporte em português, entre em contato com a gente para imprensa e parcerias, e consulte nossos documentos legais. Gente de verdade, do Brasil.
+- [ajuda.meta.og_title] Central de Ajuda — Tupham
+- [ajuda.meta.og_description] Suporte em português, contato para imprensa e parcerias, e os documentos legais do Tupham — num lugar só.
+
+### Hero
+- [ajuda.hero.eyebrow] Suporte &amp; contato
+- [ajuda.hero.h1] Como podemos<br>te ajudar?
+- [ajuda.hero.lead] Tira dúvida com o suporte, fala com a gente sobre qualquer assunto ou consulta nossos documentos. Em português, com gente de verdade.
+- [ajuda.hero.toc1] Suporte
+- [ajuda.hero.toc2] Contato &amp; Imprensa
+- [ajuda.hero.toc3] Documentos legais
+
+### Suporte
+- [ajuda.suporte.eyebrow] Suporte
+- [ajuda.suporte.h2] Tá com alguma<br>dúvida?
+- [ajuda.suporte.lead] Manda pra gente que a gente resolve. Talvez sua resposta já esteja aqui embaixo, mas se não estiver, é só chamar o suporte.
+- [ajuda.suporte.check1] **Em português de verdade:** sem robô que não entende o que você fala.
+- [ajuda.suporte.check2] **Gente de verdade:** a gente lê e responde cada mensagem.
+- [ajuda.suporte.check3] **Pra tudo do app:** conta, planos, offline, esportes, documentos.
+- [ajuda.suporte.btn] Falar com o suporte
+- [ajuda.suporte.email] suportebr@graycatcorp.com
+- [ajuda.suporte.card.titulo] Suporte do Tupham
+- [ajuda.suporte.card.texto] Conta o que aconteceu — quanto mais detalhe, mais rápido a gente resolve. Atendimento em português, de pessoas de verdade.
+- [ajuda.suporte.card.pill1] App, conta e cobrança
+- [ajuda.suporte.card.pill2] Bugs e sugestões
+
+### FAQ
+- [ajuda.faq.eyebrow] Perguntas frequentes
+- [ajuda.faq.h2] As dúvidas mais comuns.
+- [ajuda.faq.q1] Precisa de internet?
+- [ajuda.faq.a1] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.
+- [ajuda.faq.q2] Quanto custa?
+- [ajuda.faq.a2] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
+- [ajuda.faq.q3] Como cancelo a assinatura?
+- [ajuda.faq.a3] Sem multa, quando quiser. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.
+- [ajuda.faq.q4] Meus dados ficam seguros?
+- [ajuda.faq.a4] A IA raciocina dentro do seu celular — suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias e nada vai para terceiros. Dúvidas sobre dados? Fale com contato@graycatcorp.com.
+
+### Contato & Imprensa
+- [ajuda.contato.eyebrow] Contato &amp; Imprensa
+- [ajuda.contato.h2] Fala com a gente.
+- [ajuda.contato.lead] Imprensa, parcerias ou qualquer outro assunto institucional: é só mandar um e-mail que a gente responde.
+- [ajuda.contato.imprensa.titulo] Imprensa
+- [ajuda.contato.imprensa.texto] Pautas, materiais e tudo sobre o Tupham pra quem vai falar da gente.
+- [ajuda.contato.parcerias.titulo] Parcerias
+- [ajuda.contato.parcerias.texto] Quer construir junto com a gente? Chega mais que a conversa é boa.
+- [ajuda.contato.geral.titulo] Geral &amp; institucional
+- [ajuda.contato.geral.texto] Qualquer outro assunto que não seja suporte do app é por aqui.
+- [ajuda.contato.email] contato@graycatcorp.com
+- [ajuda.contato.nota] O Tupham é feito pela Graycat Corp, em Salvador, Bahia 🌴
+
+### Documentos legais
+- [ajuda.legal.eyebrow] Documentos legais
+- [ajuda.legal.h2] O combinado,<br>no claro.
+- [ajuda.legal.lead] As regras do jogo, de forma transparente. Consulte a qualquer momento.
+- [ajuda.legal.doc1.titulo] Política de Privacidade
+- [ajuda.legal.doc1.texto] Como tratamos, protegemos e damos transparência aos seus dados.
+- [ajuda.legal.doc2.titulo] Termos de Uso
+- [ajuda.legal.doc2.texto] As condições de uso do Tupham e do nosso serviço.
+- [ajuda.legal.doc3.titulo] EULA
+- [ajuda.legal.doc3.texto] A licença de uso do software para o usuário final.
+- [ajuda.legal.link] Ler documento
+- [ajuda.legal.tag] Em breve
+
+### CTA final
+- [ajuda.cta.eyebrow] A gente tá aqui
+- [ajuda.cta.h2] Não achou<br>o que precisava?
+- [ajuda.cta.lead] Manda uma mensagem pro suporte que a gente te ajuda.
+- [ajuda.cta.btn] Falar com o suporte
+
+### Imagens (alt)
+- [ajuda.alt.mascote] Mascote do Tupham
