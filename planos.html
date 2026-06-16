@@ -19,21 +19,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tupham.css">
-<style>
-  /* scoped tweaks — feature-comparison table built only from existing tokens */
-  .feat-table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden}
-  .feat-table th,.feat-table td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line-soft);font-size:14.5px}
-  .feat-table thead th{font-family:var(--font-display);font-weight:700;color:var(--ink-900);font-size:15px;background:var(--bg-soft);letter-spacing:-.01em}
-  .feat-table tbody td:first-child{font-weight:700;color:var(--ink-900)}
-  .feat-table td.col-plan{text-align:center;color:var(--tx-2);width:30%}
-  .feat-table th.col-plan{text-align:center}
-  .feat-table tbody tr:last-child td{border-bottom:none}
-  .feat-table tbody tr:hover td{background:var(--line-soft)}
-  .feat-y{color:var(--yes);font-weight:700}
-  .feat-n{color:var(--tx-3);font-weight:600}
-  .feat-table .col-pro{background:rgba(107,196,232,.06)}
-  @media(max-width:680px){.feat-table th,.feat-table td{padding:12px 11px;font-size:13px}}
-</style>
 </head>
 <body>
 <div class="progress" id="progress"></div>
@@ -46,10 +31,11 @@
       <a href="habilidades.html">Habilidades</a>
       <a href="como-salvamos-o-mundo.html">Conheça nossa missão</a>
       <a href="auditoria.html">Auditoria</a>
-      <a href="planos.html">Planos</a>
+      <a href="planos.html" class="active">Planos</a>
+      <a href="ajuda.html">Ajuda</a>
     </div>
     <div class="nav-right">
-      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <a href="index.html#baixar" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -59,7 +45,8 @@
   <a href="como-salvamos-o-mundo.html">Conheça nossa missão<span class="arr">→</span></a>
   <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
   <a href="planos.html">Planos<span class="arr">→</span></a>
-  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+  <a href="ajuda.html">Ajuda<span class="arr">→</span></a>
+  <a href="index.html#baixar" class="btn btn-gold">Baixar app</a>
 </div>
 
 <main>
@@ -75,7 +62,6 @@
       <p class="lead mt-3" style="color:var(--ink-800);max-width:34ch">A IA do Brasil é grátis e ilimitada. Quem quiser mais tem o Premium por <b>R$ 14,90/mês</b>.</p>
       <div class="btn-row mt-4">
         <a href="#planos" class="btn btn-ink btn-lg">Ver os planos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="#incluso" class="btn btn-ghost btn-lg">O que está incluso</a>
       </div>
       <div class="pill-row mt-3">
         <span class="pill"><span class="dot"></span>Grátis pra sempre</span>
@@ -96,8 +82,8 @@
   <div class="wrap">
     <div class="center mb-5" data-reveal>
       <span class="eyebrow eyebrow--center">Os dois planos</span>
-      <h2 class="h-sec mt-2">Escolha como quiser.<br>Comece sem cartão.</h2>
-      <p class="lead mx-auto maxw-md mt-2">O plano gratuito faz muita coisa, grátis e ilimitado. O Premium tira todos os limites e libera o modo offline completo.</p>
+      <h2 class="h-sec mt-2">Escolha como quiser.<br>Comece hoje.</h2>
+      <p class="lead mx-auto maxw-md mt-2">O plano gratuito faz muita coisa, grátis e ilimitado. O Premium libera o modo offline completo, tira os anúncios e ainda rende Verdis todo mês.</p>
     </div>
     <div class="price-grid" data-reveal>
       <div class="price-card">
@@ -167,77 +153,7 @@
         </ul>
       </div>
     </div>
-    <p class="center lead mt-5" data-reveal style="color:rgba(255,255,255,.78)">O ChatGPT Plus custa cerca de <b style="color:#fff">7% do salário mínimo</b>. O Tupham Premium, cerca de <b style="color:var(--gold-400)">1%</b>.</p>
-  </div>
-</section>
-
-<!-- ===== O QUE ESTÁ INCLUSO ===== -->
-<section class="section bg-soft" id="incluso">
-  <div class="wrap">
-    <div class="center mb-5" data-reveal>
-      <span class="eyebrow eyebrow--center">O que está incluso</span>
-      <h2 class="h-sec mt-2">Tudo do Grátis.<br>Sem limites no Premium.</h2>
-      <p class="lead mx-auto maxw-md mt-2">O essencial já vem no plano gratuito. O Premium tira os limites e libera o que mais pesa: offline, zero anúncios e Verdis garantidos.</p>
-    </div>
-    <div data-reveal style="overflow-x:auto">
-      <table class="feat-table">
-        <thead>
-          <tr>
-            <th>Recurso</th>
-            <th class="col-plan">Grátis</th>
-            <th class="col-plan col-pro">Premium</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Chat com IA</td>
-            <td class="col-plan"><span class="feat-y">Incluso</span></td>
-            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
-          </tr>
-          <tr>
-            <td>Esportes &amp; bolão</td>
-            <td class="col-plan"><span class="feat-y">Incluso</span></td>
-            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
-          </tr>
-          <tr>
-            <td>Notícias &amp; cards visuais</td>
-            <td class="col-plan"><span class="feat-y">Incluso</span></td>
-            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
-          </tr>
-          <tr>
-            <td>Pesquisa profunda</td>
-            <td class="col-plan">1ª grátis</td>
-            <td class="col-plan col-pro"><span class="feat-y">Ilimitada</span></td>
-          </tr>
-          <tr>
-            <td>Criação de áudio &amp; design</td>
-            <td class="col-plan">Via Verdis / anúncios</td>
-            <td class="col-plan col-pro"><span class="feat-y">Livre</span></td>
-          </tr>
-          <tr>
-            <td>Modo offline (PIN/biometria)</td>
-            <td class="col-plan"><span class="feat-n">—</span></td>
-            <td class="col-plan col-pro"><span class="feat-y">Completo</span></td>
-          </tr>
-          <tr>
-            <td>Anúncios</td>
-            <td class="col-plan">Discretos</td>
-            <td class="col-plan col-pro"><span class="feat-y">Zero</span></td>
-          </tr>
-          <tr>
-            <td>Verdis por mês</td>
-            <td class="col-plan">Gera usando</td>
-            <td class="col-plan col-pro"><span class="feat-y">Bônus garantido</span></td>
-          </tr>
-          <tr>
-            <td>Suporte prioritário</td>
-            <td class="col-plan"><span class="feat-n">—</span></td>
-            <td class="col-plan col-pro"><span class="feat-y">Incluso</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="center muted mt-4" data-reveal style="font-size:14px">Tanto no Grátis quanto no Premium, a IA funciona com e sem internet. <a href="habilidades.html#ia-local" class="btn-link" style="display:inline-flex">Como funciona a tecnologia</a></p>
+    <p class="center lead mt-5" data-reveal style="color:rgba(255,255,255,.78)">As gringas custam cerca de <b style="color:#fff">7% do salário mínimo</b>. O Tupham Premium, cerca de <b style="color:var(--gold-400)">1%</b>. E ainda sobra para ajudarmos o planeta.</p>
   </div>
 </section>
 
@@ -335,7 +251,7 @@
         <h4>Planeta</h4>
         <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
         <a href="auditoria.html">Auditoria &amp; transparência</a>
-        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Verdis</a>
       </div>
       <div class="foot-col">
         <h4>Empresa</h4>
