@@ -458,3 +458,14 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .hide-mob{display:none}@media(min-width:768px){.hide-mob{display:initial}}
 .show-mob{display:initial}@media(min-width:768px){.show-mob{display:none}}
 .img-frame{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-lg);border:1px solid var(--line)}
+
+/* ---------- Hand-drawn icons (verde floresta) ---------- */
+.card-ico svg,.e-ico svg,.journey-dot svg,.fi svg,.vi svg{display:block;color:#1F5F3A}
+.card-ico svg{width:30px;height:30px}
+.e-ico svg{width:36px;height:36px;margin-left:auto;margin-right:auto}
+.journey-dot svg{width:27px;height:27px}
+.fi svg{width:23px;height:23px}
+.vi svg{width:22px;height:22px}
+.card--ink .card-ico svg{color:var(--leaf-300)}
+.ladder .lv .e{display:inline-flex}
+.ladder .lv .e svg{width:18px;height:18px;display:block;color:#1F5F3A}
