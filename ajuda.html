@@ -28,6 +28,17 @@
   .legal-card{display:flex;flex-direction:column;height:100%}
   .legal-card .btn-link{margin-top:auto;padding-top:14px}
   .mail-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  /* suporte — bullets em tiles com ícone */
+  .flist{display:grid;gap:12px;margin-top:8px}
+  .flist li{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px;box-shadow:var(--sh-xs);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s}
+  .flist li:hover{transform:translateY(-2px);box-shadow:var(--sh-sm);border-color:var(--leaf-300)}
+  .flist .fi{flex-shrink:0;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:21px;background:var(--leaf-100)}
+  .flist .ft{font-size:14.5px;color:var(--tx-2);line-height:1.5}
+  .flist .ft b{display:block;font-family:var(--font-display);font-weight:700;font-size:15.5px;color:var(--ink-900);letter-spacing:-.01em;margin-bottom:2px}
+  /* contato/legal — cards com topo em destaque + tag PDF */
+  .icard{position:relative;overflow:hidden}
+  .icard::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--sky-400),var(--leaf-400))}
+  .pdf-tag{position:absolute;top:18px;right:18px;font-family:var(--font-mono);font-size:10px;font-weight:700;letter-spacing:1px;color:var(--gold-600);background:var(--gold-200);padding:4px 9px;border-radius:var(--r-pill)}
 </style>
 </head>
 <body>
@@ -42,9 +53,10 @@
       <a href="como-salvamos-o-mundo.html">Conheça nossa missão</a>
       <a href="auditoria.html">Auditoria</a>
       <a href="planos.html">Planos</a>
+      <a href="ajuda.html" class="active">Ajuda</a>
     </div>
     <div class="nav-right">
-      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <a href="index.html#baixar" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -54,7 +66,8 @@
   <a href="como-salvamos-o-mundo.html">Conheça nossa missão<span class="arr">→</span></a>
   <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
   <a href="planos.html">Planos<span class="arr">→</span></a>
-  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+  <a href="ajuda.html">Ajuda<span class="arr">→</span></a>
+  <a href="index.html#baixar" class="btn btn-gold">Baixar app</a>
 </div>
 
 <main>
@@ -89,10 +102,10 @@
       <span class="eyebrow eyebrow--leaf">Suporte</span>
       <h2 class="h-sec mt-2">Tá com alguma<br>dúvida?</h2>
       <p class="lead mt-2">Manda pra gente que a gente resolve. Talvez sua resposta já esteja aqui embaixo, mas se não estiver, é só chamar o suporte.</p>
-      <ul class="checks mt-3">
-        <li><b>Em português de verdade:</b> sem robô que não entende o que você fala.</li>
-        <li><b>Gente de verdade:</b> a gente lê e responde cada mensagem.</li>
-        <li><b>Pra tudo do app:</b> conta, planos, offline, esportes, documentos.</li>
+      <ul class="flist mt-3">
+        <li><span class="fi">🇧🇷</span><span class="ft"><b>Em português de verdade</b>Sem robô que não entende o que você fala.</span></li>
+        <li><span class="fi">💬</span><span class="ft"><b>Gente de verdade</b>A gente lê e responde cada mensagem.</span></li>
+        <li><span class="fi">🛠️</span><span class="ft"><b>Pra tudo do app</b>Conta, planos, offline, esportes, documentos.</span></li>
       </ul>
       <div class="mail-row mt-4">
         <a href="mailto:suportebr@graycatcorp.com" class="btn btn-leaf btn-lg">Falar com o suporte</a>
@@ -126,7 +139,7 @@
       <div class="faq-item"><button class="faq-q">Precisa de internet?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.</div></div></div>
       <div class="faq-item"><button class="faq-q">Quanto custa?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios. <a href="planos.html" class="btn-link" style="display:inline-flex">Ver os planos</a></div></div></div>
       <div class="faq-item"><button class="faq-q">Como cancelo a assinatura?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Sem multa, quando quiser. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Meus dados ficam seguros?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A IA raciocina dentro do seu celular — suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias e nada vai para terceiros. Dúvidas sobre dados? Fale com contato@graycatcorp.com.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Meus dados ficam seguros?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias. Dúvidas sobre dados? Fale com contato@graycatcorp.com.</div></div></div>
     </div>
   </div>
 </section>
@@ -140,23 +153,23 @@
       <p class="lead mx-auto maxw-md mt-2">Imprensa, parcerias ou qualquer outro assunto institucional: é só mandar um e-mail que a gente responde.</p>
     </div>
     <div class="grid grid-3" data-reveal-stagger>
-      <div class="card">
+      <div class="card icard legal-card">
         <div class="card-ico card-ico--sky">📰</div>
         <h3>Imprensa</h3>
         <p>Pautas, materiais e tudo sobre o Tupham pra quem vai falar da gente.</p>
-        <a href="mailto:contato@graycatcorp.com?subject=Imprensa" class="btn-link mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="mailto:contato@graycatcorp.com?subject=Imprensa" class="btn-link">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="card">
+      <div class="card icard legal-card">
         <div class="card-ico card-ico--gold">🤝</div>
         <h3>Parcerias</h3>
         <p>Quer construir junto com a gente? Chega mais que a conversa é boa.</p>
-        <a href="mailto:contato@graycatcorp.com?subject=Parceria" class="btn-link mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="mailto:contato@graycatcorp.com?subject=Parceria" class="btn-link">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="card">
+      <div class="card icard legal-card">
         <div class="card-ico card-ico--leaf">✉️</div>
         <h3>Geral &amp; institucional</h3>
         <p>Qualquer outro assunto que não seja suporte do app é por aqui.</p>
-        <a href="mailto:contato@graycatcorp.com" class="btn-link btn-link--leaf mt-2">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="mailto:contato@graycatcorp.com" class="btn-link btn-link--leaf">contato@graycatcorp.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <p class="center muted mt-4" data-reveal style="font-size:14px">O Tupham é feito pela <a href="https://graycatcorp.com" target="_blank" rel="noopener" class="btn-link" style="display:inline-flex">Graycat Corp</a>, em Salvador, Bahia 🌴</p>
@@ -173,19 +186,22 @@
       <p class="lead mx-auto maxw-md mt-2">As regras do jogo, de forma transparente. Consulte a qualquer momento.</p>
     </div>
     <div class="grid grid-3" data-reveal-stagger>
-      <div class="card legal-card">
+      <div class="card icard legal-card">
+        <span class="pdf-tag">PDF</span>
         <div class="card-ico card-ico--gold">🔒</div>
         <h3>Política de Privacidade</h3>
         <p>Como tratamos, protegemos e damos transparência aos seus dados.</p>
         <a href="assets/legal/politica-de-privacidade.pdf" target="_blank" rel="noopener" class="btn-link">Ler documento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="card legal-card">
+      <div class="card icard legal-card">
+        <span class="pdf-tag">PDF</span>
         <div class="card-ico card-ico--gold">📜</div>
         <h3>Termos de Uso</h3>
         <p>As condições de uso do Tupham e do nosso serviço.</p>
         <a href="assets/legal/termos-de-uso.pdf" target="_blank" rel="noopener" class="btn-link">Ler documento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="card legal-card">
+      <div class="card icard legal-card">
+        <span class="pdf-tag">PDF</span>
         <div class="card-ico card-ico--gold">📄</div>
         <h3>EULA</h3>
         <p>A licença de uso do software para o usuário final.</p>
@@ -237,7 +253,7 @@
         <h4>Planeta</h4>
         <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
         <a href="auditoria.html">Auditoria &amp; transparência</a>
-        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Verdis</a>
       </div>
       <div class="foot-col">
         <h4>Empresa</h4>

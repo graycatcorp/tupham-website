@@ -20,8 +20,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tupham.css">
 <style>
-  .backlink{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12.5px;font-weight:600;letter-spacing:.5px;color:var(--tx-2);padding:7px 14px;border-radius:var(--r-pill);background:rgba(15,36,64,.05);border:1px solid rgba(15,36,64,.08);transition:transform .25s var(--ease),background .2s,color .2s}
-  .backlink:hover{transform:translateX(-3px);background:rgba(15,36,64,.09);color:var(--ink-900)}
+  .trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .trust span{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:14px;letter-spacing:-.01em;color:var(--ink-800);padding:9px 18px 9px 10px;border-radius:var(--r-pill);background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh-xs);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s}
+  .trust span:hover{transform:translateY(-2px);box-shadow:var(--sh-sm);border-color:var(--leaf-300)}
+  .trust span i{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--leaf-100);display:inline-flex;align-items:center;justify-content:center}
+  .trust span i svg{width:13px;height:13px;color:var(--leaf-600)}
   .ledger{width:100%;border-collapse:separate;border-spacing:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-sm)}
   .ledger thead th{font-family:var(--font-mono);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx-3);text-align:left;padding:18px 22px;background:var(--bg-soft);border-bottom:1px solid var(--line)}
   .ledger tbody td{padding:22px;color:var(--tx-2);font-size:14.5px}
@@ -42,11 +45,12 @@
     <div class="nav-links">
       <a href="habilidades.html">Habilidades</a>
       <a href="como-salvamos-o-mundo.html">Conheça nossa missão</a>
-      <a href="auditoria.html">Auditoria</a>
+      <a href="auditoria.html" class="active">Auditoria</a>
       <a href="planos.html">Planos</a>
+      <a href="ajuda.html">Ajuda</a>
     </div>
     <div class="nav-right">
-      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <a href="index.html#baixar" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -56,7 +60,8 @@
   <a href="como-salvamos-o-mundo.html">Conheça nossa missão<span class="arr">→</span></a>
   <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
   <a href="planos.html">Planos<span class="arr">→</span></a>
-  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+  <a href="ajuda.html">Ajuda<span class="arr">→</span></a>
+  <a href="index.html#baixar" class="btn btn-gold">Baixar app</a>
 </div>
 
 <main>
@@ -65,16 +70,13 @@
 <section class="section bg-leaf-soft" style="padding-top:calc(var(--nav-h) + 56px)">
   <div class="sec-orb glow--leaf" style="width:380px;height:380px;top:-8%;right:-6%;opacity:.5"></div>
   <div class="wrap wrap--narrow center load">
-    <div style="display:flex;justify-content:center;margin-bottom:22px">
-      <a href="como-salvamos-o-mundo.html" class="backlink">← Voltar</a>
-    </div>
     <span class="eyebrow eyebrow--center eyebrow--leaf">Auditoria &amp; Transparência</span>
     <h1 class="display mt-2">Transparência<br>total.</h1>
-    <p class="lead mx-auto maxw-md mt-3">Acompanhe como o compromisso ambiental do Tupham vira preservação real — com método, repasses auditados por terceiros independentes e prestação de contas pública.</p>
-    <div class="pill-row mt-4" style="justify-content:center">
-      <span class="pill"><span class="dot"></span>Repasses auditados</span>
-      <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Registro público</span>
-      <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>Métricas verificadas</span>
+    <p class="lead mx-auto maxw-md mt-3">Acompanhe como o compromisso ambiental do Tupham vira preservação real, com método, repasses auditados por terceiros independentes e prestação de contas pública.</p>
+    <div class="trust mt-4">
+      <span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Repasses auditados</span>
+      <span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Registro público</span>
+      <span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></i>Métricas verificadas</span>
     </div>
   </div>
 </section>
@@ -85,19 +87,19 @@
     <div class="center mb-5" data-reveal>
       <span class="eyebrow eyebrow--center">Como funciona</span>
       <h2 class="h-sec mt-2">Do seu uso à floresta<br>em pé, em três passos.</h2>
-      <p class="lead mx-auto maxw-md mt-2">Os <b class="leaf-ink">Créditos Verdes</b> conectam cada conversa no app a preservação ambiental concreta. Sem mistério, sem letra miúda.</p>
+      <p class="lead mx-auto maxw-md mt-2">Os <b class="leaf-ink">Verdis</b> conectam cada conversa no app a preservação ambiental concreta. Sem mistério, sem letra miúda.</p>
     </div>
     <div class="equiv" data-reveal-stagger>
       <div class="equiv-card">
         <div class="e-ico">📱</div>
         <div class="e-num">PASSO 1</div>
         <div class="e-eq">Você usa o Tupham</div>
-        <p class="muted mt-1" style="font-size:14px;line-height:1.55">Cada conversa, pesquisa ou criação no app gera Créditos Verdes, sem esforço extra da sua parte.</p>
+        <p class="muted mt-1" style="font-size:14px;line-height:1.55">Cada conversa, pesquisa ou criação no app gera Verdis, sem esforço extra da sua parte.</p>
       </div>
       <div class="equiv-card">
         <div class="e-ico">🌍</div>
         <div class="e-num">PASSO 2</div>
-        <div class="e-eq">Os créditos se acumulam na comunidade</div>
+        <div class="e-eq">Os Verdis se acumulam na comunidade</div>
         <p class="muted mt-1" style="font-size:14px;line-height:1.55">O uso de toda a base de usuários se soma e é consolidado em lote, formando um fundo coletivo destinado a causas ambientais.</p>
       </div>
       <div class="equiv-card">
@@ -237,7 +239,7 @@
     <div class="cta-band cta-band--leaf grain on-dark" data-reveal>
       <span class="eyebrow eyebrow--center eyebrow--light">Transparência de verdade</span>
       <h2 class="h-sec mt-2" style="color:#fff;font-size:clamp(34px,6vw,60px)">Usar IA aqui devolve<br>pro planeta.</h2>
-      <p class="lead mx-auto maxw-sm mt-2" style="color:rgba(255,255,255,.82)">Entenda o passo a passo dos Créditos Verdes e comece a reflorestar a cada conversa.</p>
+      <p class="lead mx-auto maxw-sm mt-2" style="color:rgba(255,255,255,.82)">Entenda o passo a passo dos Verdis e comece a reflorestar a cada conversa.</p>
       <div class="btn-row mt-4" style="justify-content:center">
         <a href="como-salvamos-o-mundo.html" class="btn btn-white btn-lg">Como salvamos o mundo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
@@ -276,7 +278,7 @@
         <h4>Planeta</h4>
         <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
         <a href="auditoria.html">Auditoria &amp; transparência</a>
-        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Verdis</a>
       </div>
       <div class="foot-col">
         <h4>Empresa</h4>

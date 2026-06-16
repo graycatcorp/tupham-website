@@ -22,10 +22,22 @@
 <style>
   /* scoped helpers — built only from existing tokens */
   .skill-sec{scroll-margin-top:90px}
-  .toc{display:flex;flex-wrap:wrap;gap:9px}
-  .toc a{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.3px;padding:8px 15px;border-radius:var(--r-pill);background:rgba(15,36,64,.06);border:1px solid rgba(15,36,64,.08);color:var(--ink-800);transition:transform .25s var(--ease),background .2s,color .2s}
-  .toc a:hover{transform:translateY(-2px);background:rgba(15,36,64,.1);color:var(--ink-900)}
-  .toc a .n{font-weight:700;color:var(--sky-600)}
+  /* TOC como tiles */
+  .toc{display:flex;flex-wrap:wrap;gap:10px}
+  .toc a{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-body);font-size:14px;font-weight:700;letter-spacing:-.01em;padding:9px 16px 9px 9px;border-radius:14px;background:var(--surface);border:1px solid var(--line);color:var(--ink-800);box-shadow:var(--sh-xs);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s,color .2s}
+  .toc a:hover{transform:translateY(-3px);box-shadow:var(--sh-sm);border-color:var(--sky-300);color:var(--ink-900)}
+  .toc a .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:9px;background:var(--sky-100);color:var(--sky-600);font-family:var(--font-mono);font-weight:700;font-size:12px}
+  .toc a:hover .n{background:var(--sky-300);color:var(--ink-900)}
+  /* feature list — bullets em tiles com ícone */
+  .flist{display:grid;gap:12px;margin-top:8px}
+  @media(min-width:560px){.flist--2{grid-template-columns:1fr 1fr}}
+  .flist li{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px;box-shadow:var(--sh-xs);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s}
+  .flist li:hover{transform:translateY(-2px);box-shadow:var(--sh-sm);border-color:var(--sky-200)}
+  .flist .fi{flex-shrink:0;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:21px;background:var(--sky-100)}
+  .flist .ft{font-size:14.5px;color:var(--tx-2);line-height:1.5}
+  .flist .ft b{display:block;font-family:var(--font-display);font-weight:700;font-size:15.5px;color:var(--ink-900);letter-spacing:-.01em;margin-bottom:2px}
+  .flist--leaf .fi{background:var(--leaf-100)}
+  .flist--gold .fi{background:var(--gold-200)}
 </style>
 </head>
 <body>
@@ -40,9 +52,10 @@
       <a href="como-salvamos-o-mundo.html">Conheça nossa missão</a>
       <a href="auditoria.html">Auditoria</a>
       <a href="planos.html">Planos</a>
+      <a href="ajuda.html">Ajuda</a>
     </div>
     <div class="nav-right">
-      <a href="planos.html" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
+      <a href="index.html#baixar" class="btn btn-gold btn-sm nav-cta">Baixar app</a>
       <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -52,7 +65,8 @@
   <a href="como-salvamos-o-mundo.html">Conheça nossa missão<span class="arr">→</span></a>
   <a href="auditoria.html">Auditoria<span class="arr">→</span></a>
   <a href="planos.html">Planos<span class="arr">→</span></a>
-  <a href="planos.html" class="btn btn-gold">Baixar app</a>
+  <a href="ajuda.html">Ajuda<span class="arr">→</span></a>
+  <a href="index.html#baixar" class="btn btn-gold">Baixar app</a>
 </div>
 
 <main>
@@ -63,11 +77,10 @@
   <div class="sec-orb glow--leaf" style="width:320px;height:320px;bottom:-14%;left:-6%;opacity:.45"></div>
   <div class="wrap split split--wide-text">
     <div data-reveal>
-      <span class="eyebrow">Tudo num app só</span>
-      <h1 class="display mt-2" style="font-size:clamp(40px,7vw,78px)">As habilidades<br>do Tupham.</h1>
+      <h1 class="display" style="font-size:clamp(40px,7vw,78px)">As habilidades<br>do Tupham.</h1>
       <p class="lead mt-3" style="color:var(--ink-800)">Conversa, documentos, esportes, criação e estudos, com um modelo de IA criado por brasileiros. Aqui está cada coisa que o Tupham faz, organizada por área.</p>
       <div class="btn-row mt-4">
-        <a href="planos.html" class="btn btn-ink btn-lg">Baixar o app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="index.html#baixar" class="btn btn-ink btn-lg">Baixar o app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
       <nav class="toc mt-4" aria-label="Áreas de habilidades">
         <a href="#conversa"><span class="n">01</span> Conversa</a>
@@ -94,13 +107,8 @@
     <div data-reveal>
       <span class="eyebrow"><span class="gold-ink">01</span> &nbsp;Conversa &amp; Inteligência</span>
       <h2 class="h-sec mt-2">Um chat que entende<br>o jeito brasileiro.</h2>
-      <p class="lead mt-2">O coração do Tupham: você pergunta do seu jeito, com gíria, sotaque e tudo, e ele responde como um amigo que manja de tudo.</p>
-      <ul class="checks mt-3">
-        <li><b>Entende o Brasil:</b> gíria, sotaque, futebol e o nosso jeito de falar, sem precisar explicar.</li>
-        <li><b>Resolve o dia a dia:</b> tira dúvidas, faz contas, escreve textos, dá ideias e ajuda no que você precisar.</li>
-        <li><b>Responde do seu jeito:</b> vai direto ao ponto ou se aprofunda, do jeito que você pediu.</li>
-      </ul>
-      <p class="muted mt-3" style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx-3)">Pra que serve</p>
+      <p class="lead mt-2">O coração do Tupham: você pergunta do seu jeito, com gíria, sotaque e tudo, e ele responde como um amigo que manja de tudo. Tira dúvidas, faz contas, escreve textos e dá ideias, sempre no seu jeito.</p>
+      <p class="muted mt-4" style="font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx-3)">Pra que serve</p>
       <div class="pill-row mt-2">
         <span class="pill">Tira dúvidas</span>
         <span class="pill">Faz contas</span>
@@ -136,11 +144,6 @@
         <li><b>Converter:</b> Word → PDF, PDF → Word editável e várias imagens num PDF.</li>
         <li><b>Privacidade &amp; biblioteca:</b> nada do conteúdo vai pra nuvem; seus arquivos ficam guardados no seu celular.</li>
       </ul>
-      <div class="pill-row mt-3">
-        <span class="pill"><span class="dot"></span>PDF + Word</span>
-        <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Sem marca-d'água</span>
-        <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>De graça</span>
-      </div>
     </div>
   </div>
 </section>
@@ -152,12 +155,12 @@
       <span class="eyebrow eyebrow--leaf"><span class="leaf-ink">03</span> &nbsp;Esportes &amp; Bolões</span>
       <h2 class="h-sec mt-2">Seu time ao vivo,<br>e o bolão com a turma.</h2>
       <p class="lead mt-2">Os jogos ao vivo, lance a lance, com alerta de gol no bolso. E a tradição do bolão integra toda a experiência.</p>
-      <ul class="checks mt-3">
-        <li><b>Ao vivo:</b> placar, gols, cartões, posse e chutes em tempo real, com notificações que te deixam sempre antenado.</li>
-        <li><b>Seus campeonatos:</b> Brasileirão, Libertadores, Copa do Mundo e mais, com próximos jogos, resultados e tabela.</li>
-        <li><b>Classificação:</b> a tabela inteira com as zonas coloridas, V / E / D, pontos e saldo.</li>
-        <li><b>Raio-X + Palpite da Torcida:</b> os números da temporada do time e a votação ao vivo da galera.</li>
-        <li><b>Bolões com a turma:</b> começa na Copa do Mundo 2026 e, em breve, todos os campeonatos. Crie o seu, convide por link e dispute o ranking ao vivo.</li>
+      <ul class="flist flist--leaf mt-3">
+        <li><span class="fi">⚡</span><span class="ft"><b>Ao vivo</b>Placar, gols, cartões, posse e chutes em tempo real, com notificações que te deixam sempre antenado.</span></li>
+        <li><span class="fi">🏆</span><span class="ft"><b>Seus campeonatos</b>Brasileirão, Libertadores, Copa do Mundo e mais, com próximos jogos, resultados e tabela.</span></li>
+        <li><span class="fi">📊</span><span class="ft"><b>Classificação</b>A tabela inteira com as zonas coloridas, V / E / D, pontos e saldo.</span></li>
+        <li><span class="fi">📣</span><span class="ft"><b>Raio-X + Palpite da Torcida</b>Os números da temporada do time e a votação ao vivo da galera.</span></li>
+        <li><span class="fi">🎟️</span><span class="ft"><b>Bolões com a turma</b>Começa na Copa do Mundo 2026 e, em breve, todos os campeonatos. Crie o seu, convide por link e dispute o ranking ao vivo.</span></li>
       </ul>
       <div class="pill-row mt-3">
         <span class="pill"><span class="dot"></span>Brasileirão</span>
@@ -194,9 +197,9 @@
       <span class="eyebrow eyebrow--gold"><span class="gold-ink">04</span> &nbsp;Criação</span>
       <h2 class="h-sec mt-2">Música cantada e artes<br>prontas pra postar.</h2>
       <p class="lead mt-2">Descreva a ideia e o Tupham tira do papel: uma música completa com voz cantada em português, ou uma arte pronta pra publicar.</p>
-      <ul class="checks mt-3">
-        <li><b>Áudio Studio:</b> título, letra, melodia, arranjo e voz cantada com vários estilos.</li>
-        <li><b>Modo Design:</b> Convite, Cartão de Visita, Panfleto, Frase e Banner de LinkedIn, gere criativos para diversos propósitos.</li>
+      <ul class="flist flist--gold mt-3">
+        <li><span class="fi">🎵</span><span class="ft"><b>Áudio Studio</b>Título, letra, melodia, arranjo e voz cantada com vários estilos.</span></li>
+        <li><span class="fi">🎨</span><span class="ft"><b>Modo Design</b>Convite, cartão de visita, panfleto, frase e banner de LinkedIn. Gere criativos para diversos propósitos.</span></li>
       </ul>
     </div>
   </div>
@@ -207,18 +210,19 @@
   <div class="wrap split">
     <div data-reveal>
       <span class="eyebrow"><span class="gold-ink">05</span> &nbsp;Tupham Estuda</span>
-      <h2 class="h-sec mt-2">Um plano de estudos<br>que muda com você.</h2>
-      <p class="lead mt-2">O Tupham monta um plano diário pro seu objetivo (ENEM, vestibular ou concurso) e recalcula todo dia, focando no que você mais precisa.</p>
-      <ul class="checks mt-3">
-        <li><b>Plano diário:</b> até 3 passos por dia, recalculados pra mirar a sua maior dificuldade.</li>
-        <li><b>Revisão na hora certa:</b> flashcards que voltam quando você precisa fixar.</li>
-        <li><b>Questões no estilo da prova:</b> blocos pra treinar de verdade e medir o seu avanço.</li>
-        <li><b>Pesquisa com fontes:</b> quando precisa ir fundo num tema, o Tupham monta um dossiê com as fontes pra você conferir.</li>
+      <h2 class="h-sec mt-2">Um jeito de estudar<br>que muda com você.</h2>
+      <p class="lead mt-2">Pro seu objetivo (ENEM, vestibular ou concurso), o Tupham monta um plano diário e recalcula todo dia. E pra aprender qualquer assunto no seu ritmo, tem as trilhas, que funcionam até offline.</p>
+      <ul class="flist mt-3">
+        <li><span class="fi">📅</span><span class="ft"><b>Plano diário</b>Até 3 passos por dia, recalculados pra mirar a sua maior dificuldade.</span></li>
+        <li><span class="fi">🧭</span><span class="ft"><b>Trilhas de aprendizado</b>Caminhos prontos pra estudar diversas áreas no seu ritmo, e que rodam até offline.</span></li>
+        <li><span class="fi">🔁</span><span class="ft"><b>Revisão na hora certa</b>Flashcards que voltam quando você precisa fixar.</span></li>
+        <li><span class="fi">✍️</span><span class="ft"><b>Questões no estilo da prova</b>Blocos pra treinar de verdade e medir o seu avanço.</span></li>
+        <li><span class="fi">🔎</span><span class="ft"><b>Pesquisa com fontes</b>Quando precisa ir fundo num tema, o Tupham monta um dossiê com as fontes pra você conferir.</span></li>
       </ul>
       <div class="pill-row mt-3">
         <span class="pill"><span class="dot"></span>ENEM e vestibular</span>
-        <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Plano diário</span>
-        <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>Estuda offline</span>
+        <span class="pill"><span class="dot" style="background:var(--sky-500)"></span>Trilhas de estudo</span>
+        <span class="pill"><span class="dot" style="background:var(--gold-500)"></span>Funciona offline</span>
       </div>
     </div>
     <div class="split-visual" data-reveal>
@@ -239,12 +243,6 @@
       <span class="eyebrow eyebrow--light">A diferença que ninguém tem</span>
       <h2 class="h-sec mt-2">A IA que funciona<br>com e sem internet.</h2>
       <p class="lead mt-2">Sem internet, o Tupham resolve cálculos, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz clima, cotações e notícias na hora.</p>
-      <ul class="checks mt-3">
-        <li><b>Privacidade:</b> a IA pensa no seu celular; coletamos dados só pra melhorias e suas conversas não vão pra terceiros.</li>
-        <li><b>Offline no Premium:</b> a única IA que funciona até sem conexão: no metrô, no avião, no sítio sem sinal.</li>
-        <li><b>Leve e rápido:</b> roda bem em qualquer celular, sem travar.</li>
-        <li><b>Sempre do seu lado:</b> com internet fica ainda melhor, mas nunca depende dela pra te ajudar.</li>
-      </ul>
     </div>
     <div class="split-visual" data-reveal>
       <div class="glow glow--leaf" style="width:300px;height:300px"></div>
@@ -295,7 +293,7 @@
         <h4>Planeta</h4>
         <a href="como-salvamos-o-mundo.html">Como salvamos o mundo</a>
         <a href="auditoria.html">Auditoria &amp; transparência</a>
-        <a href="como-salvamos-o-mundo.html#verdis">Créditos Verdes</a>
+        <a href="como-salvamos-o-mundo.html#verdis">Verdis</a>
       </div>
       <div class="foot-col">
         <h4>Empresa</h4>
