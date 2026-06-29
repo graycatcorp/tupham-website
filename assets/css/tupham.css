@@ -469,3 +469,84 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .card--ink .card-ico svg{color:var(--leaf-300)}
 .ladder .lv .e{display:inline-flex}
 .ladder .lv .e svg{width:18px;height:18px;display:block;color:#1F5F3A}
+
+/* ============================================================
+   CAMPAIGN LAYER  ·  "Tupico" + comic/script accents
+   Traz a linguagem das artes da loja pro site (jun 2026).
+   Base premium intacta — isto é só o tempero por cima.
+   ============================================================ */
+:root{
+  --font-comic:'Luckiest Guy','Bricolage Grotesque',sans-serif;
+  --font-script:'Caveat','Hanken Grotesk',cursive;
+}
+
+/* ---- Comic display (headline da campanha) ---- */
+/* element-qualified pra vencer .hero h1 / .h-sec da base */
+.comic,h1.comic,h2.comic,h3.comic,.hero h1.comic{font-family:var(--font-comic);font-weight:400;text-transform:uppercase;letter-spacing:.012em;line-height:.95}
+.comic--ink,h1.comic--ink,h2.comic--ink{color:var(--ink-900)}
+.comic--leaf,h2.comic--leaf{color:var(--leaf-600)}
+.comic--gold{color:var(--gold-500)}
+.comic--white,h2.comic--white{color:#fff}
+/* contorno escuro + preenchimento claro — pra fundos coloridos (cara da loja) */
+.comic--outline,h1.comic--outline,h2.comic--outline,.hero h1.comic--outline{
+  color:#fff;-webkit-text-stroke:5px var(--ink-900);
+  paint-order:stroke fill;text-shadow:0 4px 0 rgba(15,36,64,.20);
+}
+.comic--outline .lime{color:#C6F24E}
+.comic--outline .gold{color:var(--gold-300)}
+.comic--outline .sky{color:var(--sky-200)}
+@media(max-width:640px){.comic--outline{-webkit-text-stroke-width:3.5px;text-shadow:0 3px 0 rgba(15,36,64,.20)}}
+/* leve balanço de baseline pra ficar mais "feito à mão" */
+.comic--wobble span{display:inline-block}
+.comic--wobble span:nth-child(2n){transform:translateY(.04em) rotate(-1.4deg)}
+.comic--wobble span:nth-child(3n){transform:translateY(-.04em) rotate(1.6deg)}
+
+/* ---- Script à mão (etiquetas tipo "ao vivo", "de graça") ---- */
+.sticker{font-family:var(--font-script);font-weight:700;line-height:.95;color:var(--leaf-600);font-size:clamp(19px,2.6vw,30px);display:inline-block;transform:rotate(-7deg)}
+.sticker--gold{color:var(--gold-600)}
+.sticker--sky{color:var(--sky-600)}
+.sticker--white{color:#fff}
+.sticker--r{transform:rotate(5deg)}
+.sticker--lg{font-size:clamp(24px,4vw,42px)}
+.sticker svg{display:inline-block;vertical-align:middle;width:1.1em;height:1.1em}
+
+/* traço de pincel embaixo de uma palavra-chave */
+.brush{position:relative;display:inline-block}
+.brush::after{content:"";position:absolute;left:-3%;right:-3%;bottom:-.16em;height:.3em;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 26' preserveAspectRatio='none'%3E%3Cpath d='M7 16 C 70 7 130 7 180 13 S 280 22 314 10' fill='none' stroke='%232E9E6E' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+  pointer-events:none}
+.brush--gold::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 26' preserveAspectRatio='none'%3E%3Cpath d='M7 16 C 70 7 130 7 180 13 S 280 22 314 10' fill='none' stroke='%23F0C938' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E")}
+.brush--white::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 26' preserveAspectRatio='none'%3E%3Cpath d='M7 16 C 70 7 130 7 180 13 S 280 22 314 10' fill='none' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+/* ---- Mockups já emoldurados (PNG transparente do device) ---- */
+.mockup{position:relative;width:clamp(212px,60vw,290px);flex-shrink:0;filter:drop-shadow(0 26px 46px rgba(15,36,64,.26))}
+.mockup img{width:100%;height:auto;display:block}
+.mockup--tilt{transform:rotate(-4deg)}
+.mockup--tilt-r{transform:rotate(4deg)}
+.mockup--sm{width:clamp(176px,46vw,236px)}
+.mockup--lg{width:clamp(232px,64vw,318px)}
+.mockup-cluster{position:relative;display:flex;justify-content:center;align-items:center}
+.mockup-back{position:absolute;z-index:0}
+.mockup-front{position:relative;z-index:2}
+@media(prefers-reduced-motion:no-preference){
+  .mockup--float{animation:float 7.5s var(--ease) infinite}
+  .mockup--float-2{animation:float 8.5s var(--ease) infinite;animation-delay:-2.2s}
+}
+
+/* ---- Mascote Tupico ---- */
+.tupico{display:block;pointer-events:none;-webkit-user-select:none;user-select:none;
+  filter:drop-shadow(0 16px 26px rgba(15,36,64,.22))}
+.tupico--peek{position:absolute;z-index:3}
+@media(prefers-reduced-motion:no-preference){
+  .tupico--float{animation:float 6.5s var(--ease) infinite}
+  .tupico--float-2{animation:float 7.5s var(--ease) infinite;animation-delay:-1.6s}
+  .tupico--bob{animation:bob 5.5s var(--ease) infinite}
+}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(-2deg)}}
+
+/* faixa decorativa de mascote "espiando" numa seção */
+.mascot-stage{position:relative}
+.mascot-stage .tupico--peek{filter:drop-shadow(0 22px 30px rgba(15,36,64,.28))}
+
+/* esconde mascotes muito decorativos em telas estreitas pra não atravancar */
+@media(max-width:600px){.tupico--hide-mob{display:none}}
