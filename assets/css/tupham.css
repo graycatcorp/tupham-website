@@ -550,3 +550,7 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 
 /* esconde mascotes muito decorativos em telas estreitas pra não atravancar */
 @media(max-width:600px){.tupico--hide-mob{display:none}}
+/* mascote de canto: decorativo, ancorado no texto, atrás do conteúdo (z-index 0),
+   somem antes (<=900px) pq aí o layout empilha e não sobra canto pra eles */
+.tupico--corner{position:absolute;z-index:0}
+@media(max-width:900px){.tupico--corner{display:none}}
