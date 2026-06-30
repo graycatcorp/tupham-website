@@ -558,3 +558,9 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
    assim o mascote acompanha o texto em telas largas em vez de fugir pro canto */
 .tupico--cl{left:max(10px,calc((100% - var(--maxw))/2 + 4px))}
 .tupico--cr{right:max(10px,calc((100% - var(--maxw))/2 + 4px))}
+/* mascote EM FLUXO abaixo do mockup (reserva o próprio espaço — nunca
+   sobrepõe texto/botão, em qualquer largura). usado onde a coluna de texto
+   é alta e não sobra canto seguro. */
+.split-visual--stack{flex-direction:column;align-items:center}
+.split-visual--stack .tupico{margin-top:10px}
+@media(max-width:600px){.split-visual--stack .tupico{width:clamp(140px,40vw,190px)!important}}
