@@ -19,7 +19,7 @@
 > - **Habilidades · Criação:** removidas as pills de "9 vibes" e a nota técnica.
 > - **Habilidades · seção 05:** refatorada pra **dedicada ao Tupham Estuda** (era "Pesquisa & Estudos"). Label no menu/rodapé/TOC → "Estudos". Âncora segue `#pesquisa` por ora (renomeável pra `#estuda` depois).
 > - **Habilidades · "IA no aparelho":** reescrita inteira como "funciona com e sem internet", sem nenhum jargão.
-> - **planos:** propaguei o tom que faltava — tirei "local", removi jargão do FAQ (Metal/GPU/llama.cpp), "Tupham" no lugar de "Tupham AI". Preços mantidos (R$ 14,90 / R$ 139,90).
+> - **planos:** propaguei o tom que faltava — tirei "local", removi jargão do FAQ (Metal/GPU/llama.cpp), "Tupham" no lugar de "Tupham AI". Preços atuais (R$ 19,90 / R$ 139,90).
 
 ---
 
@@ -163,7 +163,7 @@
 - [index.compare.them.who] IAs gringas
 - [index.compare.them.price] R$ 105+/mês
 - [index.compare.us.who] Tupham
-- [index.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
+- [index.compare.us.price] Grátis, ou R$ 19,90/mês no Premium.
 - [index.compare.row1] Chat avançado
 - [index.compare.row3] Roda no seu celular
 - [index.compare.row4] Brasileirão &amp; bolão
@@ -184,7 +184,7 @@
 - [index.pricing.free.btn] Começar grátis
 - [index.pricing.pro.badge] MAIS POPULAR
 - [index.pricing.pro.nome] Premium
-- [index.pricing.pro.preco] R$ 14,90/mês
+- [index.pricing.pro.preco] R$ 19,90/mês
 - [index.pricing.pro.sub] ou R$ 139,90/ano. Você economiza.
 - [index.pricing.pro.feat1] Tudo ilimitado
 - [index.pricing.pro.feat2] Modo offline completo
@@ -202,7 +202,7 @@
 - [index.faq.q2] Precisa de internet?
 - [index.faq.a2] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.
 - [index.faq.q3] Quanto custa?
-- [index.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
+- [index.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 19,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
 - [index.faq.q4] Como o Tupham ajuda o planeta?
 - [index.faq.a4] Cada uso gera Verdis, a nossa moeda verde, e uma parte da nossa receita vira preservação ambiental auditada por terceiros. No app você acompanha seu impacto em árvores, CO₂ e mata preservada.
 - [index.faq.a4_link] Ver o passo a passo
@@ -511,15 +511,15 @@
 ## 💳 planos.html — Planos
 
 ### Meta / SEO
-- [planos.meta.title] Planos — Tupham · Grátis pra sempre ou Premium por R$ 14,90/mês
-- [planos.meta.description] A IA do Brasil cabe no seu bolso: plano gratuito completo e ilimitado, sustentado por anúncios, e Premium por R$ 14,90/mês ou R$ 139,90/ano. Cancele quando quiser.
+- [planos.meta.title] Planos — Tupham · Grátis pra sempre ou Premium por R$ 19,90/mês
+- [planos.meta.description] A IA do Brasil cabe no seu bolso: plano gratuito completo e ilimitado, sustentado por anúncios, e Premium por R$ 19,90/mês ou R$ 139,90/ano. Cancele quando quiser.
 - [planos.meta.og_title] Planos — Tupham
-- [planos.meta.og_description] Comece grátis. Premium quando quiser, por R$ 14,90/mês. A IA do Brasil que cabe no seu bolso.
+- [planos.meta.og_description] Comece grátis. Premium quando quiser, por R$ 19,90/mês. A IA do Brasil que cabe no seu bolso.
 
 ### Hero
 - [planos.hero.eyebrow] Planos
 - [planos.hero.h1] Comece grátis.<br>Premium quando<br>quiser.
-- [planos.hero.lead] A IA do Brasil é grátis e ilimitada. Quem quiser mais tem o Premium por **R$ 14,90/mês**.
+- [planos.hero.lead] A IA do Brasil é grátis e ilimitada. Quem quiser mais tem o Premium por **R$ 19,90/mês**.
 - [planos.hero.btn1] Ver os planos
 - [planos.hero.btn2] O que está incluso
 - [planos.hero.pill1] Grátis pra sempre
@@ -541,7 +541,7 @@
 - [planos.pricing.free.btn] Começar grátis
 - [planos.pricing.pro.badge] MAIS POPULAR
 - [planos.pricing.pro.nome] Premium
-- [planos.pricing.pro.preco] R$ 14,90/mês
+- [planos.pricing.pro.preco] R$ 19,90/mês
 - [planos.pricing.pro.sub] ou R$ 139,90/ano. Você economiza.
 - [planos.pricing.pro.feat1] Tudo ilimitado
 - [planos.pricing.pro.feat2] Modo offline completo
@@ -559,7 +559,7 @@
 - [planos.compare.them.who] IAs gringas
 - [planos.compare.them.price] R$ 105+/mês
 - [planos.compare.us.who] Tupham
-- [planos.compare.us.price] Grátis, ou R$ 14,90/mês no Premium.
+- [planos.compare.us.price] Grátis, ou R$ 19,90/mês no Premium.
 - [planos.compare.row1] Chat avançado
 - [planos.compare.row3] Roda no seu celular
 - [planos.compare.row4] Brasileirão &amp; bolão
@@ -612,7 +612,7 @@
 - [planos.faq.q2] Precisa de internet?
 - [planos.faq.a2] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. O modo 100% offline é um recurso Premium, desbloqueado com PIN ou biometria. Funções que dependem de dados em tempo real (notícias, esportes, busca) usam internet quando disponível.
 - [planos.faq.q3] Quanto custa?
-- [planos.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios. O Premium custa R$ 14,90/mês ou R$ 139,90/ano, com offline completo, zero anúncios e Verdis todo mês.
+- [planos.faq.a3] O Tupham é grátis e ilimitado, sustentado por anúncios. O Premium custa R$ 19,90/mês ou R$ 139,90/ano, com offline completo, zero anúncios e Verdis todo mês.
 - [planos.faq.q4] Como funciona o plano gratuito?
 - [planos.faq.a4] O plano Grátis é completo e ilimitado, sustentado por anúncios discretos e pela economia de Verdis, a nossa moeda verde. Você gera Verdis usando o Tupham e aplica em recursos como criação de áudio e design. Chat, esportes, bolão e notícias estão liberados. Sua primeira pesquisa profunda também é gratuita.
 - [planos.faq.q5] O que é o modo offline?
@@ -644,7 +644,7 @@
 ### CTA final
 - [planos.cta.eyebrow] Disponível em breve nas lojas
 - [planos.cta.h2] Comece grátis.<br>Refloreste usando.
-- [planos.cta.lead] A IA do Brasil, no seu bolso, de graça pra sempre ou R$ 14,90 por mês.
+- [planos.cta.lead] A IA do Brasil, no seu bolso, de graça pra sempre ou R$ 19,90 por mês.
 
 ### Imagens (alt)
 - [planos.alt.hero] Tela inicial do Tupham
@@ -687,7 +687,7 @@
 - [ajuda.faq.q1] Precisa de internet?
 - [ajuda.faq.a1] O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.
 - [ajuda.faq.q2] Quanto custa?
-- [ajuda.faq.a2] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
+- [ajuda.faq.a2] O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 19,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios.
 - [ajuda.faq.q3] Como cancelo a assinatura?
 - [ajuda.faq.a3] Sem multa, quando quiser. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.
 - [ajuda.faq.q4] Meus dados ficam seguros?

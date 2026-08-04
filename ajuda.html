@@ -22,13 +22,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Caveat:wght@600;700&family=Hanken+Grotesk:wght@400..800&family=JetBrains+Mono:wght@500..700&family=Luckiest+Guy&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/tupham.css?v=20260804">
+<link rel="stylesheet" href="assets/css/tupham.css?v=20260804-2">
 <style>
   /* scoped helpers — só com tokens existentes */
   .helpsec{scroll-margin-top:90px}
   .toc{display:flex;flex-wrap:wrap;gap:9px}
-  .toc a{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:.3px;padding:8px 15px;border-radius:var(--r-pill);background:rgba(15,36,64,.06);border:1px solid rgba(15,36,64,.08);color:var(--ink-800);transition:transform .25s var(--ease),background .2s,color .2s}
-  .toc a:hover{transform:translateY(-2px);background:rgba(15,36,64,.1);color:var(--ink-900)}
+  .toc a{display:inline-flex;align-items:center;gap:0;font-family:var(--font-body);font-size:12.5px;font-weight:700;letter-spacing:0;padding:8px 15px;border-radius:var(--r-pill);background:var(--ink-900);border:1px solid var(--ink-900);color:#fff;box-shadow:var(--sh-xs);transition:transform .25s var(--ease),background .2s,color .2s}
+  .toc a:hover{transform:translateY(-2px);background:var(--ink-800);color:#fff}
   .legal-card{display:flex;flex-direction:column;height:100%}
   .legal-card .btn-link{margin-top:auto;padding-top:14px}
   .mail-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
@@ -86,9 +86,9 @@
       <h1 class="display mt-2 comic comic--outline" style="font-size:clamp(40px,7vw,78px)">Como podemos<br><span class="lime">te ajudar?</span></h1>
       <p class="lead mt-3" style="color:var(--ink-800)">Tira dúvida com o suporte, fala com a gente sobre qualquer assunto ou consulta nossos documentos. Em português, com gente de verdade.</p>
       <nav class="toc mt-4" aria-label="Seções">
-        <a href="#suporte"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--leaf-500)"></span> Suporte</a>
-        <a href="#contato"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--sky-500)"></span> Contato &amp; Imprensa</a>
-        <a href="#legal"><span class="dot" style="width:7px;height:7px;border-radius:50%;background:var(--gold-500)"></span> Documentos legais</a>
+        <a href="#suporte">Suporte</a>
+        <a href="#contato">Contato &amp; Imprensa</a>
+        <a href="#legal">Documentos legais</a>
       </nav>
     </div>
     <div class="split-visual" data-reveal>
@@ -123,8 +123,8 @@
         <h3>Suporte do Tupham</h3>
         <p>Conta o que aconteceu — quanto mais detalhe, mais rápido a gente resolve. Atendimento em português, de pessoas de verdade.</p>
         <div class="stack gap-sm mt-3">
-          <span class="pill pill--light"><span class="dot"></span>App, conta e cobrança</span>
-          <span class="pill pill--light"><span class="dot" style="background:var(--sky-300)"></span>Bugs e sugestões</span>
+          <span class="pill pill--light">App, conta e cobrança</span>
+          <span class="pill pill--light">Bugs e sugestões</span>
         </div>
         <a href="mailto:suportebr@graycatcorp.com" class="btn btn-gold mt-4">suportebr@graycatcorp.com</a>
       </div>
@@ -141,7 +141,7 @@
     </div>
     <div class="faq" data-reveal>
       <div class="faq-item"><button class="faq-q">Precisa de internet?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham funciona com e sem internet. Sem conexão, ele resolve contas, definições, traduções e conceitos direto no seu celular. Com internet, faz pesquisas e traz notícias, esportes e cotações na hora. O modo 100% offline é um recurso Premium.</div></div></div>
-      <div class="faq-item"><button class="faq-q">Quanto custa?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 14,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios. <a href="planos.html" class="btn-link" style="display:inline-flex">Ver os planos</a></div></div></div>
+      <div class="faq-item"><button class="faq-q">Quanto custa?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">O Tupham é grátis e ilimitado, sustentado por anúncios discretos. Quem quiser mais tem o Premium por R$ 19,90/mês ou R$ 139,90/ano, com offline completo e zero anúncios. <a href="planos.html" class="btn-link" style="display:inline-flex">Ver os planos</a></div></div></div>
       <div class="faq-item"><button class="faq-q">Como cancelo a assinatura?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Sem multa, quando quiser. A assinatura é gerenciada pela App Store ou pelo Google Play, e você cancela direto na sua conta da loja. Também dá pra restaurar compras a qualquer momento se trocar de aparelho.</div></div></div>
       <div class="faq-item"><button class="faq-q">Meus dados ficam seguros?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A IA raciocina dentro do seu celular, suas conversas não precisam sair do aparelho pra serem respondidas. Coletamos dados apenas para melhorias. Dúvidas sobre dados? Fale com contato@graycatcorp.com.</div></div></div>
     </div>
@@ -278,6 +278,6 @@
   </div>
 </footer>
 
-<script src="assets/js/tupham.js?v=20260804"></script>
+<script src="assets/js/tupham.js?v=20260804-2"></script>
 </body>
 </html>
