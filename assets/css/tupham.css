@@ -145,6 +145,9 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .store-btn span b{font-size:15px;font-weight:700;letter-spacing:-.01em}
 .store-btn span small{font-size:10px;opacity:.7;font-family:var(--font-body);letter-spacing:.5px}
 .store-btn--light{background:#fff;color:var(--ink-900)}
+/* aviso "só no celular" — evita confusão de quem tenta baixar no computador */
+.store-note{display:inline-flex;align-items:center;gap:8px;margin-top:13px;font-size:12.5px;font-weight:600;color:inherit;opacity:.72;text-wrap:pretty}
+.store-note svg{width:15px;height:15px;flex-shrink:0}
 
 /* ---------- Pills / badges / chips ---------- */
 .pill{display:inline-flex;align-items:center;gap:0;font-family:var(--font-body);font-size:12.5px;font-weight:700;letter-spacing:0;padding:8px 15px;border-radius:var(--r-pill);background:var(--ink-900);border:1px solid var(--ink-900);color:#fff;box-shadow:var(--sh-xs);transition:transform .25s var(--ease),background .2s,border-color .2s}
