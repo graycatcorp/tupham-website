@@ -671,17 +671,11 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 .home .hero .lead{max-width:34ch;margin-top:22px}
 .home .hero>.tupico{left:24px;bottom:18px!important;width:132px!important}
 .home .store-row{margin-top:28px}
-.hero-proof{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px}
-.hero-proof span{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--ink-800)}
-.hero-proof span::before{content:"✓";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.55);color:var(--leaf-700);font-size:11px;box-shadow:inset 0 0 0 1px rgba(15,36,64,.08)}
 .hero-visual{display:flex;justify-content:center;min-width:0}
 
 /* Static capability rail replaces the moving marquee */
 .capability-band{position:relative;padding:28px 0;border-bottom:1px solid var(--line)}
-.capability-band-in{display:grid;grid-template-columns:210px 1fr;gap:28px;align-items:center}
-.capability-label{display:flex;flex-direction:column;padding-right:24px;border-right:1px solid var(--line)}
-.capability-label span{font-family:var(--font-body);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--leaf-600)}
-.capability-label b{font-family:var(--font-display);font-weight:400;font-size:17px;color:var(--ink-900)}
+.capability-band-in{display:grid;grid-template-columns:1fr;align-items:center}
 .capability-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
 .capability-grid span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 12px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#fff,#f6f9fb);font-size:12px;font-weight:700;line-height:1.25;text-align:center;color:var(--ink-800);box-shadow:var(--sh-xs)}
 .capability-grid span::before{content:none}
@@ -719,7 +713,7 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .home .hero-visual{order:2}
   .home .hero h1{font-size:68px;margin-inline:auto}
   .home .hero .lead{margin-inline:auto}
-  .home .hero .store-row,.home .hero .hero-proof{justify-content:center}
+  .home .hero .store-row{justify-content:center}
   .split-visual{min-height:380px}
   main>.section:first-child{padding-top:calc(var(--nav-h) + 42px)}
   main>.section:first-child .split>*:first-child{order:1}
@@ -728,8 +722,6 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   main>.section:first-child .mockup{width:250px}
   main>.section:first-child .hero-visual>.mockup-cluster+.tupico,
   main>.section:first-child .split-visual--stack>.tupico{position:absolute;right:10%;bottom:4px;width:110px!important;margin:0!important;z-index:4}
-  .capability-band-in{grid-template-columns:1fr;gap:16px}
-  .capability-label{padding:0 0 14px;border-right:0;border-bottom:1px solid var(--line);text-align:center}
   .capability-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
@@ -764,10 +756,7 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .home .store-btn{flex:1;min-width:0;padding:10px 11px;gap:8px;border-radius:13px}
   .home .store-btn svg{width:21px;height:21px}
   .home .store-btn span b{font-size:13px}.home .store-btn span small{font-size:8px}
-  .hero-proof{gap:7px 11px;margin-top:14px}
-  .hero-proof span{font-size:10.5px}
   .capability-band{padding:24px 0}
-  .capability-label{align-items:center}
   .capability-grid{grid-template-columns:1fr 1fr;gap:7px}
   .capability-grid span{justify-content:flex-start;min-height:48px;text-align:left;font-size:11px}
   .capability-grid span:last-child{grid-column:1/-1;justify-content:center}
@@ -786,5 +775,4 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .home .hero h1{font-size:49px!important}
   .home .store-btn{padding-inline:8px}
   .home .store-btn span b{font-size:12px}
-  .hero-proof{justify-content:flex-start!important}
 }
