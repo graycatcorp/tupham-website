@@ -26,8 +26,9 @@
 <style>
   /* scoped helpers — built only from existing tokens */
   .skill-sec{scroll-margin-top:90px}
-  /* TOC como tiles */
-  .toc{display:flex;flex-wrap:wrap;gap:10px}
+  /* TOC como tiles — grade uniforme, 5 em linha no desktop */
+  .toc{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+  @media(max-width:960px){.toc{grid-template-columns:repeat(2,minmax(0,1fr))}}
   .toc a{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-body);font-size:14px;font-weight:700;letter-spacing:-.01em;padding:9px 16px 9px 9px;border-radius:14px;background:var(--surface);border:1px solid var(--line);color:var(--ink-800);box-shadow:var(--sh-xs);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .2s,color .2s}
   .toc a:hover{transform:translateY(-3px);box-shadow:var(--sh-sm);border-color:var(--sky-300);color:var(--ink-900)}
   .toc a .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:9px;background:var(--sky-100);color:var(--sky-600);font-family:var(--font-body);font-weight:700;font-size:12px}
@@ -86,13 +87,6 @@
       <div class="btn-row mt-4">
         <a href="index.html#baixar" class="btn btn-ink btn-lg">Baixar o app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <nav class="toc mt-4" aria-label="Áreas de habilidades">
-        <a href="#conversa"><span class="n">01</span> Conversa</a>
-        <a href="#documentos"><span class="n">02</span> Documentos</a>
-        <a href="#esportes"><span class="n">03</span> Esportes &amp; Bolões</a>
-        <a href="#criacao"><span class="n">04</span> Criação</a>
-        <a href="#pesquisa"><span class="n">05</span> Estudos</a>
-      </nav>
     </div>
     <div class="hero-visual" data-reveal style="display:flex;flex-direction:column;align-items:center">
       <div class="mockup-cluster">
@@ -102,6 +96,15 @@
       </div>
       <img class="tupico" src="assets/img/mascotes/tupico-detetive.png" alt="Tupico explorando as habilidades" style="width:clamp(110px,13vw,150px);margin-top:8px" loading="eager">
     </div>
+  </div>
+  <div class="wrap mt-5" data-reveal>
+    <nav class="toc" aria-label="Áreas de habilidades">
+      <a href="#conversa"><span class="n">01</span> Conversa</a>
+      <a href="#documentos"><span class="n">02</span> Documentos</a>
+      <a href="#esportes"><span class="n">03</span> Esportes</a>
+      <a href="#criacao"><span class="n">04</span> Criação</a>
+      <a href="#pesquisa"><span class="n">05</span> Estudos</a>
+    </nav>
   </div>
   <svg class="wave wave--bottom" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#FBFCFD" d="M0,64 C240,108 520,20 760,52 C1020,86 1240,28 1440,58 L1440,110 L0,110Z"/></svg>
 </section>
