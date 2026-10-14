@@ -205,6 +205,7 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 
 /* split layout: text + visual */
 .split{display:grid;grid-template-columns:1fr;gap:42px;align-items:center}
+.split--top{align-items:flex-start}
 @media(min-width:960px){.split{grid-template-columns:1fr 1fr;gap:64px}.split--wide-text{grid-template-columns:1.1fr .9fr}.split--reverse .split-visual{order:-1}}
 .split-visual{position:relative;display:flex;justify-content:center}
 
