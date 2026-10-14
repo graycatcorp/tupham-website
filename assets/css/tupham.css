@@ -181,9 +181,17 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .card--leaf h3,.card--leaf p{color:#fff}.card--leaf p{color:rgba(255,255,255,.8)}
 .card--gold{background:linear-gradient(160deg,var(--gold-300),var(--gold-400));border-color:transparent}
 .card--gold h3{color:var(--ink-900)}.card--gold p{color:var(--ink-800)}
-/* card de funcionalidade: grade uniforme, texto padronizado e link na base */
+/* card de funcionalidade: grade uniforme, texto padronizado e selo de abertura */
 .card--feat{display:flex;flex-direction:column;min-height:230px}
-.card--feat .btn-link{margin-top:auto;padding-top:16px}
+/* cartão cartoon: contorno de tinta e relevo curto, como no app */
+.card.card--feat{border:2px solid var(--ink-900);border-radius:22px;box-shadow:0 4px 0 var(--ink-900)}
+.card.card--feat .card-ico{border:2px solid var(--ink-900);box-shadow:0 3px 0 var(--ink-900)}
+.card-go{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--ink-900);color:#fff;margin-top:auto;box-shadow:0 3px 0 rgba(15,36,64,.4);transition:transform .25s var(--ease)}
+.card-go svg{width:19px;height:19px}
+@media(hover:hover){
+  .card.card--feat:hover{transform:translateY(-3px);box-shadow:0 7px 0 var(--ink-900);border-color:var(--ink-900)}
+  .card--feat:hover .card-go{transform:translateX(4px)}
+}
 
 /* feature grid (bento) */
 .grid{display:grid;gap:18px}
