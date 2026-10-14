@@ -680,6 +680,8 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 .home .hero-in{grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr);gap:72px}
 /* a onda cresce proporcional à largura; o respiro da faixa acompanha para o CTA não encostar */
 @media(min-width:768px){.home .section.bg-leaf{padding-bottom:calc(7.64vw + 48px)}}
+/* idem nos heroes azuis (habilidades, ajuda e planos) — o conteúdo não encosta na onda */
+@media(min-width:768px){.section.bg-sky{padding-bottom:calc(7.64vw + 48px)}}
 .home .hero-text{max-width:590px}
 .home .hero h1{font-size:88px;max-width:7.5ch}
 .home .hero .lead{max-width:34ch;margin-top:22px}
