@@ -679,6 +679,8 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   background:radial-gradient(70% 80% at 85% 20%,rgba(255,255,255,.7),transparent 70%),linear-gradient(150deg,#dff5fd 0%,#a8e2f5 46%,#65c5e8 100%);
 }
 .home .hero-in{grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr);gap:72px}
+/* a onda cresce proporcional à largura; o respiro da faixa acompanha para o CTA não encostar */
+@media(min-width:768px){.home .section.bg-leaf{padding-bottom:calc(7.64vw + 48px)}}
 .home .hero-text{max-width:590px}
 .home .hero h1{font-size:88px;max-width:7.5ch}
 .home .hero .lead{max-width:34ch;margin-top:22px}
