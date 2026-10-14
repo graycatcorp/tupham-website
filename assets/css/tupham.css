@@ -407,7 +407,7 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 /* ---------- Footer ---------- */
 .foot{background:var(--ink-950);color:#fff;padding:72px 0 36px;position:relative;overflow:hidden}
 .foot-top{display:grid;grid-template-columns:1fr;gap:40px;margin-bottom:48px}
-@media(min-width:820px){.foot-top{grid-template-columns:minmax(220px,auto) auto auto;justify-content:space-between}}
+@media(min-width:820px){.foot-top{grid-template-columns:minmax(220px,auto) auto auto;justify-content:center;column-gap:88px}}
 .foot-brand img{height:30px;margin-bottom:16px;filter:brightness(0) invert(1);opacity:.95}
 .foot-brand p{font-size:14.5px;color:rgba(255,255,255,.5);max-width:30ch;line-height:1.6}
 .foot-brand .foot-social{margin-top:18px}
