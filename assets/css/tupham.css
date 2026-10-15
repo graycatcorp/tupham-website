@@ -148,16 +148,16 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .store-note svg{width:15px;height:15px;flex-shrink:0}
 
 /* ---------- Pills / badges / chips ---------- */
-.pill{display:inline-flex;align-items:center;gap:0;font-family:var(--font-body);font-size:12.5px;font-weight:700;letter-spacing:0;padding:8px 15px;border-radius:var(--r-pill);background:var(--ink-900);border:1px solid var(--ink-900);color:#fff;box-shadow:var(--sh-xs);transition:transform .25s var(--ease),background .2s,border-color .2s}
-.pill:hover{transform:translateY(-2px);background:var(--ink-800);border-color:var(--ink-800);color:#fff}
+.pill{display:inline-flex;align-items:center;gap:0;font-family:var(--font-body);font-size:12.5px;font-weight:700;letter-spacing:0;padding:8px 15px;border-radius:var(--r-pill);background:var(--ink-900);border:2px solid var(--ink-950);color:#fff;box-shadow:0 2px 0 var(--ink-950);transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .2s,border-color .2s}
+.pill:hover{transform:translateY(-2px);box-shadow:0 4px 0 var(--ink-950);background:var(--ink-800);border-color:var(--ink-800);color:#fff}
 .pill .dot{display:none}
 .pill--light{background:var(--ink-900);border-color:var(--ink-900);color:#fff}
 .pill-row{display:flex;flex-wrap:wrap;gap:9px}
-.tag{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:5px 11px;border-radius:var(--r-pill);background:var(--sky-100);color:var(--ink-800)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:5px 11px;border-radius:var(--r-pill);background:var(--sky-100);color:var(--ink-800);border:1.5px solid rgba(15,36,64,.12);box-shadow:0 2px 0 rgba(15,36,64,.08)}
 .tag--gold{background:var(--gold-200);color:var(--ink-900)}
 .tag--leaf{background:var(--leaf-100);color:var(--leaf-700)}
 .tag--new{background:var(--gold-400);color:var(--ink-900)}
-.badge-tier{font-family:var(--font-body);font-size:11px;font-weight:700;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px}
+.badge-tier{font-family:var(--font-body);font-size:11px;font-weight:700;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;box-shadow:0 2px 0 rgba(15,36,64,.12)}
 .badge-tier.s{background:var(--gold-400);color:var(--ink-900)}
 .badge-tier.a{background:var(--sky-300);color:var(--ink-900)}
 .badge-tier.b{background:var(--leaf-300);color:var(--ink-900)}
@@ -293,7 +293,7 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .price-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:36px 30px;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
 .price-card:hover{transform:translateY(-6px);box-shadow:var(--sh)}
 .price-card--pro{background:radial-gradient(120% 120% at 80% 0%,var(--ink-800),var(--ink-950));border-color:transparent;box-shadow:var(--sh-lg);color:#fff}
-.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--ink-900);background:linear-gradient(180deg,var(--gold-300),var(--gold-400));padding:7px 16px;border-radius:var(--r-pill);box-shadow:var(--sh-gold);white-space:nowrap}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-family:var(--font-body);font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--ink-900);background:linear-gradient(180deg,var(--gold-300),var(--gold-400));border:2px solid var(--ink-900);padding:6px 15px;border-radius:var(--r-pill);box-shadow:0 3px 0 rgba(15,36,64,.4);white-space:nowrap}
 .price-name{font-family:var(--font-display);font-weight:400;font-size:21px;margin-bottom:4px}
 .price-card--pro .price-name{color:#fff}
 .price-tag{display:flex;align-items:baseline;gap:3px;margin:12px 0 2px}
