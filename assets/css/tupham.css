@@ -352,7 +352,7 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 
 /* level ladder */
 .ladder{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.ladder .lv{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:var(--r-pill);background:#fff;border:1px solid var(--line);font-weight:700;font-size:14px;color:var(--ink-800);box-shadow:var(--sh-xs)}
+.ladder .lv{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:var(--r-pill);background:#fff;border:1.5px solid var(--ink-900);font-weight:700;font-size:14px;color:var(--ink-800);box-shadow:0 2px 0 var(--ink-900)}
 .ladder .lv .e{font-size:17px}
 .ladder .arrow{display:flex;align-items:center;color:var(--leaf-300)}
 
@@ -627,9 +627,9 @@ main{overflow:clip}
 .lead{font-size:20px;text-wrap:pretty}
 .eyebrow{line-height:1.45}
 
-/* Premium surfaces */
+/* Premium surfaces — contorno de tinta + relevo curto (linguagem do app) */
 .card,.step,.equiv-card,.price-card{
-  position:relative;border-color:var(--premium-line);box-shadow:var(--premium-shadow-soft);
+  position:relative;border:2px solid var(--ink-900);box-shadow:0 3px 0 var(--ink-900);
   background-image:linear-gradient(145deg,rgba(255,255,255,.98),rgba(249,251,253,.92));
 }
 .card{overflow:hidden;padding:32px}
@@ -644,7 +644,7 @@ main{overflow:clip}
 .card h3{font-size:21px}.card p{font-size:15px}
 .card-ico{box-shadow:inset 0 1px rgba(255,255,255,.8),0 8px 22px rgba(15,36,64,.08)}
 .price-card--pro{background-image:radial-gradient(120% 120% at 80% 0%,var(--ink-800),var(--ink-950))}
-.cta-band{border:1px solid rgba(255,255,255,.58);box-shadow:var(--premium-shadow),inset 0 1px rgba(255,255,255,.5)}
+.cta-band{border:2px solid var(--ink-900);box-shadow:0 4px 0 var(--ink-900)}
 
 /* Reserve media space to prevent layout shifts while images load */
 .mockup{width:290px;aspect-ratio:821/1640}
@@ -691,13 +691,13 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 .capability-band{position:relative;padding:28px 0;border-bottom:1px solid var(--line)}
 .capability-band-in{display:grid;grid-template-columns:1fr;align-items:center}
 .capability-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
-.capability-grid span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 12px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#fff,#f6f9fb);font-size:12px;font-weight:700;line-height:1.25;text-align:center;color:var(--ink-800);box-shadow:var(--sh-xs)}
+.capability-grid span{display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 12px;border:1.5px solid var(--ink-900);border-radius:14px;background:linear-gradient(145deg,#fff,#f6f9fb);font-size:12px;font-weight:700;line-height:1.25;text-align:center;color:var(--ink-800);box-shadow:0 2px 0 var(--ink-900)}
 .capability-grid span::before{content:none}
 
 /* Desktop and touch-specific interactions */
 .card:hover,.step:hover,.price-card:hover{transform:none}
 @media(hover:hover) and (pointer:fine){
-  .card:hover,.step:hover,.price-card:hover{transform:translateY(-5px);box-shadow:var(--premium-shadow);border-color:rgba(74,175,207,.24)}
+  .card:hover,.step:hover,.price-card:hover{transform:translateY(-3px);box-shadow:0 6px 0 var(--ink-900);border-color:var(--ink-900)}
 }
 
 @media(min-width:768px){
