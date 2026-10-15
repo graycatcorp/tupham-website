@@ -531,8 +531,9 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .brush--white::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 26' preserveAspectRatio='none'%3E%3Cpath d='M7 16 C 70 7 130 7 180 13 S 280 22 314 10' fill='none' stroke='%23ffffff' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E")}
 
 /* ---- Mockups já emoldurados (PNG transparente do device) ---- */
-.mockup{position:relative;width:clamp(212px,60vw,290px);flex-shrink:0;filter:drop-shadow(0 26px 46px rgba(15,36,64,.26))}
-.mockup img{width:100%;height:auto;display:block}
+/* molduras de device em CSS — os prints novos vêm sem frame embutido */
+.mockup{position:relative;width:clamp(212px,60vw,290px);flex-shrink:0;padding:8px;border-radius:40px;background:linear-gradient(150deg,#2b3644,#0a0f17);box-shadow:inset 0 0 0 2px rgba(255,255,255,.08);filter:drop-shadow(0 26px 46px rgba(15,36,64,.26))}
+.mockup img{width:100%;height:auto;display:block;border-radius:33px;aspect-ratio:622/1280;object-fit:cover;object-position:top}
 .mockup--tilt{transform:rotate(-4deg)}
 .mockup--tilt-r{transform:rotate(4deg)}
 .mockup--sm{width:clamp(176px,46vw,236px)}
@@ -649,9 +650,8 @@ main{overflow:clip}
 .cta-band{border:2px solid var(--ink-900);box-shadow:0 4px 0 var(--ink-900)}
 
 /* Reserve media space to prevent layout shifts while images load */
-.mockup{width:290px;aspect-ratio:821/1640}
+.mockup{width:290px}
 .mockup--sm{width:236px}.mockup--lg{width:318px}
-.mockup img{width:100%;height:auto;aspect-ratio:821/1640}
 img[src$="tupico-bateria.png"]{aspect-ratio:519/760;height:auto}
 img[src$="tupico-aviador.png"]{aspect-ratio:1100/625;height:auto}
 img[src$="tupico-craque.png"]{aspect-ratio:585/900;height:auto}
