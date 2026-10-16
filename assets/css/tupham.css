@@ -577,7 +577,9 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
    sobrepõe texto/botão, em qualquer largura). usado onde a coluna de texto
    é alta e não sobra canto seguro. */
 .split-visual--stack{flex-direction:column;align-items:center}
-.split-visual--stack .tupico{margin-top:10px}
+/* o print acima é rotacionado (tilt) — o bbox dele desce além do box de layout,
+   então o respiro real precisa cobrir esse excedente (~7px) + folga visual */
+.split-visual--stack .tupico{margin-top:20px}
 @media(max-width:600px){.split-visual--stack .tupico{width:clamp(140px,40vw,190px)!important}}
 
 /* ============================================================
@@ -678,6 +680,8 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   background:radial-gradient(70% 80% at 85% 20%,rgba(255,255,255,.7),transparent 70%),linear-gradient(150deg,#dff5fd 0%,#a8e2f5 46%,#65c5e8 100%);
 }
 .home .hero-in{grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr);gap:72px}
+/* o avião pousa acima do título na faixa escura — reserva a altura dele no topo (só onde ele aparece) */
+@media(min-width:901px){.home .section.bg-ink{padding-top:158px}}
 /* a onda cresce proporcional à largura; o respiro da faixa acompanha para o CTA não encostar */
 @media(min-width:768px){.home .section.bg-leaf{padding-bottom:calc(7.64vw + 48px)}}
 /* idem nos heroes azuis (habilidades, ajuda e planos) — o conteúdo não encosta na onda */
@@ -761,7 +765,7 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .split{gap:34px}
   .split-visual{min-height:0;padding:8px 0}
   .mockup,main>.section:first-child .mockup{width:224px}.mockup--sm{width:196px}.mockup--lg{width:246px}
-  .split-visual--stack .tupico{width:128px!important;margin-top:-4px}
+  .split-visual--stack .tupico{width:128px!important}
   main>.section:first-child .hero-visual>.mockup-cluster+.tupico,
   main>.section:first-child .split-visual--stack>.tupico{right:8px;bottom:2px;width:96px!important}
   .home .hero{padding:calc(var(--nav-h) + 26px) 0 62px}
