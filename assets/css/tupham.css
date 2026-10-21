@@ -685,8 +685,9 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 .home .hero-in{grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr);gap:72px}
 /* o avião pousa acima do título na faixa escura — reserva a altura dele no topo (só onde ele aparece) */
 @media(min-width:901px){.home .section.bg-ink{padding-top:158px}}
-/* a onda cresce proporcional à largura; o respiro da faixa acompanha para o CTA não encostar */
-@media(min-width:768px){.home .section.bg-leaf{padding-bottom:calc(7.64vw + 48px)}}
+/* a onda cresce proporcional à largura; o respiro da faixa acompanha para o CTA não encostar
+   (vale para todas as faixas verdes com onda: teaser da home e hero de Verdis) */
+@media(min-width:768px){.section.bg-leaf{padding-bottom:calc(7.64vw + 48px)}}
 /* idem nos heroes azuis (habilidades, ajuda e planos) — o conteúdo não encosta na onda */
 @media(min-width:768px){.section.bg-sky{padding-bottom:calc(7.64vw + 48px)}}
 .home .hero-text{max-width:590px}
