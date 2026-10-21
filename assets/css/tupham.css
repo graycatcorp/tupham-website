@@ -664,6 +664,7 @@ img[src$="tupico-detetive.png"]{aspect-ratio:643/900;height:auto}
 img[src$="tupico-festa.png"]{aspect-ratio:705/704;height:auto}
 img[src$="tupico-jardineiro.png"]{aspect-ratio:644/860;height:auto}
 img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
+img[src$="tupico-voando.png"]{aspect-ratio:1402/1122;height:auto}
 .split{grid-template-columns:minmax(0,1fr);gap:44px}
 .split>*{min-width:0}
 .split-visual{min-height:420px;align-items:center}
