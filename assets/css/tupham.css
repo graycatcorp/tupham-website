@@ -772,8 +772,11 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .home .hero-in{gap:36px}
   .home .hero h1{font-size:54px!important;max-width:none}
   .home .hero .lead{margin-top:18px;max-width:32ch}
-  .home .store-row{width:100%;gap:8px;margin-top:22px}
+  .home .store-row{width:100%;gap:8px;margin-top:22px;justify-content:center}
   .home .store-btn{flex:1;min-width:0;padding:10px 11px;gap:8px;border-radius:13px}
+  /* no hero só existe um CTA: ele fica com a largura do texto, centralizado */
+  .home .hero .store-btn{flex:0 0 auto;padding:12px 22px}
+  .home .hero .store-btn span b{font-size:14px}
   .home .store-btn svg{width:21px;height:21px}
   .home .store-btn span b{font-size:13px}.home .store-btn span small{font-size:8px}
   .capability-band{padding:24px 0}
