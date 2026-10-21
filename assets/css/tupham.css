@@ -372,8 +372,12 @@ button{cursor:pointer;border:none;background:none;font:inherit;color:inherit}
 .nav-links a.active{color:var(--ink-900)}
 .nav-links a.active::after{content:"";position:absolute;bottom:2px;left:13px;right:13px;height:2px;border-radius:2px;background:var(--gold-400)}
 .nav-right{display:flex;align-items:center;gap:10px}
-.nav-cta{display:none}
-@media(min-width:560px){.nav-cta{display:inline-flex}}
+/* Instagram no navbar — mesmo ícone do rodapé, com o acabamento cartoon do site */
+.nav-insta{display:none;width:40px;height:40px;border-radius:50%;align-items:center;justify-content:center;background:linear-gradient(145deg,#fff,#f2f7fa);color:var(--ink-800);border:2px solid var(--ink-900);box-shadow:0 2px 0 var(--ink-900);transition:transform .18s var(--ease),box-shadow .18s var(--ease),background .2s,color .2s}
+.nav-insta svg{width:20px;height:20px}
+.nav-insta:hover{background:var(--gold-300);color:var(--ink-900);transform:translateY(-2px);box-shadow:0 4px 0 var(--ink-900)}
+.nav-insta:active{transform:translateY(1px);box-shadow:0 1px 0 var(--ink-900)}
+@media(min-width:560px){.nav-insta{display:inline-flex}}
 .burger{display:flex;flex-direction:column;gap:5px;padding:9px;border-radius:10px}
 @media(min-width:1000px){.burger{display:none}}
 .burger span{display:block;width:21px;height:2px;border-radius:2px;background:var(--ink-900);transition:transform .35s var(--ease),opacity .25s}
@@ -619,7 +623,7 @@ main{overflow:clip}
 .nav-links a{padding:8px 11px;font-size:14px}
 .nav-links a.active{background:rgba(15,36,64,.055)}
 .nav-links a.active::after{bottom:0;left:12px;right:12px}
-.nav-cta{display:inline-flex}
+.nav-insta{display:inline-flex}
 .burger{width:40px;height:40px;align-items:center;justify-content:center;padding:0}
 .mobnav{inset:0;padding:calc(var(--nav-h) + 20px) var(--gutter) 28px;background:rgba(247,250,252,.98)}
 .mobnav a{min-height:56px}
@@ -747,7 +751,7 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .nav-in{height:58px;padding:0 12px;border-radius:16px}
   .nav-logo img{height:27px}
   .nav-right{gap:5px}
-  .nav-cta{padding:9px 13px;font-size:12px}
+  .nav-insta{width:36px;height:36px}
   .mobnav{padding-inline:20px}
   .section{padding:76px 0}
   .section--tight{padding:50px 0}
@@ -787,7 +791,6 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 @media(max-width:360px){
   :root{--gutter:16px}
   .nav-logo img{height:25px}
-  .nav-cta{padding-inline:11px}
   .home .hero h1{font-size:49px!important}
   .home .store-btn{padding-inline:8px}
   .home .store-btn span b{font-size:12px}
