@@ -654,7 +654,6 @@ main{overflow:clip}
 /* Reserve media space to prevent layout shifts while images load */
 .mockup{width:290px}
 .mockup--sm{width:236px}.mockup--lg{width:318px}
-img[src$="tupico-bateria.png"]{aspect-ratio:519/760;height:auto}
 img[src$="tupico-aviador.png"]{aspect-ratio:1100/625;height:auto}
 img[src$="tupico-craque.png"]{aspect-ratio:585/900;height:auto}
 img[src$="tupico-detetive.png"]{aspect-ratio:643/900;height:auto}
@@ -689,7 +688,6 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
 .home .hero-text{max-width:590px}
 .home .hero h1{font-size:88px;max-width:7.5ch}
 .home .hero .lead{max-width:34ch;margin-top:22px}
-.home .hero>.tupico{left:24px;bottom:18px!important;width:132px!important}
 .home .store-row{margin-top:28px}
 .hero-visual{display:flex;justify-content:center;min-width:0}
 
@@ -721,8 +719,6 @@ img[src$="tupico-rockstar.png"]{aspect-ratio:544/820;height:auto}
   .home .hero h1{font-size:76px}
   .nav-links a{padding-inline:8px;font-size:13.5px}
 }
-
-@media(max-width:1200px){.home .hero>.tupico{display:none}}
 
 @media(max-width:959px){
   .display{font-size:56px}
